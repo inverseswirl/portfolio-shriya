@@ -1,8 +1,9 @@
 import './sass/App.css';
 import Title from './components/title';
-import Test from './components/test';
+
 import React from 'react';
 import Second from './components/second';
+import Intro from './components/intro';
 
 
 
@@ -57,7 +58,7 @@ render(){
     <div className="App" onMouseMove={this.handleMouse} >
         <div className="cursor" style={{top: top - 10,left: left - 10}}></div>
       
-      <Test />
+      <Intro />
      
      
     </div>
