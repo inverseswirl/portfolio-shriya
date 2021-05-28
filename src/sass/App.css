@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,156 +25,166 @@ button:active {
 }
 
 body, html {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  background-color: #121212;
+  overflow: hidden;
   background-size: 100% 100%;
 }
 
 .App {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 100%;
-  width: 100%;
-  cursor: none;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 .cursor {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 2px solid #800a0a;
+  border: 2px solid black;
   position: absolute;
 }
 
 .text {
-  color: #121212;
+  color: white;
   font-family: 'Special Elite', cursive;
   font-weight: 400;
   font-size: 3.2rem;
   padding: 7%;
   overflow-y: scroll;
   text-indent: 1px;
-  -webkit-animation: letter 1s alternate forwards  2.6s,font 100ms linear forwards 3s;
-          animation: letter 1s alternate forwards  2.6s,font 100ms linear forwards 3s;
+  margin-top: 20vh;
+  text-align: center;
+  -webkit-animation: letter 0.8s linear forwards 2.5s, font 0.3s linear forwards 2.9s;
+          animation: letter 0.8s linear forwards 2.5s, font 0.3s linear forwards 2.9s;
+  background-color: white;
 }
 
 .text .M {
-  -webkit-animation: type 0.6s alternate forwards 0s;
-          animation: type 0.6s alternate forwards 0s;
+  -webkit-animation: type 0.8s alternate forwards 0s;
+          animation: type 0.8s alternate forwards 0s;
   display: inline-block;
 }
 
 .text .y {
-  -webkit-animation: type 0.6s alternate forwards 0.1s;
-          animation: type 0.6s alternate forwards 0.1s;
+  -webkit-animation: type 0.8s alternate forwards 0.1s;
+          animation: type 0.8s alternate forwards 0.1s;
   display: inline-block;
 }
 
 .text .l {
-  -webkit-animation: type 0.6s alternate forwards 0.2s;
-          animation: type 0.6s alternate forwards 0.2s;
+  -webkit-animation: type 0.8s alternate forwards 0.2s;
+          animation: type 0.8s alternate forwards 0.2s;
   display: inline-block;
 }
 
 .text .i {
-  -webkit-animation: type 0.6s alternate forwards 0.3s;
-          animation: type 0.6s alternate forwards 0.3s;
+  -webkit-animation: type 0.8s alternate forwards 0.3s;
+          animation: type 0.8s alternate forwards 0.3s;
   display: inline-block;
 }
 
 .text .f {
-  -webkit-animation: type 0.6s alternate forwards 0.4s;
-          animation: type 0.6s alternate forwards 0.4s;
+  -webkit-animation: type 0.8s alternate forwards 0.4s;
+          animation: type 0.8s alternate forwards 0.4s;
   display: inline-block;
 }
 
 .text .e {
-  -webkit-animation: type 0.6s alternate forwards 0.5s;
-          animation: type 0.6s alternate forwards 0.5s;
+  -webkit-animation: type 0.8s alternate forwards 0.5s;
+          animation: type 0.8s alternate forwards 0.5s;
   display: inline-block;
 }
 
 .text .a {
-  -webkit-animation: type 0.6s alternate forwards 0.6s;
-          animation: type 0.6s alternate forwards 0.6s;
+  -webkit-animation: type 0.8s alternate forwards 0.6s;
+          animation: type 0.8s alternate forwards 0.6s;
   display: inline-block;
 }
 
 .text .s {
-  -webkit-animation: type 0.6s alternate forwards 0.7s;
-          animation: type 0.6s alternate forwards 0.7s;
+  -webkit-animation: type 0.8s alternate forwards 0.7s;
+          animation: type 0.8s alternate forwards 0.7s;
   display: inline-block;
 }
 
 .text .aa {
-  -webkit-animation: type 0.6s alternate forwards 0.8s;
-          animation: type 0.6s alternate forwards 0.8s;
+  -webkit-animation: type 0.8s alternate forwards 0.8s;
+          animation: type 0.8s alternate forwards 0.8s;
   display: inline-block;
 }
 
 .text .C {
-  -webkit-animation: type 0.6s alternate forwards 0.9s;
-          animation: type 0.6s alternate forwards 0.9s;
+  -webkit-animation: type 0.8s alternate forwards 0.9s;
+          animation: type 0.8s alternate forwards 0.9s;
   display: inline-block;
 }
 
 .text .o {
-  -webkit-animation: type 0.6s alternate forwards 1s;
-          animation: type 0.6s alternate forwards 1s;
+  -webkit-animation: type 0.8s alternate forwards 1s;
+          animation: type 0.8s alternate forwards 1s;
   display: inline-block;
 }
 
 .text .d {
-  -webkit-animation: type 0.6s alternate forwards 1.1s;
-          animation: type 0.6s alternate forwards 1.1s;
+  -webkit-animation: type 0.8s alternate forwards 1.1s;
+          animation: type 0.8s alternate forwards 1.1s;
   display: inline-block;
 }
 
 .text .ee {
-  -webkit-animation: type 0.6s alternate forwards 1.2s;
-          animation: type 0.6s alternate forwards 1.2s;
+  -webkit-animation: type 0.8s alternate forwards 1.2s;
+          animation: type 0.8s alternate forwards 1.2s;
   display: inline-block;
 }
 
 .text .r {
-  -webkit-animation: type 0.6s alternate forwards 1.3s;
-          animation: type 0.6s alternate forwards 1.3s;
+  -webkit-animation: type 0.8s alternate forwards 1.3s;
+          animation: type 0.8s alternate forwards 1.3s;
   display: inline-block;
 }
 
 @-webkit-keyframes type {
   0% {
     text-indent: 0px;
-    color: #121212;
+    color: white;
+    padding: 0.8%;
+    border-radius: 2px;
   }
   100% {
     text-indent: 1px;
-    color: #9acd32;
+    color: #aace62;
+    background-color: #121212;
+    margin-right: -2px;
+    padding: 0.8%;
+    border-radius: 2px;
   }
 }
 
 @keyframes type {
   0% {
     text-indent: 0px;
-    color: #121212;
+    color: white;
+    padding: 0.8%;
+    border-radius: 2px;
   }
   100% {
     text-indent: 1px;
-    color: #9acd32;
+    color: #aace62;
+    background-color: #121212;
+    margin-right: -2px;
+    padding: 0.8%;
+    border-radius: 2px;
   }
 }
 
 @-webkit-keyframes letter {
   100% {
-    letter-spacing: -32px;
+    font-size: 0.5rem;
   }
 }
 
 @keyframes letter {
   100% {
-    letter-spacing: -32px;
+    font-size: 0.5rem;
   }
 }
 
@@ -188,7 +200,117 @@ body, html {
   }
 }
 
-@-webkit-keyframes fade {
+.intro {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-animation: appear 0.5s linear 1;
+          animation: appear 0.5s linear 1;
+}
+
+.intro-headline {
+  font-family: 'Nixie One', cursive;
+  color: #9ebcf5;
+  font-weight: 400;
+  font-size: 10rem;
+  margin-right: 4%;
+  text-shadow: -2px 2px 10px black;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.intro .second {
+  top: 25%;
+  left: 10.24%;
+  color: #f3fcff;
+  font-weight: 400;
+  font-size: 10.02rem;
+}
+
+.intro-img {
+  background-image: none;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 40% 100%;
+     object-position: 40% 100%;
+  display: inline-block;
+  position: absolute;
+}
+
+.intro-btn {
+  background-color: transparent;
+  -webkit-animation: moveRight 20s linear forwards infinite 0.8s;
+          animation: moveRight 20s linear forwards infinite 0.8s;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  border-radius: 50%;
+  padding: 3px 2px 2px 3px;
+  opacity: 1;
+  background-color: darkgrey;
+  border: 2px solid grey;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+    font-size: 0rem;
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+    font-size: 10rem;
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+    font-size: 0rem;
+  }
+  100% {
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+    font-size: 10rem;
+  }
+}
+
+@-webkit-keyframes moveRight {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes sparkle {
   0% {
     opacity: 1;
   }
@@ -197,7 +319,7 @@ body, html {
   }
 }
 
-@keyframes fade {
+@keyframes sparkle {
   0% {
     opacity: 1;
   }

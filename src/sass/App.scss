@@ -9,10 +9,8 @@
 }
 
 body, html{
-    overflow-x:hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    background-color:rgb(18,18,18);
+    overflow:hidden;
+    // overflow-y: scroll;
     background-size: 100% 100%;
   
 
@@ -21,12 +19,11 @@ body, html{
 }
 
 .App{
-
-    overflow-y: scroll;
-    overflow-x:hidden;
-    height:100%;
-    width:100%;
-    cursor:none;
+    // overflow-y: scroll;
+    overflow:hidden;
+    height:100vh;
+    width:100vw;
+    // cursor:none;
    
 }
 
@@ -35,7 +32,7 @@ body, html{
     height:20px;
     width: 20px;
     border-radius: 50%;
-    border:2px solid $color ;
+    border:2px solid black ;
     position: absolute;
 
    
@@ -54,29 +51,31 @@ body, html{
 
 
 
-/////text//////
+/////text///////............................................
 
 
 .text{
 
     @mixin animation($sec){
-        animation: type 0.6s alternate forwards  $sec ;
+        animation: type 0.8s alternate forwards  $sec ;
     }
-    color: rgb(18,18,18);
+   
+    color: white;
     @include special-font();
     @include font(400,3.2rem);
     padding: 7%;
     overflow-y: scroll;
     text-indent:1px;
-    animation: letter 1s alternate forwards  2.6s,font 100ms linear forwards 3s ;
+    margin-top:20vh;
+    text-align: center;
+    animation: letter 0.8s linear forwards 2.5s, font 0.3s linear forwards 2.9s;
+    background-color:white;
    
 
-   
 
     .M{
         @include animation(0s);
         display: inline-block;
-      
 
       
     }
@@ -85,10 +84,12 @@ body, html{
         @include animation(0.1s);
         display: inline-block;
     }
+
     .l{
         @include animation(0.2s);
         display: inline-block;
     }
+
     .i{
         @include animation(0.3s);
         display: inline-block;
@@ -113,6 +114,7 @@ body, html{
     .aa{
         @include animation(0.8s); 
         display: inline-block;
+        
     }
     .C{
         @include animation(0.9s); 
@@ -130,15 +132,20 @@ body, html{
         @include animation(1.2s); 
         display: inline-block;
     }
-   
+       
     .r{
         @include animation(1.3s); 
         display: inline-block;
+      
     }
-   
-   
 
+   
+     
+        
 }
+   
+  
+
 
 
 
@@ -146,50 +153,149 @@ body, html{
 @keyframes type {
     0%{
      text-indent: 0px;
-     color: rgb(18,18,18);
+     color: white;
+     padding:0.8%;
+     border-radius: 2px;
   
     }
     100%{
         text-indent: 1px;
-        color: #9acd32;
+        color: rgb(170, 206, 98);
+        background-color:rgb(18,18,18);
+        margin-right:-2px;
+        padding:0.8%;
+        border-radius: 2px;
     }
+      
+
 }
+
+///keyframes....
 @keyframes letter{
    100%{
-       letter-spacing: -32px;
+       font-size: 0.5rem;
+      
    }
  
 }
 @keyframes font {
  100%{
      visibility: hidden;
+     
+    
     }
 } 
 
      
 
-// .para{
-//     color: black;
-//     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-//     @include font(400,4rem);
-//     padding: 0% 7%;
-//     overflow-y: scroll;
-//     margin-top:-10px;
-//     animation: appear 2s linear;
-//     display: inline-block;
+///////INTRO.....................................
 
-// }
+.intro{
 
-
-
+  height: 100%;
+  width:100%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content:space-evenly;
+  align-items:stretch;
+  animation: appear 0.5s linear 1 ;
+ 
 
 
 
 
+ &-headline{
+    font-family: 'Nixie One', cursive;
+    color: rgb(158, 188, 245);
+    @include font(400, 10rem);
+    margin-right: 4%;
+    text-shadow:  -2px  2px 10px rgb(0, 0, 0);
+    position: absolute;
+    top:25%;
+    left:10%;
+
+   
+   
+    
+}
+
+  .second{
+    top: 25%;
+    left:10.24%;
+    color: rgb(243, 252, 255);
+    @include font(400, 10.02rem);
+ 
+
+  }
+   
+
+  &-img{
+      background-image: none;
+      height: 100%;
+      object-fit: cover;
+      object-position:40% 100%;
+      display:inline-block;
+      position: absolute;
+   
+     
+
+  }
+
+   &-btn{
+       background-color: transparent;
+       animation: moveRight 20s linear forwards infinite 0.8s;
+       position: absolute;
+       right: 10%;
+       top:5%;
+       border-radius: 50%;
+       padding:3px 2px 2px 3px;
+       opacity:1;
+       background-color: darkgrey;
+       border:2px solid grey;
+   }
+}
 
 
+///keyframes.....
+@keyframes appear {
+    0%{
+       
+     transform: translateY(100vh);
+     font-size: 0rem;
+   
+    }
+    100%{
+    transform: translateY(0vh);
+    font-size: 10rem;
+   }
+  
+}
 
-@keyframes fade{
+@keyframes moveRight {
+    0%{
+     transform: rotateZ(0deg);
+
+      
+    }
+    100%{
+    transform: rotateZ(360deg);
+   
+    
+    }
+}
+
+   
+
+    
+   
+  
+ 
+  
+
+   
+
+
+@keyframes sparkle{
   0%{
       opacity:1;
 
@@ -200,6 +306,12 @@ body, html{
   }
  
 }
+
+
+
+
+
+
 
 
   
