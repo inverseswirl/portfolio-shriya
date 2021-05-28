@@ -2,7 +2,7 @@ import './sass/App.css';
 // import Title from './components/title';
 
 import React from 'react';
-import Second from './components/second';
+import Second from './components/second-slide';
 import Intro from './components/intro';
 
 
