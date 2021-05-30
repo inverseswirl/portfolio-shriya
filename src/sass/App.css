@@ -202,8 +202,7 @@ body, html {
 .intro {
   height: 100%;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3f3a3a), to(transparent)), url("https://images.pexels.com/photos/3831422/pexels-photo-3831422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-image: linear-gradient(180deg, #3f3a3a, transparent), url("https://images.pexels.com/photos/3831422/pexels-photo-3831422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: linear-gradient(210deg, #817a7a, transparent), url("https://images.pexels.com/photos/3831422/pexels-photo-3831422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: 100% 220%;
   background-repeat: no-repeat;
   background-position: 0% 25%;
@@ -276,16 +275,16 @@ body, html {
   position: absolute;
   left: 40%;
   color: #689c72;
-  -webkit-animation: leaf 18s linear infinite;
-          animation: leaf 18s linear infinite;
+  -webkit-animation: leaf 12s linear infinite;
+          animation: leaf 12s linear infinite;
 }
 
 .intro-leaf1 {
   position: absolute;
   left: 20%;
   color: #689c72;
-  -webkit-animation: leaf 11s linear infinite;
-          animation: leaf 11s linear infinite;
+  -webkit-animation: leaf 10s linear infinite;
+          animation: leaf 10s linear infinite;
 }
 
 .intro-leaf2 {
@@ -293,8 +292,8 @@ body, html {
   right: 20%;
   bottom: 27%;
   color: #689c72;
-  -webkit-animation: leaf2 12s linear infinite;
-          animation: leaf2 12s linear infinite;
+  -webkit-animation: leaf2 8s linear infinite;
+          animation: leaf2 8s linear infinite;
 }
 
 .intro-tag1 {

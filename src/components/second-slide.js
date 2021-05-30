@@ -2,7 +2,6 @@ import React from 'react';
 import {IoMdFlower,IoIosLeaf} from 'react-icons/io';
 import {IoScanOutline} from 'react-icons/io5';
 import {RiLeafFill} from 'react-icons/ri'; 
-import {GiTreeBranch} from 'react-icons/gi';
 
 
 
@@ -26,7 +25,7 @@ const{btn}=this.state;
           
             <span  className="intro-leaf"><RiLeafFill size={38} /></span>
             <span  className="intro-leaf1"><IoIosLeaf size={40} /></span>
-            <span  className="intro-leaf2"><GiTreeBranch  size={42} /></span>
+            <span  className="intro-leaf2"><IoIosLeaf  size={42} /></span>
             <h1  className="intro-headline">Hi!<br/> I'm <br/>Shriya</h1> 
             <h1  className="intro-headline second" >Hi!<br/> I'm <br/>Shriya</h1>
 

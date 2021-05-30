@@ -195,7 +195,7 @@ body, html{
       
   height: 100%;
   width:100%;
-  background-image: linear-gradient(180deg,rgb(63, 58, 58), transparent),url('https://images.pexels.com/photos/3831422/pexels-photo-3831422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: linear-gradient(210deg,rgb(129, 122, 122), transparent),url('https://images.pexels.com/photos/3831422/pexels-photo-3831422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size: 100% 220%;
   background-repeat: no-repeat;
   background-position: 0% 25%;
@@ -271,14 +271,14 @@ body, html{
        position: absolute;
        left:40%;
        color: rgb(104, 156, 114);
-       animation: leaf 18s linear infinite;
+       animation: leaf 12s linear infinite;
        
     }
    &-leaf1{
        position: absolute;
        left:20%;
        color: rgb(104, 156, 114);
-       animation: leaf 11s linear infinite;
+       animation: leaf 10s linear infinite;
        
     }
    &-leaf2{
@@ -286,7 +286,7 @@ body, html{
        right:20%;
        bottom:27%;
        color: rgb(104, 156, 114);
-       animation: leaf2 12s linear infinite;
+       animation: leaf2 8s linear infinite;
        
     }
     
