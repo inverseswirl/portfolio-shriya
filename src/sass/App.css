@@ -24,12 +24,10 @@ button:active {
 }
 
 body, html {
-  overflow: hidden;
   background-size: 100% 100%;
 }
 
 .App {
-  overflow: hidden;
   height: 100vh;
   width: 100vw;
 }
@@ -55,6 +53,7 @@ body, html {
   -webkit-animation: letter 0.8s linear forwards 2.5s, font 0.3s linear forwards 2.9s;
           animation: letter 0.8s linear forwards 2.5s, font 0.3s linear forwards 2.9s;
   background-color: white;
+  overflow-y: hidden !important;
 }
 
 .text .M {
@@ -217,6 +216,8 @@ body, html {
           align-items: stretch;
   -webkit-animation: appear 0.5s linear 1;
           animation: appear 0.5s linear 1;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .intro-headline {
@@ -262,13 +263,10 @@ body, html {
   position: absolute;
   right: 10%;
   top: 5%;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 25px black;
-          box-shadow: 0px 0px 25px black;
 }
 
 .intro-btn:hover {
-  background-color: grey;
+  background-color: #5d5d5d;
 }
 
 .intro-leaf {
@@ -302,6 +300,7 @@ body, html {
   top: 15%;
   font-family: Quicksand,'cursive';
   color: whitesmoke;
+  background-color: transparent;
   font-weight: 400;
   font-size: 3rem;
   border-radius: 4px;
@@ -341,6 +340,21 @@ body, html {
   color: grey;
   -webkit-box-shadow: 0px 0px 5px #d6d6d6;
           box-shadow: 0px 0px 5px #d6d6d6;
+}
+
+.intro-tag3 {
+  position: absolute;
+  right: 2%;
+  bottom: 8%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: #0072b1;
+  font-weight: 900;
+  font-size: 2.4rem;
+  border-radius: 4px;
+  height: 45px;
+  width: 45px;
+  padding: 0.1%;
 }
 
 @-webkit-keyframes leaf {
@@ -499,7 +513,6 @@ body, html {
   0% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
-    background-color: whitesmoke;
     opacity: 0;
   }
   50% {
@@ -515,7 +528,6 @@ body, html {
   0% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
-    background-color: whitesmoke;
     opacity: 0;
   }
   50% {

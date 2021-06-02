@@ -50,7 +50,7 @@ render(){
      
      {animate==="font" ? <Second /> :  <Intro  animate={this.handleAnimation}/>}
      
- 
+     
     </div>
   );
 }

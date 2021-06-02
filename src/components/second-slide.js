@@ -31,13 +31,14 @@ const{btn}=this.state;
 
             
     
-            <button onClick={()=>this.setState({btn: true})} className="intro-btn"><IoMdFlower color="whitesmoke" size={75}/></button>
-         {btn && (  
-              <p className="intro-tag1">My creative work</p>
-         )} 
-         {btn && (  
-                <button className="intro-tag2">Know about me</button>
-         )} 
+            {/* <button onClick={()=>this.setState({btn: true})} className="intro-btn"><IoMdFlower color="whitesmoke" size={75}/></button> */}
+       
+            <button className="intro-tag1">How it started ?</button>
+             <button className="intro-tag2">Know about me</button>
+             <button className="intro-tag3">in</button>
+                
+     
+            
   
       
     
