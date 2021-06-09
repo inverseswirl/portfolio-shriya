@@ -15,7 +15,7 @@ this.Checkanime=this.Checkanime.bind(this)
 
 
 Checkanime(e){
-console.log(e.animationName)
+
  this.props.animate(e.animationName)
 
 }

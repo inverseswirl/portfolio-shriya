@@ -16,11 +16,23 @@ class App extends React.Component {
     super(props)
 
 
-    this.state={top: 500,left:500,animate: ""}
+    this.state={top: 500,left:500,animate: "",scroll:""}
     this.handleMouse=this.handleMouse.bind(this);
     this.handleAnimation=this.handleAnimation.bind(this);
-   
+    this.handleScroll=this.handleScroll.bind(this);
   }
+
+
+
+  handleScroll(e){
+    // console.log(e.target.clientHeight)
+   
+      console.log(e.target.scrollTop)
+    this.setState({scroll:e.target.scrollTop})
+  
+  }
+
+
 
 
 
@@ -40,15 +52,15 @@ class App extends React.Component {
 
 
 render(){
-  const{top,left,animate}=this.state
+  const{top,left,animate,scroll}=this.state
 
 
   return (
-    <div className="App" onMouseMove={this.handleMouse}  >
+    <div className="App" onMouseMove={this.handleMouse}  onScroll={this.handleScroll} >
         {/* <div className="cursor" style={{top: top - 10,left: left - 10}}></div> */}
       
      
-     {animate==="font" ? <Second /> :  <Intro  animate={this.handleAnimation}/>}
+     {animate==="font" ? <Second  scroll={scroll}/> :  <Intro  animate={this.handleAnimation}/>}
      
      
     </div>
