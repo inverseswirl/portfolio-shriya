@@ -11,7 +11,7 @@ class Second extends React.Component{
 constructor(props){
     super(props)
 
-    this.state={btn:false}
+ 
  
 }
 
@@ -24,7 +24,7 @@ constructor(props){
 
 
 render(){
-const{btn}=this.state;
+
 
     return(
    <>
@@ -36,15 +36,18 @@ const{btn}=this.state;
             <span  className="intro-leaf2"><IoIosLeaf  size={42} /></span>
 
 
-        {/* <button onClick={()=>this.setState({btn: true})} className="intro-btn"><IoMdFlower color="whitesmoke" size={75}/></button> */}
        
             <button className="intro-tag1">How it started ?</button>
-             <button  className="intro-tag2">Know about me</button>
+             <button  className="intro-tag2"></button>
 
            </div>
      
-        <AboutMe scroll={this.props.scroll}/>
-        <Story />
+      <AboutMe scroll={this.props.scroll}/>
+      
+      {this.props.scroll > 950 ? <Story scroll={this.props.scroll} /> :null}
+
+
+      
 
    
         

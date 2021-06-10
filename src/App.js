@@ -1,9 +1,9 @@
 import './sass/App.css';
-// import Title from './components/title';
-
 import React from 'react';
 import Second from './components/second-slide';
 import Intro from './components/intro';
+
+
 
 
 
@@ -25,15 +25,11 @@ class App extends React.Component {
 
 
   handleScroll(e){
-    // console.log(e.target.clientHeight)
    
       console.log(e.target.scrollTop)
     this.setState({scroll:e.target.scrollTop})
   
   }
-
-
-
 
 
 
@@ -51,6 +47,9 @@ class App extends React.Component {
   }
 
 
+
+
+
 render(){
   const{top,left,animate,scroll}=this.state
 
@@ -59,10 +58,14 @@ render(){
     <div className="App" onMouseMove={this.handleMouse}  onScroll={this.handleScroll} >
         {/* <div className="cursor" style={{top: top - 10,left: left - 10}}></div> */}
       
+
+    
+     {animate==="font" ? <Second scroll={scroll}/> :  <Intro  animate={this.handleAnimation}/>}
      
-     {animate==="font" ? <Second  scroll={scroll}/> :  <Intro  animate={this.handleAnimation}/>}
-     
-     
+  
+
+
+
     </div>
   );
 }

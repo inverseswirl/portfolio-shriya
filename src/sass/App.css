@@ -39,6 +39,7 @@ body, html {
   border-radius: 50%;
   border: 2px solid black;
   position: absolute;
+  z-index: 2;
 }
 
 .text {
@@ -204,11 +205,8 @@ body, html {
   background-size: 100% 220%;
   background-repeat: no-repeat;
   background-position: 0% 25%;
-  background-attachment: scroll;
-  -webkit-animation: appear 0.5s linear 1;
-          animation: appear 0.5s linear 1;
-  overflow: scroll;
-  scroll-behavior: smooth;
+  -webkit-animation: appear 0.8s linear 1;
+          animation: appear 0.8s linear 1;
   position: relative;
 }
 
@@ -316,16 +314,16 @@ body, html {
 
 .about {
   position: relative;
-  background-color: white;
+  background-color: #ecc45e;
 }
 
 .about-svg1 {
   position: absolute;
-  top: -25vh;
+  top: -24vh;
   z-index: 0;
 }
 
-.about- {
+.about-first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,12 +341,12 @@ body, html {
       -ms-flex-pack: start;
           justify-content: flex-start;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 100px;
   -webkit-animation: transition1 2.5s ease-out  forwards 1;
           animation: transition1 2.5s ease-out  forwards 1;
 }
 
-.about--pic {
+.about-first .about-first-pic {
   height: 300px;
   width: 295px;
   border-radius: 50%;
@@ -358,34 +356,26 @@ body, html {
   -o-object-position: center;
      object-position: center;
   border-radius: 50%;
-  border: 2px solid #181818;
+  border: 2px solid #535a5a;
   border-style: solid dashed solid;
+  position: relative;
 }
 
-.about--pic::before {
-  content: 'thewh';
-  display: block;
-  border: 2px solid #181818;
-  height: 400px;
-  width: 305px;
-  background-color: red;
-}
-
-.about--headline {
+.about-first .about-first-headline {
   font-family: Quicksand,'cursive';
-  color: #324736;
+  color: #535a5a;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   -webkit-transition: -webkit-transform 0.4s linear;
   transition: -webkit-transform 0.4s linear;
   transition: transform 0.4s linear;
   transition: transform 0.4s linear, -webkit-transform 0.4s linear;
   border-radius: 23px;
-  border: 2px solid #324736;
-  padding: 0px 10px;
+  border: 2px solid #535a5a;
+  padding: 0px 20px;
 }
 
-.about--headline:hover {
+.about-first .about-first-headline:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   display: inline-block;
@@ -411,15 +401,64 @@ body, html {
   align-items: center;
   -webkit-animation: transition1 2.5s ease-out forwards 1;
           animation: transition1 2.5s ease-out forwards 1;
+  padding-bottom: 210px;
 }
 
-.about .timeline-year {
-  color: #324736;
-  font-weight: 700;
+.about-flexright .about-flexright-headline {
+  font-family: Quicksand,'cursive';
+  color: #535a5a;
+  font-weight: 400;
   font-size: 1.5rem;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  border-radius: 23px;
+  border: 2px solid #535a5a;
+  padding: 0px 20px;
 }
 
-.about .timeline-thread {
+.about-flexright .about-flexright-headline:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  display: inline-block;
+}
+
+.about-flexright .about-flexright-pic {
+  height: 300px;
+  width: 295px;
+  border-radius: 50%;
+  margin: 0px 4% 0px 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  border: 2px solid #535a5a;
+  border-style: solid dashed solid;
+}
+
+.story {
+  background-color: #ecc45e;
+  position: relative;
+}
+
+.story-svg {
+  position: absolute;
+  top: -24vh;
+  z-index: 0;
+}
+
+.story-headline {
+  font-family: Quicksand,'cursive';
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  padding: 10px 0px 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,44 +472,180 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 20px;
+  -webkit-animation: transition1 2.5s linear forwards 1, headlines 7s linear forwards infinite;
+          animation: transition1 2.5s linear forwards 1, headlines 7s linear forwards infinite;
+  width: 60%;
+  line-height: 1rem;
+  background-color: #5f569e;
+  -webkit-animation: transition1 1s linear 1;
+          animation: transition1 1s linear 1;
 }
 
-.about .timeline-thread-vertical {
+.story-para {
+  font-family: Quicksand,'cursive';
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  padding: 10px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 18px;
-  width: 3px;
-  background-color: black;
+  -webkit-animation: transition1 2.5s linear forwards 1,headlines 7s linear forwards infinite;
+          animation: transition1 2.5s linear forwards 1,headlines 7s linear forwards infinite;
+  width: 70%;
+  background-color: #d83556;
+  -webkit-animation: transition1 1s linear 1;
+          animation: transition1 1s linear 1;
 }
 
-.about .timeline-thread-horizontal {
-  height: 4px;
-  width: 100px;
-  background-color: #324736;
-  display: inline-block;
-  -webkit-animation: timeline 1s linear 1 3s;
-          animation: timeline 1s linear 1 3s;
-}
-
-.about .story {
-  background-color: blue;
-}
-
-.about .story-headline {
-  color: white;
+.story-lastline {
   font-family: Quicksand,'cursive';
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  padding: 10px 0px 12px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: transition1 2.5s linear forwards 1, headlines 7s linear forwards infinite;
+          animation: transition1 2.5s linear forwards 1, headlines 7s linear forwards infinite;
+  line-height: 11px;
+  width: 90%;
+  background-color: darkorange;
+}
+
+.story-dots {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 1vw;
+  z-index: 1;
+}
+
+.story-dots1 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 4vw;
+  z-index: 1;
+}
+
+.story-dots2 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 7vw;
+}
+
+.story-dots3 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 6%;
+  left: 2.5vw;
+}
+
+.story-dots4 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 6%;
+  left: 5.5vw;
+}
+
+.story-dots5 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 14%;
+  left: 4vw;
+}
+
+.story-prism {
+  border: 2px solid #535a5a;
+  height: 330px;
+  width: 330px;
+  position: absolute;
+  top: -60%;
+  left: 30%;
+  z-index: 1;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  -webkit-perspective: 20rem;
+          perspective: 20rem;
+}
+
+.story-prism::after {
+  content: "";
+  -webkit-box-shadow: 1px -1px 5px 2px #535a5a;
+          box-shadow: 1px -1px 5px 2px #535a5a;
+  height: 330px;
+  width: 330px;
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  z-index: -2;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  -webkit-perspective: 20rem;
+          perspective: 20rem;
+}
+
+@-webkit-keyframes laptop {
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes laptop {
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
 @-webkit-keyframes scaleup {
@@ -495,7 +670,7 @@ body, html {
   }
 }
 
-@-webkit-keyframes timeline {
+@-webkit-keyframes wide {
   0% {
     width: 0px;
   }
@@ -507,7 +682,7 @@ body, html {
   }
 }
 
-@keyframes timeline {
+@keyframes wide {
   0% {
     width: 0px;
   }
@@ -667,31 +842,25 @@ body, html {
 
 @-webkit-keyframes appear {
   0% {
-    -webkit-transform: translateY(100vh);
-            transform: translateY(100vh);
     opacity: 0;
   }
   50% {
     background-color: whitesmoke;
   }
   100% {
-    -webkit-transform: translateY(0vh);
-            transform: translateY(0vh);
+    opacity: 1;
   }
 }
 
 @keyframes appear {
   0% {
-    -webkit-transform: translateY(100vh);
-            transform: translateY(100vh);
     opacity: 0;
   }
   50% {
     background-color: whitesmoke;
   }
   100% {
-    -webkit-transform: translateY(0vh);
-            transform: translateY(0vh);
+    opacity: 1;
   }
 }
 

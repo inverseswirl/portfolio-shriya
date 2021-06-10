@@ -49,6 +49,7 @@ body, html{
     border-radius: 50%;
     border:2px solid black ;
     position: absolute;
+    z-index:2;
 
    
 }
@@ -213,10 +214,7 @@ body, html{
   background-size: 100% 220%;
   background-repeat: no-repeat;
   background-position: 0% 25%;
-  background-attachment: scroll;
-  animation:  appear 0.5s linear 1;
-  overflow: scroll;
-  scroll-behavior: smooth;
+  animation:  appear 0.8s linear 1;
   position: relative;
 
 
@@ -347,34 +345,32 @@ body, html{
 
 
 .about{
-    $color: rgb(50, 71, 54);
-
+    $color: rgb(83, 90, 90);
     position:relative;
-    background-color:  white;
- 
+    background-color:  $design-color;
+   
     
     &-svg1{
         position: absolute;
-        top:-25vh;
+        top:-24vh;
         z-index:0;
+    }
         
        
-     }
 
 
    
-    
-    &-{
-    @include flex(row);
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 10px;
-    animation: transition1 2.5s ease-out  forwards 1;
+    &-first{
+        @include flex(row);
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 100px;
+        animation: transition1 2.5s ease-out  forwards 1;
 
     
     
-
-        &-pic{
+    
+        #{&}-pic{
             height:300px;
             width:295px;
             border-radius: 50%;
@@ -382,103 +378,257 @@ body, html{
             object-fit:cover;
             object-position: center;
             border-radius: 50%;
-            border: 2px solid rgb(24, 24, 24);
+            border: 2px solid $color;
             border-style: solid dashed solid;
-         
-           
-            &::before{
-                content:'thewh';
-                display: block;
-                border:2px solid rgb(24, 24, 24);
-                height:400px;
-                width:305px;
-                background-color: red;
-            }
-    
-           
-    
-      
-        }
+            position: relative;
+        
 
+        }
        
-        &-headline{
+    
+           
+    
+        #{&}-headline{
         @include cursive();
         color: $color;
-        @include font(400, 1.7rem);
+        @include font(400, 1.5rem);
         transition: transform 0.4s linear;
         border-radius: 23px;
         border:2px solid $color;
-        padding: 0px 10px;
+        padding: 0px 20px;
        
-
-            &:hover{
-                transform: scale(1.1,1.1) ;
-                display: inline-block;
-            }
+        &:hover{
+            transform: scale(1.1,1.1) ;
+            display: inline-block;
         }
-            
-    }
+     }
+      
+
+    } 
+
+   
+    
 
     &-flexright{
         @include flex(row);
         justify-content: flex-end;
         align-items: center;  
         animation: transition1 2.5s ease-out forwards 1;
-    }
+        padding-bottom: 210px;
 
 
-
-.timeline{
- 
-
-    &-year{
+      #{&}-headline{
+        @include cursive();
         color: $color;
-        @include font(700,1.5rem);
-        // position: absolute;
+        @include font(400, 1.5rem);
+        transition: transform 0.4s linear;
+        border-radius: 23px;
+        border:2px solid $color;
+        padding: 0px 20px;
+       
+        &:hover{
+            transform: scale(1.1,1.1) ;
+            display: inline-block;
+        }
+      }
+
+      #{&}-pic {
+        height:300px;
+        width:295px;
+        border-radius: 50%;
+        margin: 0px 4% 0px 5%;
+        object-fit:cover;
+        object-position: center;
+        border-radius: 50%;
+        border: 2px solid $color;
+        border-style: solid dashed solid;
+      }
+
+
+
+
     }
-
-    &-thread{
-        @include flex(row);
-        margin-left:20px;
-    &-vertical{
-      @include flex(column);
-
-        height: 18px;
-        width:3px;
-        background-color:black;
-    }
-   &-horizontal{
-       height: 4px;
-       width:100px;
-       background-color: $color;
-       display: inline-block;
-       animation: timeline 1s linear 1 3s;
-   }
-
-
-    }
-
-
-
-
-
-
-
-
+    
 }
 
 
 
-//////story.....
+
+
+
+
+
+//////story...........
 
 .story{
-
-    background-color: blue;
-
-    &-headline{
-        color: white;
-        @include cursive();
+    $color: rgb(83, 90, 90);
+    background-color: $design-color;
+ 
+    
+    position: relative;
+   
+  
+    &-svg{
+        position: absolute;
+        top:-24vh;
+        z-index:0;
+       
     }
+      
+    &-headline{
+        @include cursive();
+        color:white;
+        @include font(400, 1.5rem);
+        transition: transform 0.4s linear;
+        padding: 10px 0px 10px 0px;
+        @include flex(row);
+        animation: transition1 2.5s linear forwards 1, headlines 7s linear forwards infinite ;
+        width:60%;
+        line-height: 1rem;
+        background-color: rgb(95, 86, 158);
+        animation:transition1 1s linear 1;
+    }
+  
+
+        
+       
+    
+
+     &-para{
+        @include cursive();
+        color:white;
+        @include font(400, 1.5rem);
+        transition: transform 0.4s linear;
+        padding: 10px 0px 0px 0px;
+        @include flex(row); 
+        animation: transition1 2.5s linear forwards 1,headlines 7s linear forwards infinite;
+        width:70%;
+        background-color: rgb(216, 53, 86);
+        animation: transition1 1s linear 1;
+       
+    }
+
+   
+        
+
+    &-lastline{
+        @include cursive();
+        color:white;
+        @include font(400, 1.5rem);
+        transition: transform 0.4s linear;
+        padding: 10px 0px 12px 0px;
+        @include flex(row); 
+        animation: transition1 2.5s linear forwards 1, headlines 7s linear forwards infinite;
+        line-height: 11px;
+        width:90%;
+        background-color: darkorange;
+    }
+
+
+
+   
+    
+    &-dots{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top:0%;
+        left:1vw;
+        z-index:1;
+        
+    }
+    &-dots1{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top:0%;
+        left:4vw;
+        z-index:1;
+
+    }
+    &-dots2{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top:0%;
+        left:7vw;
+
+    }
+    &-dots3{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top:6%;
+        left:2.5vw;
+
+    }
+    &-dots4{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top:6%;
+        left:5.5vw;
+
+    }
+    &-dots5{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top:14%;
+        left:4vw;
+
+    }
+
+    &-prism{
+        border: 2px solid $color;
+        height: 330px;
+        width:330px;
+        position: absolute;
+        top:-60%;
+        left:30%;
+        z-index:1;
+        transform: rotateZ(45deg);
+        perspective: 20rem;
+      
+        &::after{
+            content: "";
+            box-shadow: 1px -1px 5px 2px $color;
+            height: 330px;
+            width:330px;
+            position: absolute;
+            top:10%;
+            left:12%;
+            z-index:-2;
+            transform: rotateZ(90deg);
+            perspective: 20rem;
+        }
+
+    }
+
+
+
+
+
+ 
+  
+   
+
+ 
+  
+
+   
 }
 
 
@@ -498,11 +648,25 @@ body, html{
 
 
         
-}
+////......
+
 
 ///keyframes.....
 
 
+
+
+
+@keyframes laptop {
+    
+   
+    100%{
+        transform:  rotateZ(360deg) ;  
+       
+    }
+}
+
+ 
 
 @keyframes scaleup {
     0%{
@@ -514,7 +678,7 @@ body, html{
     
 }
     
-@keyframes timeline {
+@keyframes wide{
 
     0%{
       width: 0px;  
@@ -598,7 +762,7 @@ body, html{
 
 @keyframes appear {
     0%{
-    transform: translateY(100vh);
+   
     opacity:0;
    }
    50%{
@@ -606,7 +770,7 @@ body, html{
    }
 
    100%{
-   transform: translateY(0vh);
+   opacity:1;
   }
        
 }
