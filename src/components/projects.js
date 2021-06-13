@@ -4,8 +4,12 @@ import React from 'react';
 const Projects=()=>{
 
     return(
-        <div>
-          <p></p>
+        <div className="projects">
+          <p className="projects-headline">Projects </p>
+      
+         
+
+
         </div>
     )
 }

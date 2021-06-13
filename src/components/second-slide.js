@@ -1,9 +1,9 @@
 import React from 'react';
-import {IoMdFlower,IoIosLeaf} from 'react-icons/io';
-import {IoScanOutline} from 'react-icons/io5';
+import {IoIosLeaf,IoIosArrowDown} from 'react-icons/io';
 import {RiLeafFill} from 'react-icons/ri'; 
 import AboutMe from '../components/about';
 import Story from '../components/story';
+import Projects from '../components/projects';
 
 
 
@@ -12,12 +12,14 @@ constructor(props){
     super(props)
 
  
- 
+ this.About=this.About.bind(this)
 }
 
 
 
-  
+  About(e){
+    console.log(e)
+  }
 
 
 
@@ -38,13 +40,18 @@ render(){
 
        
             <button className="intro-tag1">How it started ?</button>
-             <button  className="intro-tag2"></button>
+             <button onClick={this.About} className="intro-tag2"><IoIosArrowDown  size={90}/></button>
 
            </div>
      
       <AboutMe scroll={this.props.scroll}/>
       
-      {this.props.scroll > 950 ? <Story scroll={this.props.scroll} /> :null}
+      {this.props.scroll > 1120 ? <Story scroll={this.props.scroll} /> :null}
+
+      {/* <Projects/> */}
+
+
+
 
 
       

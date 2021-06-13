@@ -30,21 +30,24 @@ render(){
 
    
         
-     <span className="story-prism" ></span>
+    <span className="story-prism" ></span>
       
 
 
     {this.props.scroll > 1120 && (
             <p className="story-headline"> In Aug 2019, I moved to Melbourne.</p>
+         
 
     )}
-
-  {this.props.scroll > 1240 && (
+   
+  {this.props.scroll > 1150 && (
           <p className="story-para">I decided to re-skill and learn to code.</p>
         
   )}
 
-     <p  className="story-lastline">And made a couple of Projects.</p>
+    {this.props.scroll > 1153 && (<p  className="story-lastline">And made a couple of Projects.</p>
+    
+    )}
 
         
 
