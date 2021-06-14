@@ -11,7 +11,7 @@
 body, html{
    
     overflow: scroll;
-    scroll-behavior: smooth;
+   
    
 
  
@@ -27,6 +27,8 @@ body, html{
 
     height:100vh;
     width:100vw;
+    box-sizing: border-box;
+    
     // cursor:none;
 
     // &::-webkit-scrollbar {
@@ -208,16 +210,17 @@ body, html{
 .intro{
 
       
-  height: 100vh;
+  height: 110vh;
   width:100%;
   background-image: linear-gradient(200deg,rgb(209, 211, 212), transparent),url('../img/secondslide.jpeg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: 10% 100%;
   animation:  appear 0.8s linear 1;
   position: relative;
   box-sizing: border-box;
-  border:5px solid $design-color;
+  background-attachment: fixed;
+  
+  
 
 
  
@@ -272,20 +275,22 @@ body, html{
 
     &-tag1{
         $color:  $color;
-        position:absolute;
-        right:45%;
-        top:15%;
+        @include flex(row);
+        padding: 10vh 0 0 17vw;
         @include sansserif-font();
         color:$color;
-        background-color:$design-color;
-        @include font(900, 3rem);
+        background-color:transparent;
+        @include font(900, 5.4rem);
         border-radius: 3px;
-        padding: 1%;
         animation: swish 0.8s linear forwards 1;
-        opacity:1;
+        transition: color 0.2s linear;
         &:hover{
-            box-shadow: 5px 5px 20px 4px $color;
+            
             cursor: pointer;
+            -webkit-text-stroke: 3px $color;
+            color:transparent;
+            
+            
            
         }
     
@@ -297,12 +302,20 @@ body, html{
         top:50%;
         color: whitesmoke;
         background-color: transparent;
-        @include font(400, 3rem);
+       
         padding:0px;
         animation: swish 1s linear  forwards 1 1s, movedown 1s linear  forwards infinite;
         opacity:0;
 
-       
+      &::after{
+          content:"scroll";
+          @include font(600, 16px);
+          @include sansserif-font();
+          position: absolute;
+          left:24px;
+          bottom:0px;
+
+      }       
     }
     @keyframes movedown {
         0%{
@@ -358,81 +371,96 @@ body, html{
 
 
 .about{
-    $color: $color;
-    position:relative;
+  
     background-color: $design-color;
+    position: relative;
 
-   
     
-    &-svg1{
+
+    &-svg{
         position: absolute;
-        top:-24vh;
+        top:-26vh;
         z-index:0;
+
+
     }
-        
-       
 
 
+
+    &-flower{
+        position: absolute;
+        z-index: 0;
+        top:80px;
+        left:-33%;
+        transform: rotateZ(145deg);
+        opacity:0.8;
+        border-radius: 5%;
+        border:5px solid $color2;
+
+    } 
+      
    
     &-first{
+        padding-top: 50px;
+        animation: transition1 1s ease-out  forwards 1;
         @include flex(row);
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 100px;
-        animation: transition1 2.5s ease-out  forwards 1;
-     
-        
+        justify-content: center;
 
-    
-    
-    
-        #{&}-pic{
-            height:350px;
-            width:320px;
-            margin: 0px 10% 0px 6%;
+      #{&}-pic1{
+
+            height:400px;
+            width:400px;
             background-image: url('../img/mypic.jpg');
-            background-position: 50% 45%;
-            background-size: 60% 60%;
+            background-size: 100% 110%;
             background-repeat: no-repeat;
-            filter: saturate(80%);
-
-        
-            &::before{
-                content:'';
-                border-radius: 5px;
-                border: 3px solid $color;
-                height:320px;
-                width:320px;
-                position: absolute;
-                transform: rotate(45deg);
-                animation: moveRight 10s linear forwards infinite;
-            }
-
+            animation: textappear 1s linear 1;
+            border-radius: 50%;
+            filter:contrast(90%) brightness(110%) ;
+            margin-right: 3%;
+            
         }
-       
-    
            
-    
-        #{&}-headline{
-        @include sansserif-font();
-        color: $color;
-        @include font(800, 1.5rem);
-        transition: transform 0.4s linear;
-        border-radius: 5px;
-        border:3px solid $color;
-        padding: 4px 20px;
-       
-        &:hover{
-            transform: scale(1.1,1.1) ;
-            display: inline-block;
+
+        #{&}-para{
+            @include sansserif-font();
+            color:$color;
+            animation: textappear 1s linear forwards 1;
+            perspective:20rem;
+            z-index: 0;
+            animation: appear 4s linear forwards infinite,transition1 1s linear forwards 1;
+            width:30%;
+           
+            &-headline{
+                @include font(500,2rem);
+                padding-bottom: 20px;
+            }
+            &-main{
+                @include font(200,1.3rem);
+            }
         }
-     }
+       
+        
+        
+
+       
+    
       
 
     } 
 
    
-    
+    @keyframes textappear{
+        0%{
+          transform:  translate3d(0px,70px,0px);
+          perspective:20rem;
+        }
+        100%{
+            transform:  translate3d(0px,0px,0px);
+            perspective:20rem;
+        }
+      
+        
+    }
 
     &-flexright{
         @include flex(row);
@@ -445,38 +473,25 @@ body, html{
       #{&}-headline{
         @include sansserif-font();
         color: $color;
-        @include font(800, 1.5rem);
+        @include font(800, 2rem);
         transition: transform 0.4s linear;
         border-radius: 5px;
         border:3px solid $color;
         padding: 4px 20px;
-       
-        &:hover{
-            transform: scale(1.1,1.1) ;
-            display: inline-block;
-        }
+      
       }
 
       #{&}-pic {
         height:350px;
         width:320px;
-        margin: 10% 4% 0px 5%;
+        margin: 10% 4% 0px 6%;
         background-image:url('../img/hospital.jpeg') ;
         background-size: 60% 60%;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        
+        animation: moveRight 1s linear forwards 1;
 
-        &::before{
-            content:'';
-            border-radius: 5px;
-            border: 3px solid $color;
-            height:320px;
-            width:320px;
-            position: absolute;
-            transform: rotate(45deg);
-            animation: moveRight 10s linear forwards infinite;
-        }
+       
       }
 
 
@@ -517,7 +532,6 @@ body, html{
         animation: transition2 2.5s linear forwards 1 ;
         width:70%;
         line-height: 1rem;
-        background-color: rgb(76, 65, 143);
         background-color: $color;
         animation:transition1 1s linear 1;
         border-top-right-radius: 2px;
@@ -551,16 +565,17 @@ body, html{
 
     &-lastline{
         @include sansserif-font();
-        color:$design-color;
+        color:$color;
         @include font(600, 1.6rem);
         transition: transform 0.4s linear;
         padding: 10px 0px 12px 0px;
         margin-bottom: 40px;
         @include flex(row); 
-        animation: transition2 2s linear forwards 1;
+        animation: transition2 0.7s linear forwards 1;
+       
         line-height: 11px;
         width:90%;
-        background-color: $color;
+        // background-color: $color;
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
         background-attachment: fixed;
@@ -636,8 +651,8 @@ body, html{
 
     &-prism{
         box-shadow: 1px -1px 5px 1px $color;
-        height: 320px;
-        width:320px;
+        height: 500px;
+        width: 500px;
         position: absolute;
         top:-10%;
         left:40%;
@@ -722,13 +737,14 @@ body, html{
 
 
 @keyframes rotater {
-    
    
     100%{
-        transform:  rotateZ(360deg) ;  
-       
+        transform:  rotateZ(360deg) ; 
     }
+       
 }
+       
+       
 
  
 
@@ -831,7 +847,8 @@ body, html{
     opacity:0;
    }
    50%{
-    background-color: whitesmoke;
+    opacity:0.5;
+    background-color: white;
    }
 
    100%{
@@ -848,15 +865,14 @@ body, html{
 
 @keyframes moveRight {
     0%{
-     transform: rotateZ(0deg);
+        transform:  rotateZ(360deg) translateX(0px) translateY(-80px) scale(0.5,0.5);   
+    }
+   100%{
 
+     transform:none;
       
     }
-    100%{
-    transform: rotateZ(360deg);
-   
-    
-    }
+  
 }
 
    
@@ -870,20 +886,6 @@ body, html{
    
 
 
-@keyframes transition2{
-  0%{
-      opacity:0;
-      line-height: 0%;
-
-  }
- 
-  100%{
-     
-     opacity:1;
-     line-height: 100%;
-  }
- 
-}
 
 
 

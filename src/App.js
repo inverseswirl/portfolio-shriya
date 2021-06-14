@@ -16,16 +16,21 @@ class App extends React.Component {
     super(props)
 
 
-    this.state={top: 500,left:500,animate: "",scroll:""}
+    this.state={top: 500,left:500,animate: "",scroll:"",background: ""}
     this.handleMouse=this.handleMouse.bind(this);
     this.handleAnimation=this.handleAnimation.bind(this);
     this.handleScroll=this.handleScroll.bind(this);
   }
 
 
+  // componentDidMount(){
+  //   setInterval(()=>{
+  //     this.setState({background: })
+  //   })
+  // }
 
   handleScroll(e){
-   
+  
       console.log(e.target.scrollTop)
     this.setState({scroll:e.target.scrollTop})
   
@@ -51,7 +56,7 @@ class App extends React.Component {
 
 
 render(){
-  const{top,left,animate,scroll}=this.state
+  const{top,left,animate,scroll,background}=this.state
 
 
   return (
