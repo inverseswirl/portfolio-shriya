@@ -47,7 +47,7 @@ render(){
      
       <AboutMe scroll={this.props.scroll}/>
       
-      {/* {this.props.scroll > 1120 ? <Story scroll={this.props.scroll} /> :null} */}
+     <Story scroll={this.props.scroll} /> 
 
       {/* <Projects/> */}
 

@@ -274,11 +274,10 @@ body, html {
   background-color: transparent;
   font-weight: 900;
   font-size: 5.4rem;
-  border-radius: 3px;
   -webkit-animation: swish 0.8s linear forwards 1;
           animation: swish 0.8s linear forwards 1;
-  -webkit-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
 }
 
 .intro-tag1:hover {
@@ -370,9 +369,9 @@ body, html {
   position: absolute;
   z-index: 0;
   top: 200px;
-  left: -12%;
-  -webkit-transform: rotateZ(147deg);
-          transform: rotateZ(147deg);
+  left: -13%;
+  -webkit-transform: rotateZ(148deg);
+          transform: rotateZ(148deg);
   opacity: 0.8;
   border-radius: 34%;
   border: 5.3px solid #aca106;
@@ -521,42 +520,6 @@ body, html {
   position: relative;
 }
 
-.story-headline {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  font-weight: 600;
-  font-size: 1.6rem;
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
-  padding: 10px 0px 10px 0px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: transition2 2.5s linear forwards 1;
-          animation: transition2 2.5s linear forwards 1;
-  width: 70%;
-  line-height: 1rem;
-  background-color: #485c11;
-  -webkit-animation: transition1 1s linear 1;
-          animation: transition1 1s linear 1;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-
 .story-para {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -628,9 +591,9 @@ body, html {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #aca106;
   position: absolute;
-  top: 0%;
+  top: 20%;
   left: 1vw;
   z-index: 1;
 }
@@ -639,7 +602,7 @@ body, html {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #aca106;
   position: absolute;
   top: 0%;
   left: 4vw;
@@ -650,7 +613,7 @@ body, html {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #aca106;
   position: absolute;
   top: 0%;
   left: 7vw;
@@ -660,7 +623,7 @@ body, html {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #aca106;
   position: absolute;
   top: 6%;
   left: 2.5vw;
@@ -670,7 +633,7 @@ body, html {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #aca106;
   position: absolute;
   top: 6%;
   left: 5.5vw;
@@ -687,13 +650,14 @@ body, html {
 }
 
 .story-prism {
-  -webkit-box-shadow: 1px -1px 5px 1px #485c11;
-          box-shadow: 1px -1px 5px 1px #485c11;
+  -webkit-box-shadow: 1px 1px 8px 1px #aca106;
+          box-shadow: 1px 1px 8px 1px #aca106;
+  border-radius: 34%;
   height: 500px;
   width: 500px;
   position: absolute;
   top: -10%;
-  left: 40%;
+  right: 5%;
   z-index: 0;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);

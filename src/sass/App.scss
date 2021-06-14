@@ -281,9 +281,9 @@ body, html{
         color:$color;
         background-color:transparent;
         @include font(900, 5.4rem);
-        border-radius: 3px;
         animation: swish 0.8s linear forwards 1;
-        transition: color 0.2s linear;
+        transition: color 0.1s linear;
+        
         &:hover{
             
             cursor: pointer;
@@ -391,8 +391,8 @@ body, html{
         position: absolute;
         z-index: 0;
         top:200px;
-        left:-12%;
-        transform: rotateZ(147deg);
+        left:-13%;
+        transform: rotateZ(148deg);
         opacity:0.8;
         border-radius: 34%;
         border:5.3px solid $color2;
@@ -521,24 +521,7 @@ body, html{
   
    
       
-    &-headline{
-        @include sansserif-font();
-        color:$design-color;
-        @include font(600, 1.6rem);
-        transition: transform 0.4s linear;
-        padding: 10px 0px 10px 0px;
-        margin-bottom: 40px;
-        margin-top:40px;
-        @include flex(row);
-        animation: transition2 2.5s linear forwards 1 ;
-        width:70%;
-        line-height: 1rem;
-        background-color: $color;
-        animation:transition1 1s linear 1;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-    }
-  
+    
 
         
        
@@ -591,9 +574,9 @@ body, html{
         height: 15px;
         width: 15px;
         border-radius: 50%;
-        background-color: white;
+        background-color: $color2;
         position: absolute;
-        top:0%;
+        top:20%;
         left:1vw;
         z-index:1;
         
@@ -602,7 +585,7 @@ body, html{
         height: 15px;
         width: 15px;
         border-radius: 50%;
-        background-color: white;
+        background-color: $color2;
         position: absolute;
         top:0%;
         left:4vw;
@@ -613,7 +596,7 @@ body, html{
         height: 15px;
         width: 15px;
         border-radius: 50%;
-        background-color: white;
+        background-color: $color2;
         position: absolute;
         top:0%;
         left:7vw;
@@ -623,7 +606,7 @@ body, html{
         height: 15px;
         width: 15px;
         border-radius: 50%;
-        background-color: white;
+        background-color: $color2;
         position: absolute;
         top:6%;
         left:2.5vw;
@@ -633,7 +616,7 @@ body, html{
         height: 15px;
         width: 15px;
         border-radius: 50%;
-        background-color: white;
+        background-color: $color2;
         position: absolute;
         top:6%;
         left:5.5vw;
@@ -651,12 +634,13 @@ body, html{
     }
 
     &-prism{
-        box-shadow: 1px -1px 5px 1px $color;
+        box-shadow: 1px 1px 8px 1px $color2;
+        border-radius: 34%;
         height: 500px;
         width: 500px;
         position: absolute;
         top:-10%;
-        left:40%;
+        right:5%;
         z-index:0;
         transform: rotateZ(45deg);
         perspective: 20rem;

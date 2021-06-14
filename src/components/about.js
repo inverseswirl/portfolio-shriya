@@ -31,7 +31,9 @@ render(){
         <div className="about-first-para"> 
               <h1 className="about-first-para-headline">Hi! I'm Shriya</h1>
               <p className="about-first-para-main">
-                  My journey as a coder started last year. Earlier , I worked in a hospital in administration role. I moved to Melbourne in 2019.
+                  My journey as a coder started last year. Earlier, I worked in a hospital in administration role. I moved to Melbourne in 2019.
+              <br/>
+              I always felt the need to get feedback while learing to code in a self-paced manner. Through the bootcamp, I seek to get the right technical guidance.
               </p>
         </div>
         
