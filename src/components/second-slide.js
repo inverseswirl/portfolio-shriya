@@ -12,7 +12,7 @@ constructor(props){
     super(props)
 
  
- this.About=this.About.bind(this)
+ this.About=this.About.bind(this);
 }
 
 

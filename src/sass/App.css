@@ -369,13 +369,14 @@ body, html {
 .about-flower {
   position: absolute;
   z-index: 0;
-  top: 80px;
-  left: -33%;
-  -webkit-transform: rotateZ(145deg);
-          transform: rotateZ(145deg);
+  top: 200px;
+  left: -12%;
+  -webkit-transform: rotateZ(147deg);
+          transform: rotateZ(147deg);
   opacity: 0.8;
-  border-radius: 5%;
-  border: 5px solid #aca106;
+  border-radius: 34%;
+  border: 5.3px solid #aca106;
+  padding: 0.7%;
 }
 
 .about-first {

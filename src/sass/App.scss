@@ -390,12 +390,13 @@ body, html{
     &-flower{
         position: absolute;
         z-index: 0;
-        top:80px;
-        left:-33%;
-        transform: rotateZ(145deg);
+        top:200px;
+        left:-12%;
+        transform: rotateZ(147deg);
         opacity:0.8;
-        border-radius: 5%;
-        border:5px solid $color2;
+        border-radius: 34%;
+        border:5.3px solid $color2;
+        padding:0.7%;
 
     } 
       
