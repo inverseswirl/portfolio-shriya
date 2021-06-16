@@ -28,13 +28,16 @@ render(){
         <span className="story-dots-5"></span>
       </div>
 
-    <span className="story-shape" ></span>
+    <div className="story-shape" ></div>
         <p className="story-para">
         I've always felt the need to get feedback while learning to code in a self-paced manner. 
-        <br/>Through the Bootcamp, I seek to get the necessary technical guidance.
+        <br/><br/>Through the Bootcamp, I seek to get the necessary technical guidance.
              
         </p>
    
+   <div>
+             
+   </div>
         
       
   

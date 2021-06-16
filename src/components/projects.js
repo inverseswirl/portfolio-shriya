@@ -1,14 +1,45 @@
 import React from 'react';
-
+import { IoMdFlower } from 'react-icons/io';
 
 const Projects=()=>{
-
     return(
         <div className="projects">
-          <p className="projects-headline">Projects </p>
-      
-         
+       
+       <svg className="projects-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fillOpacity="1" d="M0,256L80,250.7C160,245,320,235,480,213.3C640,192,800,160,960,160C1120,160,1280,192,1360,208L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
 
+       <div className="projects-dots">
+            <span className="projects-dots-1"></span>
+            <span className="projects-dots-2"></span>
+            <span className="projects-dots-3"></span>
+            <span className="projects-dots-4"></span>
+            <span className="projects-dots-5"></span>
+      </div>
+       <div className="projects-flower"><IoMdFlower color="#aca106" size={400}/></div>
+       <div className="projects-shape" ></div>
+
+
+        <div className="projects-project1">
+            <button className="projects-project1-pic"></button>
+            <h2 className="projects-project1-name">EMI Calculator</h2>
+        </div>
+       
+        <div className="projects-project2">
+            <h2 className="projects-project2-name">Accent App</h2>
+            <div className="projects-project2-pic"></div>
+        </div>
+        <div className="projects-project3">
+            <div className="projects-project3-pic"></div>
+            <h2 className="projects-project3-name">Weather App</h2>
+        </div>
+
+        <div className="projects-dots2">
+            <span className="projects-dots2-1"></span>
+            <span className="projects-dots2-2"></span>
+            <span className="projects-dots2-3"></span>
+            <span className="projects-dots2-4"></span>
+            <span className="projects-dots2-5"></span>
+      </div>
+                
 
         </div>
     )

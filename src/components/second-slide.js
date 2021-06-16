@@ -3,7 +3,8 @@ import {IoIosLeaf,IoIosArrowDown} from 'react-icons/io';
 import {RiLeafFill} from 'react-icons/ri'; 
 import AboutMe from '../components/about';
 import Story from '../components/story';
-import Projects from '../components/projects';
+import Video from '../components/video';
+import Projects from './projects';
 
 
 
@@ -49,7 +50,9 @@ render(){
       
      <Story scroll={this.props.scroll} /> 
 
-      {/* <Projects/> */}
+      <Video />
+
+      <Projects/>
 
 
 
