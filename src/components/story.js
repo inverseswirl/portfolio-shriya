@@ -18,34 +18,25 @@ render(){
     return(
    
         
-        
-        <div className="story"  >
+<div className="story"  >
       
-      <span className="story-dots"></span>
-      <span className="story-dots1"></span>
-      <span className="story-dots2"></span>
-      <span className="story-dots3"></span>
-      <span className="story-dots4"></span>
-      <span className="story-dots5"></span>
+      <div className="story-dots">
+        <span className="story-dots-1"></span>
+        <span className="story-dots-2"></span>
+        <span className="story-dots-3"></span>
+        <span className="story-dots-4"></span>
+        <span className="story-dots-5"></span>
+      </div>
 
-   
-        
     <span className="story-prism" ></span>
+   
+        
       
 
 
    
-   
-  {this.props.scroll > 1150 && (
-          <p className="story-para">I decided to re-skill and learn to code.</p>
-        
-  )}
 
-    {this.props.scroll > 1153 && (<p  className="story-lastline">And made a couple of Projects.</p>
-    
-    )}
 
-        
 
 
 

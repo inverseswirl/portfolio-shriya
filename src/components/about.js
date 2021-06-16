@@ -25,20 +25,42 @@ render(){
 
     <div className="about-flower"><IoMdFlower color="#aca106" size={400}/></div>
     
-    <div className="about-first">
-       
-        <div className="about-first-pic1"></div>
+  
+            <div className="about-dots">
+                <span className="about-dots-1"></span>
+                <span className="about-dots-2"></span>
+                <span className="about-dots-3"></span>
+                <span className="about-dots-4"></span>
+                <span className="about-dots-5"></span>
+             </div>
+
+{ this.props.scroll >92 && ( 
+   <div className="about-first">
+        <div className="about-first-pic"></div>
         <div className="about-first-para"> 
               <h1 className="about-first-para-headline">Hi! I'm Shriya</h1>
-              <p className="about-first-para-main">
-                  My journey as a coder started last year. Earlier, I worked in a hospital in administration role. I moved to Melbourne in 2019.
+              <p className="about-first-para-mainpara">
+              My journey as a coder started in 2020. Earlier, I worked in a hospital administration role. I moved to Melbourne in 2019.
               <br/>
-              I always felt the need to get feedback while learing to code in a self-paced manner. Through the bootcamp, I seek to get the right technical guidance.
+              I've always felt the need to get feedback while learning to code in a self-paced manner. Through the Bootcamp, I seek to get the necessary technical guidance.
               </p>
         </div>
-        
     </div>  
+    )
+    }
+
+        
+
+
+
      
+</div>
+       
+
+    )
+}
+}
+export default AboutMe;
 
 
 
@@ -46,26 +68,11 @@ render(){
 
 
     
- {/* {  this.props.scroll > 400 &&(
-       
-<div className="about-flexright">
-       <p className="about-flexright-headline"> I worked in a hospital in admin role.</p>
-       <span className="about-flexright-pic"></span>
-       
-       </div>
- )
 
- } */}
+
+       
 
 
       
      
 
-
-        </div>
-       
-
-    )
-}
-}
-export default AboutMe;
