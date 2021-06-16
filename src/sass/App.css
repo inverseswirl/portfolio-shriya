@@ -479,7 +479,6 @@ body, html {
           perspective: 20rem;
   z-index: 0;
   width: 30%;
-  text-align: center;
 }
 
 .about-first .about-first-para-headline {
@@ -493,55 +492,6 @@ body, html {
   font-size: 1.3rem;
 }
 
-.about-flexright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  align-items: center;
-  -webkit-animation: transition1 2.5s ease-out forwards 1;
-          animation: transition1 2.5s ease-out forwards 1;
-  padding-bottom: 210px;
-}
-
-.about-flexright .about-flexright-headline {
-  font-family: 'Montserrat', sans-serif;
-  color: #485c11;
-  font-weight: 800;
-  font-size: 2rem;
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
-  border-radius: 5px;
-  border: 3px solid #485c11;
-  padding: 4px 20px;
-}
-
-.about-flexright .about-flexright-pic {
-  height: 350px;
-  width: 320px;
-  margin: 10% 4% 0px 6%;
-  background-image: url("../img/hospital.jpeg");
-  background-size: 60% 60%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  -webkit-animation: moveRight 1s linear forwards 1;
-          animation: moveRight 1s linear forwards 1;
-}
-
 .story {
   background-color: white;
   position: relative;
@@ -549,69 +499,16 @@ body, html {
 
 .story-para {
   font-family: 'Montserrat', sans-serif;
-  color: white;
-  font-weight: 600;
-  font-size: 1.6rem;
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
-  padding: 10px 0px 0px 0px;
-  margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: transition2 2.5s linear forwards 1;
-          animation: transition2 2.5s linear forwards 1;
-  width: 80%;
-  background-color: #485c11;
-  -webkit-animation: transition1 1s linear 1;
-          animation: transition1 1s linear 1;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-
-.story-lastline {
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 1.3rem;
   color: #485c11;
-  font-weight: 600;
-  font-size: 1.6rem;
-  -webkit-transition: -webkit-transform 0.4s linear;
-  transition: -webkit-transform 0.4s linear;
-  transition: transform 0.4s linear;
-  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
-  padding: 10px 0px 12px 0px;
-  margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: transition2 0.7s linear forwards 1;
-          animation: transition2 0.7s linear forwards 1;
-  line-height: 11px;
-  width: 90%;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background-attachment: fixed;
+  -webkit-animation: textappear 1.5s linear forwards 1;
+          animation: textappear 1.5s linear forwards 1;
+  width: 30%;
+  position: absolute;
+  left: 25%;
+  z-index: 1;
+  padding: 100px 0 0 0;
 }
 
 .story-dots {
@@ -671,18 +568,18 @@ body, html {
   background-color: #aca106;
 }
 
-.story-prism {
-  -webkit-box-shadow: 1px 1px 8px 1px #aca106;
-          box-shadow: 1px 1px 8px 1px #aca106;
+.story-shape {
+  -webkit-box-shadow: 1px 1px 14px 2px #aca106;
+          box-shadow: 1px 1px 14px 2px #aca106;
   border-radius: 34%;
-  height: 500px;
-  width: 500px;
+  height: 420px;
+  width: 420px;
   position: absolute;
-  top: -10%;
-  right: 5%;
+  top: 10%;
+  right: -5%;
   z-index: 0;
-  -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(30deg);
+          transform: rotateZ(30deg);
   -webkit-perspective: 20rem;
           perspective: 20rem;
 }

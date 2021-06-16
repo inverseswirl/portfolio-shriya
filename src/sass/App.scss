@@ -483,9 +483,8 @@ body, html{
             animation: textappear 1.5s linear forwards 1;
             perspective:20rem;
             z-index: 0;
-            // animation: appear 4s linear forwards infinite,transition1 1s linear forwards 1;
             width:30%;
-            text-align: center;
+            // text-align: center;
 
             &-headline{
                 @include font(500,2rem);
@@ -504,6 +503,7 @@ body, html{
         
 
        
+}
     
       
 
@@ -513,44 +513,7 @@ body, html{
         
        
 
-    &-flexright{
-        @include flex(row);
-        justify-content: flex-end;
-        align-items: center;  
-        animation: transition1 2.5s ease-out forwards 1;
-        padding-bottom: 210px;
-
-
-      #{&}-headline{
-        @include sansserif-font();
-        color: $color;
-        @include font(800, 2rem);
-        transition: transform 0.4s linear;
-        border-radius: 5px;
-        border:3px solid $color;
-        padding: 4px 20px;
-      
-      }
-
-      #{&}-pic {
-        height:350px;
-        width:320px;
-        margin: 10% 4% 0px 6%;
-        background-image:url('../img/hospital.jpeg') ;
-        background-size: 60% 60%;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        animation: moveRight 1s linear forwards 1;
-
-       
-      }
-
-
-
-
-    }
     
-}
 
 
 
@@ -565,63 +528,25 @@ body, html{
     $color: $color;
     background-color: $design-color;
     position: relative;
-    // padding-top: 100px;
  
     
-   
-  
-   
-      
-    
-
-        
-       
-    
-
-     &-para{
+   &-para{
         @include sansserif-font();
-        color:$design-color;
-        @include font(600, 1.6rem);
-        transition: transform 0.4s linear;
-        padding: 10px 0px 0px 0px;
-        margin-bottom: 40px;
-        @include flex(row); 
-        animation: transition2 2.5s linear forwards 1;
-        width:80%;
-        background-color: $color;
-        animation: transition1 1s linear 1;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-       
-    }
-
-   
-        
-
-    &-lastline{
-        @include sansserif-font();
+        @include font(200,1.3rem);
         color:$color;
-        @include font(600, 1.6rem);
-        transition: transform 0.4s linear;
-        padding: 10px 0px 12px 0px;
-        margin-bottom: 40px;
-        @include flex(row); 
-        animation: transition2 0.7s linear forwards 1;
+        animation: textappear 1.5s linear forwards 1;
+        width:30%;
+        position: absolute;
+        left: 25%;
+        z-index:1;
+        padding: 100px 0 0 0;
        
-        line-height: 11px;
-        width:90%;
-        // background-color: $color;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-        background-attachment: fixed;
-        
     }
 
 
 
-   
-    
-    &-dots{
+
+   &-dots{
 
         @include flex(row);
         justify-content: space-around;
@@ -677,17 +602,16 @@ body, html{
 
    
   
-
-    &-prism{
-        box-shadow: 1px 1px 8px 1px $color2;
+   &-shape{
+        box-shadow: 1px 1px 14px 2px $color2;
         border-radius: 34%;
-        height: 500px;
-        width: 500px;
+        height: 420px;
+        width: 420px;
         position: absolute;
-        top:-10%;
-        right:5%;
+        top:10%;
+        right:-5%;
         z-index:0;
-        transform: rotateZ(45deg);
+        transform: rotateZ(30deg);
         perspective: 20rem;
       
     }
@@ -695,6 +619,7 @@ body, html{
 
 
 
+}
 
 
 
@@ -703,7 +628,6 @@ body, html{
 
 
  
-}
   
    
     

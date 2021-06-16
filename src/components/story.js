@@ -28,9 +28,16 @@ render(){
         <span className="story-dots-5"></span>
       </div>
 
-    <span className="story-prism" ></span>
+    <span className="story-shape" ></span>
+        <p className="story-para">
+        I've always felt the need to get feedback while learning to code in a self-paced manner. 
+        <br/>Through the Bootcamp, I seek to get the necessary technical guidance.
+             
+        </p>
    
         
+      
+  
       
 
 
