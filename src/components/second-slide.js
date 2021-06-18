@@ -31,7 +31,21 @@ render(){
 
     return(
    <>
-    <button className="intro-linkedin">in</button> 
+    <button className="linkedin">in</button> 
+
+      <div className="theme"> 
+        <button className="theme-btn">Ideation</button>
+        <div className="theme-card">
+          <div className="">
+            <div className="theme-card-img"></div>
+            <div className="theme-card-para"></div>
+          </div>
+          <p>I like</p>
+       </div>
+     </div>
+    
+
+
         <div className="intro" >
           
            <button className="intro-tag1">How it started ?</button>

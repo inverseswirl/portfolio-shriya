@@ -209,6 +209,81 @@ body, html{
 
 ///////INTRO.....................................
 
+
+.linkedin{
+    position: fixed;
+    z-index:1;
+    right:0.6%;
+    bottom:2%;
+    @include sansserif-font();
+    color: white;
+    background-color: #0072b1;
+    @include font(900, 2.3rem);
+    border-radius: 4px;
+    height: 45px;
+    width:45px;
+    padding: 0.1%;
+
+}
+
+
+.theme{
+   
+    background-color: $color;
+    height: 120px;
+    width:36px;
+    position: fixed;
+    z-index:2;
+    top:40%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+     
+    #{&}-btn{
+      @include font(500,1.2rem); 
+      transform: rotateZ(90deg);
+      color:$design-color;
+      background-color: transparent;
+      width:80%;
+      position: absolute;
+      top:28px;
+      letter-spacing: 0.5px;
+     
+    }
+      
+
+
+      &-card{
+          position: absolute;
+          z-index: 2;
+           top: -100%;
+           left:200%;
+           height: 400px;
+           width:400px;
+           background-color: $design-color;
+           border-radius: 4px;
+          
+           #{&}-img{
+               background-image: url('../img/secondslide.jpeg');
+               background-size: cover;
+               height: 200px;
+               width:50%;
+               border-bottom-right-radius: 100%;
+               float:left;
+              
+            }
+            #{&}-para{
+              width:60%;
+              float:right;
+
+             }
+
+
+
+      }
+      
+    
+}
+
 .intro{
 
       
@@ -221,21 +296,9 @@ body, html{
   animation:  appear 0.8s linear 1;
   position: relative;
   box-sizing: border-box;
+
  
   
-  
-
-
- 
-
-
-
-
-
-   
-    
- 
-
    &-btn{
        background-color: transparent;
        animation: moveRight 15s linear forwards infinite 0.8s;
@@ -306,7 +369,7 @@ body, html{
         color: whitesmoke;
         background-color: transparent;
         padding:0px;
-        animation:  swish 1s linear forwards 0.2s ,movedown 1s linear forwards infinite ;
+        animation:  swish 1s linear forwards 0.2s, movedown 1s linear forwards infinite ;
         opacity:0;
 
       &::after{
@@ -334,21 +397,7 @@ body, html{
         }
         
     }
-    &-linkedin{
-        position: fixed;
-        z-index:1;
-        right:0.58%;
-        top:5%;
-        @include sansserif-font();
-        color: white;
-        background-color: #0072b1;
-        @include font(900, 2.4rem);
-        border-radius: 4px;
-        height: 45px;
-        width:45px;
-        padding: 0.1%;
-
-    }
+   
 
 
 
@@ -493,7 +542,7 @@ body, html{
             }
                
             &-mainpara{
-                @include font(200,1.3rem);
+                @include font(200,1.55rem);
             }
               
 
@@ -533,7 +582,7 @@ body, html{
     
    &-para{
         @include sansserif-font();
-        @include font(200,1.3rem);
+        @include font(200,1.55rem);
         color:$color;
         animation: textappear 1s linear forwards 1;
         width:30%;
@@ -689,13 +738,14 @@ body, html{
         position: absolute;
         z-index: 1;
         top:50px;
-        right:-13%;
+        right:-15%;
         transform: rotateZ(120deg);
         opacity:0.8;
         border-radius: 34%;
         border:5.3px solid $color2;
         padding:0.7%;
     }
+   
 
     &-shape{
         box-shadow: 1px 1px 14px 1px $color2;
@@ -704,20 +754,37 @@ body, html{
         width: 420px;
         position: absolute;
         top:350px;
-        left:-7%;
+        left:-14%;
         z-index:1;
-        transform: rotateZ(145deg);
+        transform: rotateZ(147deg);
         perspective: 20rem;
     }
 
 
+
+    &-headline{
+     @include font(500,2rem);
+     @include sansserif-font();
+     position: absolute;
+     z-index:0;
+     color: $color;
+     left:40vw;
+     padding-top: 80px;
+     &:hover{
+         -webkit-text-stroke: 1.5px $color;
+          color:transparent;
+     }
+
+
+
+    }
     &-dots{
         @include flex(row);
         justify-content: space-around;
         width:8%;
         position: absolute;
-        top:80px;
-        left:13%;
+        top:60px;
+        left:10%;
 
      #{&}-1{
             height: 15px;
@@ -767,9 +834,9 @@ body, html{
         justify-content: space-around;
         width:8%;
         position: absolute;
-        top:1200px;
+        top:750px;
         left:75%;
-        padding-bottom: 80px;
+        padding-bottom: 60px;
 
      #{&}-1{
             height: 15px;
@@ -817,29 +884,33 @@ body, html{
 
   &-project1{
       @include flex(row);
-       padding-top: 100px;
+       justify-content: flex-start;
+        padding-top: 170px;
+        padding-left: 250px;
       
       #{&}-pic{
-        height:340px;
-        width:340px;
+        height:160px;
+        width:160px;
         background-image:url('../img/EMIapp.png');
         background-size: cover;
         background-position: 50% 0%;
         background-repeat: no-repeat;
-        box-shadow: 1px 1px 7px 1px $color2;
         animation: textappear 1s linear 1;
         border-radius: 50%;
-        filter:contrast(90%) brightness(110%) ;
-    
+        filter:contrast(80%) brightness(94%) ;
+
       }
 
       #{&}-name{
-        @include font(200,1.5rem);
+        @include font(200,1.55rem);
         @include sansserif-font();
         color:$color;
         padding-top: 10px;
         background-color: transparent;
         animation: swish 1s linear forwards 1;
+        &:hover{
+            text-decoration: underline;
+        }
         
     }
   }
@@ -849,30 +920,34 @@ body, html{
    
   &-project2{
       @include flex(row);
+      justify-content: flex-start;
        padding-top: 30px;
-       width:100%;
+       padding-left: 400px;
+       
       
       #{&}-pic{
-        height:340px;
-        width:340px;
+        height:160px;
+        width:160px;
         background-image: url('../img/accentapp.png');
         background-size: cover;
         background-position: 50% 0%;
         background-repeat: no-repeat;
         animation: textappear 1s linear 1;
-        box-shadow: 1px 1px 10px 1px $color2;
         border-radius: 50%;
-        filter:contrast(90%) brightness(110%) ;
+        filter:contrast(100%) brightness(105%) ;
     
       }
 
       #{&}-name{
-        @include font(200,1.5rem);
+        @include font(200,1.55rem);
         @include sansserif-font();
         color:$color;
         background-color: transparent;
+        margin-left: 22px;
         animation: swish 1s linear forwards 1;
-        margin-right: 170px;
+        &:hover{
+            text-decoration: underline;
+        }
         
     }
   }
@@ -885,27 +960,30 @@ body, html{
        padding-top: 30px;
       
       #{&}-pic{
-        height:340px;
-        width:340px;
+        height:160px;
+        width:160px;
         background-image: url('../img/Screen\ Shot\ 2021-06-16\ at\ 10.19.49\ pm.png');
         background-size: cover;
         background-position: 50% 0%;
         background-repeat: no-repeat;
         animation: textappear 1s linear 1;
-        box-shadow: 1px 1px 7px 1px $color2;
         border-radius: 50%;
-        filter:contrast(90%) brightness(110%) ;
+        filter:contrast(100%) brightness(100%) ;
     
       }
 
 
 
       #{&}-name{
-        @include font(200,1.5rem);
+        @include font(200,1.55rem);
+        color:$color;
         @include sansserif-font();
         padding-top: 10px;
         background-color: transparent;
         animation: swish 1s linear forwards 1;
+        &:hover{
+            text-decoration: underline;
+        }
         
     }
 
