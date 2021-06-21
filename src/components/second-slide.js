@@ -2,7 +2,6 @@ import React from 'react';
 import {IoIosLeaf,IoIosArrowDown,IoIosArrowForward} from 'react-icons/io';
 import {RiLeafFill} from 'react-icons/ri'; 
 import {MdCancel} from 'react-icons/md';
-import secondslide from '../img/secondslide.jpeg';
 import {GiPlainCircle} from 'react-icons/gi';
 import AboutMe from '../components/about';
 import Story from '../components/story';
@@ -39,7 +38,7 @@ handleClick(){
 
 render(){
   
-const{click,doubleclick}=this.state;
+const{click}=this.state;
     return(
    <>
     <button className="linkedin">in</button> 
