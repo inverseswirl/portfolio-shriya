@@ -273,6 +273,7 @@ body, html {
       -ms-flex-pack: start;
           justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .theme-card .theme-card-flex-img {
@@ -290,6 +291,12 @@ body, html {
   font-weight: 400;
   font-size: 1.1rem;
   padding: 20px 0 0 10px;
+}
+
+.theme-card .theme-card-flex-cross {
+  position: absolute;
+  top: 2%;
+  right: 2%;
 }
 
 .theme-card .theme-card-main {
@@ -365,6 +372,46 @@ body, html {
   transition: color 0.1s linear;
 }
 
+@media (max-width: 1170px) {
+  .intro-tag1 {
+    font-weight: 900;
+    font-size: 5.1rem;
+    padding: 10vh 0 0 10vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro-tag1 {
+    font-weight: 900;
+    font-size: 4.1rem;
+    padding: 10vh 0 0 7vw;
+  }
+}
+
+@media (max-width: 745px) {
+  .intro-tag1 {
+    font-weight: 900;
+    font-size: 3.6rem;
+    padding: 10vh 0 0 0.2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-tag1 {
+    font-weight: 900;
+    font-size: 2.7rem;
+    padding: 10vh 0 0 2vw;
+  }
+}
+
+@media (max-width: 475px) {
+  .intro-tag1 {
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 10vh 0 0 0px;
+  }
+}
+
 .intro-tag1:hover {
   cursor: pointer;
   -webkit-text-stroke: 3px #485c11;
@@ -390,6 +437,7 @@ body, html {
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   left: 24px;
+  bottom: 0px;
   bottom: 0px;
 }
 
@@ -432,6 +480,24 @@ body, html {
   position: absolute;
   top: -200px;
   z-index: 0;
+}
+
+@media (max-width: 900px) {
+  .about-svg {
+    top: -150px;
+  }
+}
+
+@media (max-width: 745px) {
+  .about-svg {
+    top: -100px;
+  }
+}
+
+@media (max-width: 475px) {
+  .about-svg {
+    top: -60px;
+  }
 }
 
 .about-flower {
@@ -669,18 +735,28 @@ body, html {
 }
 
 .video-video {
-  margin: 350px 0px 100px 25%;
-  border: 2px solid darkolivegreen;
-  border-radius: 23px;
+  margin: 400px 0px 20px 22%;
+  border: 5px solid darkolivegreen;
+  border-radius: 4px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
 
 .video-headline {
-  font-weight: 400;
-  font-size: 1.6rem;
-  font-family: Quicksand,'cursive';
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
   color: darkolivegreen;
+  position: absolute;
+  z-index: 0;
+  top: 26%;
+  left: 32%;
+}
+
+.video-headline:hover {
+  cursor: pointer;
+  -webkit-text-stroke: 2px darkolivegreen;
+  color: transparent;
 }
 
 .projects {
@@ -1126,8 +1202,8 @@ body, html {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(90px);
-            transform: translateX(90px);
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
   }
 }
 
@@ -1137,8 +1213,8 @@ body, html {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(90px);
-            transform: translateX(90px);
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
   }
 }
 

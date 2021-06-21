@@ -269,6 +269,7 @@ body, html{
            @include flex(row);
            justify-content: flex-start;
            align-items: center;
+           position: relative;
          
 
             &-img{
@@ -289,6 +290,13 @@ body, html{
                @include font(400,1.1rem);
                padding: 20px 0 0 10px;
 
+            }
+
+            &-cross{
+                position: absolute;
+                top:2%;
+                right:2%;
+                        
             }
               
         }
@@ -360,6 +368,7 @@ body, html{
     &-tag1{
         $color:  $color;
         @include flex(row);
+        // justify-content: flex-start;
         padding: 10vh 0 0 17vw;
         @include sansserif-font();
         color:$color;
@@ -367,6 +376,28 @@ body, html{
         @include font(900, 5.4rem);
         animation: swish 0.8s linear forwards 1;
         transition: color 0.1s linear;
+        @include laptopLarge{
+            @include font(900, 5.1rem);
+            padding: 10vh 0 0 10vw;
+        }
+        @include laptop{
+            @include font(900, 4.1rem);
+            padding: 10vh 0 0 7vw;
+        }
+        
+        @include tablet{
+            @include font(900, 3.6rem);
+            padding: 10vh 0 0 0.2vw;
+        }
+
+        @include mobileLarge{
+            @include font(900, 2.7rem);
+            padding: 10vh 0 0 2vw;
+        }
+        @include mobileSmall{
+            @include font(900, 2rem);
+            padding: 10vh 0 0 0px;
+        }
         
         &:hover{
             
@@ -389,6 +420,7 @@ body, html{
         padding:0px;
         animation:  swish 1s linear forwards 0.2s, movedown 1s linear forwards infinite ;
         opacity:0;
+      
 
       &::after{
           content:"scroll";
@@ -396,6 +428,7 @@ body, html{
           @include sansserif-font();
           position: absolute;
           left:24px;
+          bottom:0px;
           bottom:0px;
 
       }       
@@ -450,7 +483,16 @@ body, html{
         position: absolute;
         top:-200px;
         z-index:0;
-
+        
+        @include laptop{
+            top: -150px;
+        }
+        @include tablet{
+            top: -100px;
+        }
+        @include mobileSmall{
+            top: -60px;
+        }
 
     }
 
@@ -466,6 +508,7 @@ body, html{
         border-radius: 34%;
         border:5.3px solid $color2;
         padding:0.7%;
+        
 
     } 
       
@@ -723,17 +766,31 @@ body, html{
 
 
    &-video{
-       margin: 350px 0px 100px 25%;
-       border: 2px solid $color;
-       border-radius: 23px;
+       margin: 400px 0px 20px 22%;
+       border: 5px solid $color;
+       border-radius: 4px;
        box-sizing: content-box;
    }
 
 
      &-headline{
-       @include font(400,1.6rem);
-       @include cursive();
+       @include font(900,3rem);
+       @include sansserif-font();
        color: $color;
+       position: absolute;
+       z-index: 0;
+       top:26%;
+       left:32%;
+       &:hover{
+           cursor: pointer;
+           -webkit-text-stroke: 2px $color;
+           color:transparent;
+            
+    }
+        
+        
+       
+
      }
  }
   
@@ -1107,7 +1164,7 @@ body, html{
     }
     100%{
       opacity:1;
-      transform: translateX(90px);
+      transform: translateX(70px);
     }
     
 }
