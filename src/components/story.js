@@ -31,7 +31,7 @@ render(){
     <div className="story-shape" ></div>
         <p className="story-para">
         I've always felt the need to get feedback while learning to code in a self-paced manner. 
-        <br/><br/>Through CoderAcademy's Web developer Bootcamp, I seek to get technical guidance, network with people in the industry and start my career as a coder.
+        <br/><br/>Through CoderAcademy's Web developer Bootcamp, I seek to get technical guidance, network with people in the industry.
              
         </p>
    

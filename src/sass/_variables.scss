@@ -38,6 +38,18 @@ $laptop-screen:900px;
 $tablet-screen:745px;
 $mobileLarge-screen:600px;
 $mobileSmall-screen: 475px;
+
+@mixin biggerwidth{
+    @media (min-width:1400px){
+        @content;
+      }
+}
+@mixin bigger{
+    @media (min-width:1200px){
+        @content;
+      }
+}
+
 @mixin laptopLarge{
  @media (max-width:$laptopLarge-screen){
      @content;
