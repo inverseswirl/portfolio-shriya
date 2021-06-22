@@ -1109,9 +1109,15 @@ body, html {
   z-index: 0;
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1400px) {
   .projects-svg {
-    top: -250px;
+    top: -310px;
+  }
+}
+
+@media (max-width: 1430px) {
+  .projects-svg {
+    top: -230px;
   }
 }
 
@@ -1167,7 +1173,31 @@ body, html {
   opacity: 0.8;
   border-radius: 34%;
   border: 5.3px solid #aca106;
-  padding: 0.7%;
+}
+
+@media (max-width: 1170px) {
+  .projects-flower {
+    right: -25%;
+    top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-flower {
+    right: -30%;
+    top: 30px;
+    -webkit-transform: rotateZ(24deg);
+            transform: rotateZ(24deg);
+    border: none;
+  }
+}
+
+@media (max-width: 745px) {
+  .projects-flower {
+    right: -35%;
+    top: 10px;
+    border: none;
+  }
 }
 
 .projects-shape {
@@ -1184,6 +1214,28 @@ body, html {
           transform: rotateZ(147deg);
   -webkit-perspective: 20rem;
           perspective: 20rem;
+}
+
+@media (max-width: 1170px) {
+  .projects-shape {
+    height: 380px;
+    width: 380px;
+    left: -21%;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-shape {
+    height: 300px;
+    width: 300px;
+    left: -29%;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-shape {
+    display: none;
+  }
 }
 
 .projects-headline {
@@ -1218,10 +1270,23 @@ body, html {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 8%;
+  width: 100px;
   position: absolute;
   top: 60px;
   left: 10%;
+}
+
+@media (max-width: 745px) {
+  .projects-dots {
+    top: 35px;
+  }
+}
+
+@media (max-width: 475px) {
+  .projects-dots {
+    top: 10px;
+    left: 5%;
+  }
 }
 
 .projects-dots .projects-dots-1 {
@@ -1275,11 +1340,25 @@ body, html {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 8%;
+  width: 100px;
   position: absolute;
   top: 750px;
   left: 75%;
   padding-bottom: 60px;
+}
+
+@media (max-width: 745px) {
+  .projects-dots2 {
+    top: 795px;
+    left: 65%;
+  }
+}
+
+@media (max-width: 475px) {
+  .projects-dots2 {
+    top: 810px;
+    left: 52%;
+  }
 }
 
 .projects-dots2 .projects-dots2-1 {

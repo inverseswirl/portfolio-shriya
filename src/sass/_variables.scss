@@ -45,7 +45,7 @@ $mobileSmall-screen: 475px;
       }
 }
 @mixin bigger{
-    @media (min-width:1170px){
+    @media (max-width:1430px){
         @content;
       }
 }

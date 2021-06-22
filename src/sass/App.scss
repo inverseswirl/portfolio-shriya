@@ -1012,9 +1012,13 @@ body, html{
         top:-270px;
         z-index: 0;
 
-        @include bigger{
-            top:-250px; 
-        }
+       @include biggerwidth{
+        top:-310px;
+       }
+       @include bigger{
+        top:-230px;
+       }
+       
         @include laptopLarge{
             top:-200px; 
         }
@@ -1048,7 +1052,26 @@ body, html{
         opacity:0.8;
         border-radius: 34%;
         border:5.3px solid $color2;
-        padding:0.7%;
+
+
+         @include laptopLarge{
+            right:-25%;
+            top:40px;
+
+         }
+         @include laptop{
+            right:-30%;
+            top:30px;
+            transform:rotateZ(24deg);
+            border:none;
+         }
+         @include tablet{
+            right:-35%;
+            top:10px;
+            border:none;
+         }
+       
+
     }
    
 
@@ -1063,6 +1086,23 @@ body, html{
         z-index:1;
         transform: rotateZ(147deg);
         perspective: 20rem;
+       @include laptopLarge{
+        height: 380px;
+        width: 380px;
+        left:-21%;
+
+       }
+
+       @include laptop{
+        height: 300px;
+        width: 300px;
+        left:-29%;
+       }
+       @include mobileLarge{
+        display: none;
+       }
+
+
     }
 
 
@@ -1087,10 +1127,18 @@ body, html{
     &-dots{
         @include flex(row);
         justify-content: space-around;
-        width:8%;
+        width:100px;
         position: absolute;
         top:60px;
         left:10%;
+
+        @include tablet{
+            top:35px;
+        }
+        @include mobileSmall{
+            top:10px;
+            left:5%;
+        }
 
      #{&}-1{
             height: 15px;
@@ -1138,11 +1186,20 @@ body, html{
     &-dots2{
         @include flex(row);
         justify-content: space-around;
-        width:8%;
+        width:100px;
         position: absolute;
         top:750px;
         left:75%;
         padding-bottom: 60px;
+
+        @include tablet{
+            top:795px;
+            left: 65%;
+        }
+        @include mobileSmall{
+            top:810px;
+            left:52%;
+        }
 
      #{&}-1{
             height: 15px;
