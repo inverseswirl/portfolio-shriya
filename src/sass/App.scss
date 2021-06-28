@@ -212,9 +212,9 @@ body, html{
 
 .linkedin{
     position: fixed;
-    z-index:1;
-    right:0.6%;
-    bottom:2%;
+    z-index:2;
+    left:0%;
+    top:56%;
     @include sansserif-font();
     color: white;
     background-color: #0072b1;
@@ -223,6 +223,14 @@ body, html{
     height: 45px;
     width:45px;
     padding: 0.1%;
+    @include mobileSmall{
+    height: 30px;
+    width:30px;
+    @include font(900, 1.5rem);
+    border-radius: 3px;
+    padding-top: 2px;
+   
+    }
 
 }
 
@@ -562,7 +570,7 @@ body, html{
             border:none;
         }
         @include mobileSmall{
-            left: -79%;
+            left: -85%;
             top:90px;
             border:none;
            
@@ -908,7 +916,7 @@ body, html{
         height:700px; 
     }
     @include mobileLarge{
-        height:600px; 
+        height:580px; 
     }
 
     &-svg{
@@ -945,7 +953,7 @@ body, html{
         width: 400px;
        }
        @include mobileSmall{
-        margin: 200px 0px 20px 17%;
+        margin: 220px 0px 20px 17%;
         width: 240px;
        }
    }
@@ -1070,6 +1078,14 @@ body, html{
             top:10px;
             border:none;
          }
+         @include mobileSmall{
+            right:0%;
+            top:30px;
+            border:none;
+            height:20px;
+            width:20px;
+        
+         }
        
 
     }
@@ -1119,6 +1135,15 @@ body, html{
      &:hover{
          -webkit-text-stroke: 1.5px $color;
           color:transparent;
+     }
+
+     @include laptop{
+        padding-top: 90px;
+     }
+
+     @include mobileSmall{
+        left: 30vw;
+      
      }
 
 
@@ -1197,7 +1222,7 @@ body, html{
             left: 65%;
         }
         @include mobileSmall{
-            top:810px;
+            top:750px;
             left:52%;
         }
 
@@ -1250,6 +1275,16 @@ body, html{
        justify-content: flex-start;
         padding-top: 170px;
         padding-left: 250px;
+
+        @include mobileSmall{
+           
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+            padding-left: 0px;
+            padding-top: 180px;
+         
+        }
       
       #{&}-pic{
         height:160px;
@@ -1262,6 +1297,11 @@ body, html{
         border-radius: 50%;
         filter:contrast(80%) brightness(94%) ;
 
+
+          @include mobileSmall{
+            height:80px;
+            width:80px; 
+          }
       }
 
       #{&}-name{
@@ -1271,8 +1311,18 @@ body, html{
         padding-top: 10px;
         background-color: transparent;
         animation: swish 1s linear forwards 1;
+        text-decoration: none;
+        text-shadow: -1.4px 2px 2px $color;
         &:hover{
             text-decoration: underline;
+           
+        }
+
+        @include mobileSmall{
+            @include font(200,1rem);
+            padding-left: 0px;
+            padding-top: 20px;
+            margin-left: -120px;
         }
         
     }
@@ -1285,7 +1335,15 @@ body, html{
       @include flex(row);
       justify-content: flex-start;
        padding-top: 30px;
-       padding-left: 400px;
+       padding-left: 100px;
+
+       @include mobileSmall{
+       
+        @include flex(column);
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
        
       
       #{&}-pic{
@@ -1298,6 +1356,11 @@ body, html{
         animation: textappear 1s linear 1;
         border-radius: 50%;
         filter:contrast(100%) brightness(105%) ;
+
+        @include mobileSmall{
+            height:80px;
+            width:80px; 
+          }
     
       }
 
@@ -1308,8 +1371,18 @@ body, html{
         background-color: transparent;
         margin-left: 22px;
         animation: swish 1s linear forwards 1;
+        text-decoration: none;
+        text-shadow: -1.4px 2px 2px $color;
         &:hover{
             text-decoration: underline;
+           
+        }
+
+        @include mobileSmall{
+            @include font(200,1rem);
+            padding-left: 0px;
+            padding-top: 20px;
+            margin-left: -120px;
         }
         
     }
@@ -1321,6 +1394,14 @@ body, html{
   &-project3{
       @include flex(row);
        padding-top: 30px;
+
+       @include mobileSmall{
+       
+        @include flex(column);
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
       
       #{&}-pic{
         height:160px;
@@ -1332,6 +1413,10 @@ body, html{
         animation: textappear 1s linear 1;
         border-radius: 50%;
         filter:contrast(100%) brightness(100%) ;
+        @include mobileSmall{
+            height:80px;
+            width:80px; 
+          }
     
       }
 
@@ -1344,8 +1429,18 @@ body, html{
         padding-top: 10px;
         background-color: transparent;
         animation: swish 1s linear forwards 1;
+        text-decoration: none;
+        text-shadow: -1.4px 2px 2px $color;
         &:hover{
             text-decoration: underline;
+           
+        }
+
+        @include mobileSmall{
+            @include font(200,1rem);
+            padding-left: 0px;
+            padding-top: 20px;
+            margin-left: -120px;
         }
         
     }

@@ -1,5 +1,5 @@
-import './sass/App.css';
 import React from 'react';
+import './sass/App.css';
 import Second from './components/second-slide';
 import Intro from './components/intro';
 

@@ -18,18 +18,19 @@ const Projects=()=>{
        <div className="projects-shape" ></div>
 
             <h1 className="projects-headline">Projects</h1>
+
         <div className="projects-project1">
-            <button className="projects-project1-pic"></button>
-            <h2 className="projects-project1-name">EMI Calculator</h2>
+            <div className="projects-project1-pic"></div>
+            <a  href="https://emi-cal.netlify.app/" rel="noreferrer" target="_blank" className="projects-project1-name">EMI Calculator</a>
         </div>
        
         <div className="projects-project2">
         <div className="projects-project2-pic"></div>
-            <h2 className="projects-project2-name">Accent App</h2>
+            <a href="https://accent-s26.netlify.app" rel="noreferrer" target="_blank" className="projects-project2-name">Accent App</a>
         </div>
           <div className="projects-project3">
             <div className="projects-project3-pic"></div>
-            <h2 className="projects-project3-name">Weather App</h2>
+            <a  href="https://weatherapp-s26.netlify.app" rel="noreferrer" target="_blank" className="projects-project3-name">Weather App</a>
         </div>
 
         <div className="projects-dots2">

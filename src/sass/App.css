@@ -202,9 +202,9 @@ body, html {
 
 .linkedin {
   position: fixed;
-  z-index: 1;
-  right: 0.6%;
-  bottom: 2%;
+  z-index: 2;
+  left: 0%;
+  top: 56%;
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: #0072b1;
@@ -214,6 +214,17 @@ body, html {
   height: 45px;
   width: 45px;
   padding: 0.1%;
+}
+
+@media (max-width: 475px) {
+  .linkedin {
+    height: 30px;
+    width: 30px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    padding-top: 2px;
+  }
 }
 
 .theme {
@@ -595,7 +606,7 @@ body, html {
 
 @media (max-width: 475px) {
   .about-flower {
-    left: -79%;
+    left: -85%;
     top: 90px;
     border: none;
   }
@@ -979,7 +990,7 @@ body, html {
 
 @media (max-width: 600px) {
   .video {
-    height: 600px;
+    height: 580px;
   }
 }
 
@@ -1035,7 +1046,7 @@ body, html {
 
 @media (max-width: 475px) {
   .video-video {
-    margin: 200px 0px 20px 17%;
+    margin: 220px 0px 20px 17%;
     width: 240px;
   }
 }
@@ -1200,6 +1211,16 @@ body, html {
   }
 }
 
+@media (max-width: 475px) {
+  .projects-flower {
+    right: 0%;
+    top: 30px;
+    border: none;
+    height: 20px;
+    width: 20px;
+  }
+}
+
 .projects-shape {
   -webkit-box-shadow: 1px 1px 14px 1px #aca106;
           box-shadow: 1px 1px 14px 1px #aca106;
@@ -1252,6 +1273,18 @@ body, html {
 .projects-headline:hover {
   -webkit-text-stroke: 1.5px #485c11;
   color: transparent;
+}
+
+@media (max-width: 900px) {
+  .projects-headline {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 475px) {
+  .projects-headline {
+    left: 30vw;
+  }
 }
 
 .projects-dots {
@@ -1356,7 +1389,7 @@ body, html {
 
 @media (max-width: 475px) {
   .projects-dots2 {
-    top: 810px;
+    top: 750px;
     left: 52%;
   }
 }
@@ -1417,6 +1450,28 @@ body, html {
   padding-left: 250px;
 }
 
+@media (max-width: 475px) {
+  .projects-project1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 180px;
+  }
+}
+
 .projects-project1 .projects-project1-pic {
   height: 160px;
   width: 160px;
@@ -1431,6 +1486,13 @@ body, html {
           filter: contrast(80%) brightness(94%);
 }
 
+@media (max-width: 475px) {
+  .projects-project1 .projects-project1-pic {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 .projects-project1 .projects-project1-name {
   font-weight: 200;
   font-size: 1.55rem;
@@ -1440,10 +1502,22 @@ body, html {
   background-color: transparent;
   -webkit-animation: swish 1s linear forwards 1;
           animation: swish 1s linear forwards 1;
+  text-decoration: none;
+  text-shadow: -1.4px 2px 2px #485c11;
 }
 
 .projects-project1 .projects-project1-name:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 475px) {
+  .projects-project1 .projects-project1-name {
+    font-weight: 200;
+    font-size: 1rem;
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: -120px;
+  }
 }
 
 .projects-project2 {
@@ -1464,7 +1538,28 @@ body, html {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-top: 30px;
-  padding-left: 400px;
+  padding-left: 100px;
+}
+
+@media (max-width: 475px) {
+  .projects-project2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+  }
 }
 
 .projects-project2 .projects-project2-pic {
@@ -1481,6 +1576,13 @@ body, html {
           filter: contrast(100%) brightness(105%);
 }
 
+@media (max-width: 475px) {
+  .projects-project2 .projects-project2-pic {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 .projects-project2 .projects-project2-name {
   font-weight: 200;
   font-size: 1.55rem;
@@ -1490,10 +1592,22 @@ body, html {
   margin-left: 22px;
   -webkit-animation: swish 1s linear forwards 1;
           animation: swish 1s linear forwards 1;
+  text-decoration: none;
+  text-shadow: -1.4px 2px 2px #485c11;
 }
 
 .projects-project2 .projects-project2-name:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 475px) {
+  .projects-project2 .projects-project2-name {
+    font-weight: 200;
+    font-size: 1rem;
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: -120px;
+  }
 }
 
 .projects-project3 {
@@ -1513,6 +1627,27 @@ body, html {
   padding-top: 30px;
 }
 
+@media (max-width: 475px) {
+  .projects-project3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+  }
+}
+
 .projects-project3 .projects-project3-pic {
   height: 160px;
   width: 160px;
@@ -1527,6 +1662,13 @@ body, html {
           filter: contrast(100%) brightness(100%);
 }
 
+@media (max-width: 475px) {
+  .projects-project3 .projects-project3-pic {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 .projects-project3 .projects-project3-name {
   font-weight: 200;
   font-size: 1.55rem;
@@ -1536,10 +1678,22 @@ body, html {
   background-color: transparent;
   -webkit-animation: swish 1s linear forwards 1;
           animation: swish 1s linear forwards 1;
+  text-decoration: none;
+  text-shadow: -1.4px 2px 2px #485c11;
 }
 
 .projects-project3 .projects-project3-name:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 475px) {
+  .projects-project3 .projects-project3-name {
+    font-weight: 200;
+    font-size: 1rem;
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: -120px;
+  }
 }
 
 @-webkit-keyframes rotater {

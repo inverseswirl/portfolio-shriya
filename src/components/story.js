@@ -1,21 +1,10 @@
 import React from 'react';
 
 
-class Story extends React.Component{
-constructor(props){
-    super(props)
- 
+const Story =()=>{
 
 
-
-}
-
-
-
-render(){
-
-
-    return(
+return(
    
         
 <div className="story"  >
@@ -32,29 +21,23 @@ render(){
         <p className="story-para">
         I've always felt the need to get feedback while learning to code in a self-paced manner. 
         <br/><br/>Through CoderAcademy's Web developer Bootcamp, I seek to get technical guidance, network with people in the industry.
-             
         </p>
-   
-   <div>
              
-   </div>
-        
+   
+   
       
   
       
 
-
-   
-
-
-
-
-
+ </div>
 
  
-        </div>
 
 
+  )
+}
+
+export default Story;
 
 
 
@@ -65,7 +48,9 @@ render(){
 
        
 
-    )
-}
-}
-export default Story;
+
+
+   
+
+
+
