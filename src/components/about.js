@@ -1,7 +1,7 @@
 import React from 'react';
 import {IoMdFlower} from 'react-icons/io';
 
-const AboutMe =({scroll})=>{
+const AboutMe =()=>{
 
 
 
@@ -23,7 +23,7 @@ const AboutMe =({scroll})=>{
                 <span className="about-dots-5"></span>
              </div>
 
-{ scroll >92 && ( 
+
    <div className="about-first">
         <div className="about-first-pic"></div>
         <div className="about-first-para"> 
@@ -37,8 +37,7 @@ const AboutMe =({scroll})=>{
               
         </div>
     </div>  
-    )
-    }
+   
 
 
  

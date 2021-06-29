@@ -213,10 +213,11 @@ body, html{
     height: 45px;
     width:45px;
     padding: 0.1%;
+
     @include mobileSmall{
     height: 30px;
     width:30px;
-    @include font(900, 1.5rem);
+    @include font(900, 1.3rem);
     border-radius: 3px;
     padding-top: 2px;
    
@@ -237,6 +238,11 @@ body, html{
     border-bottom-right-radius: 4px;
     animation: moveRight 0.5s linear forwards 1;
      
+    @include mobileSmall{
+       height: 90px;
+       width:36px; 
+    }
+
     &-btn{
       @include font(500,1.2rem); 
       transform: rotateZ(90deg);
@@ -247,6 +253,10 @@ body, html{
       top:28px;
       letter-spacing: 0.5px;
       
+      @include mobileSmall{
+         @include font(500,0.8rem); 
+       }
+       
      
     }
       
@@ -381,6 +391,8 @@ body, html{
 
   @include mobileSmall{
       height: 80vh;
+      background-size: 200% 110%;
+
   }
   
  
@@ -430,7 +442,7 @@ body, html{
             padding: 10vh 0 0 3vw;
         }
         @include media(390px){
-            @include font(800, 1.55rem);
+            @include font(800, 1.6rem);
             padding: 10vh 0 0 0vw;
         }
         
@@ -670,9 +682,9 @@ body, html{
             height:400px;
             width:400px;
             background-image: url('../img/mypic.jpg');
-            background-size: 200% 200%;
+            background-size: 110% 160%;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: 30% 50%;
             animation: textappear 1s linear 1;
             border-radius: 50%;
             filter:contrast(90%) brightness(110%) ;

@@ -16,18 +16,13 @@ class App extends React.Component {
     super(props)
 
 
-    this.state={animate: "",scroll:""}
+    this.state={animate: ""}
     this.handleAnimation=this.handleAnimation.bind(this);
-    this.handleScroll=this.handleScroll.bind(this);
   }
 
 
  
 
-  handleScroll(e){
-    this.setState({scroll:e.target.scrollTop})
-  
-  }
 
 
 
@@ -44,14 +39,14 @@ class App extends React.Component {
 
 
 render(){
-  const{animate,scroll}=this.state
+  const{animate}=this.state
 
 
   return (
-    <div className="App"  onScroll={this.handleScroll} >
+    <div className="App"   >
       
 
-     {animate==="font" ? <Second scroll={scroll}/> :  <Intro  animate={this.handleAnimation}/>}
+     {animate==="font" ? <Second /> :  <Intro  animate={this.handleAnimation}/>}
     
      
     </div>

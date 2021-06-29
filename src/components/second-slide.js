@@ -76,9 +76,9 @@ const{click}=this.state;
           
            </div>
      
-      <AboutMe scroll={this.props.scroll}/>
+      <AboutMe />
       
-     <Story scroll={this.props.scroll} /> 
+     <Story  /> 
 
       <Video />
 

@@ -228,7 +228,7 @@ body, html {
     height: 30px;
     width: 30px;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 3px;
     padding-top: 2px;
   }
@@ -247,6 +247,13 @@ body, html {
           animation: moveRight 0.5s linear forwards 1;
 }
 
+@media (max-width: 475px) {
+  .theme {
+    height: 90px;
+    width: 36px;
+  }
+}
+
 .theme-btn {
   font-weight: 500;
   font-size: 1.2rem;
@@ -258,6 +265,13 @@ body, html {
   position: absolute;
   top: 28px;
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 475px) {
+  .theme-btn {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
 }
 
 .theme-card {
@@ -424,6 +438,7 @@ body, html {
 @media (max-width: 475px) {
   .intro {
     height: 80vh;
+    background-size: 200% 110%;
   }
 }
 
@@ -502,7 +517,7 @@ body, html {
 @media (max-width: 390px) {
   .intro-tag1 {
     font-weight: 800;
-    font-size: 1.55rem;
+    font-size: 1.6rem;
     padding: 10vh 0 0 0vw;
   }
 }
@@ -782,9 +797,9 @@ body, html {
   height: 400px;
   width: 400px;
   background-image: url("../img/mypic.jpg");
-  background-size: 200% 200%;
+  background-size: 110% 160%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 30% 50%;
   -webkit-animation: textappear 1s linear 1;
           animation: textappear 1s linear 1;
   border-radius: 50%;
