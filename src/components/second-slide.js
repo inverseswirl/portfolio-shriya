@@ -41,7 +41,7 @@ const{click}=this.state;
 
 
     <div className="theme" onClick={this.handleClick}> 
-      <button className="theme-btn">Ideation</button>
+      <button className="theme-btn">Theme</button>
       { click===1 && (  
      <div className="theme-card">
         <div className="theme-card-flex">

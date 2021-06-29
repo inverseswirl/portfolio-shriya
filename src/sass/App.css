@@ -250,8 +250,8 @@ body, html {
 
 @media (max-width: 475px) {
   .theme {
-    height: 85px;
-    width: 36px;
+    height: 80px;
+    width: 32px;
   }
 }
 
@@ -264,8 +264,7 @@ body, html {
   background-color: transparent;
   width: 100%;
   position: absolute;
-  top: 28px;
-  letter-spacing: 0.5px;
+  top: 23px;
 }
 
 @media (max-width: 475px) {
@@ -439,7 +438,7 @@ body, html {
 @media (max-width: 475px) {
   .intro {
     height: 80vh;
-    background-size: 200% 110%;
+    background-size: 210% 120%;
   }
 }
 
@@ -511,7 +510,6 @@ body, html {
 }
 
 .intro-tag1:hover {
-  cursor: pointer;
   -webkit-text-stroke: 3px #485c11;
   color: transparent;
 }
@@ -1083,7 +1081,8 @@ body, html {
 }
 
 .video {
-  background-image: linear-gradient(200deg, #d4d6d6, transparent), url("../img/secondslide.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aca106), color-stop(white), to(transparent));
+  background-image: linear-gradient(180deg, #aca106, white, transparent);
   background-position: 8% 70%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1115,7 +1114,7 @@ body, html {
 
 .video-video {
   margin: 400px 0px 20px 25%;
-  border: 5px solid darkolivegreen;
+  border: 4px solid white;
   border-radius: 4px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -1166,7 +1165,7 @@ body, html {
   font-weight: 900;
   font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
-  color: darkolivegreen;
+  color: #485c11;
   position: absolute;
   z-index: 0;
   top: 26%;
@@ -1376,7 +1375,7 @@ body, html {
 }
 
 .projects-headline {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
@@ -1384,11 +1383,6 @@ body, html {
   color: #485c11;
   left: 40vw;
   padding-top: 80px;
-}
-
-.projects-headline:hover {
-  -webkit-text-stroke: 1.5px #485c11;
-  color: transparent;
 }
 
 @media (max-width: 900px) {
@@ -1400,7 +1394,7 @@ body, html {
 @media (max-width: 475px) {
   .projects-headline {
     left: 30vw;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.45rem;
   }
 }
