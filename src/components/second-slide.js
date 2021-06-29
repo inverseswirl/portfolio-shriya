@@ -44,19 +44,22 @@ const{click}=this.state;
     <button className="linkedin">in</button> 
 
 
-      <div className="theme" onClick={this.handleClick}> 
-        <button className="theme-btn">Ideation</button>
-        { click===1 && (    <div className="theme-card">
-          <div className="theme-card-flex">
+    <div className="theme" onClick={this.handleClick}> 
+      <button className="theme-btn">Ideation</button>
+      { click===1 && (  
+     <div className="theme-card">
+        <div className="theme-card-flex">
             <div className="theme-card-flex-img" ></div>
-            <p className="theme-card-flex-para"> Colours<IoIosArrowForward size={15} style={{marginBottom:"-3px"}}/> <GiPlainCircle  color="#ffffff"size={15}/> <GiPlainCircle  color="#aca106"size={15}/> <GiPlainCircle size={15}/><br/>  Design  <IoIosArrowForward size={15} style={{marginBottom:"-3px"}}/>Floral
-            <br/>
-            <br/>
-            <span className="theme-card-flex-cross"><MdCancel size={15}/></span>
+             <p className="theme-card-flex-para"> Colours<IoIosArrowForward size={15} style={{marginBottom:"-3px"}}/> <GiPlainCircle  color="#ffffff"size={15}/> <GiPlainCircle  color="#aca106"size={15}/> <GiPlainCircle size={15}/><br/>  Design  <IoIosArrowForward size={15} style={{marginBottom:"-3px"}}/>Floral
+             <br/>
+             <br/>
+             <span className="theme-card-flex-cross"><MdCancel size={15}/></span>
             </p>
-            </div>
+          </div>
          <p className="theme-card-main"> The idea is inspired from the nature. <br/>The theme & colours reflect the same.</p>
-       </div> )}
+      </div> 
+       )}
+       
      </div>
   
 

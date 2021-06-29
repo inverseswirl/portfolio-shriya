@@ -58,6 +58,13 @@ body, html {
   background-color: white;
 }
 
+@media (max-width: 475px) {
+  .text {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+}
+
 .text .M {
   -webkit-animation: type 0.8s alternate forwards 0s;
           animation: type 0.8s alternate forwards 0s;
@@ -240,7 +247,7 @@ body, html {
           animation: moveRight 0.5s linear forwards 1;
 }
 
-.theme .theme-btn {
+.theme-btn {
   font-weight: 500;
   font-size: 1.2rem;
   -webkit-transform: rotateZ(90deg);
@@ -266,6 +273,20 @@ body, html {
           animation: appear 0.3s linear;
 }
 
+@media (max-width: 600px) {
+  .theme-card {
+    height: 350px;
+    width: 45vw;
+  }
+}
+
+@media (max-width: 475px) {
+  .theme-card {
+    height: 350px;
+    width: 52vw;
+  }
+}
+
 .theme-card .theme-card-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,12 +308,38 @@ body, html {
   position: relative;
 }
 
+@media (max-width: 900px) {
+  .theme-card .theme-card-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .theme-card .theme-card-flex-img {
   background-image: url("../img/secondslide.jpeg");
   background-size: cover;
   height: 200px;
   width: 55%;
   border-bottom-right-radius: 100%;
+}
+
+@media (max-width: 900px) {
+  .theme-card .theme-card-flex-img {
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    height: 130px;
+  }
 }
 
 .theme-card .theme-card-flex-para {
@@ -302,6 +349,32 @@ body, html {
   font-weight: 400;
   font-size: 1.1rem;
   padding: 20px 0 0 10px;
+}
+
+@media (max-width: 1170px) {
+  .theme-card .theme-card-flex-para {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 20px 0 0 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .theme-card .theme-card-flex-para {
+    padding: 12px 0 0 0px;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .theme-card .theme-card-flex-para {
+    font-weight: 400;
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 12px 0 0 20px;
+  }
 }
 
 .theme-card .theme-card-flex-cross {
@@ -316,6 +389,22 @@ body, html {
   font-weight: 400;
   font-size: 1.1rem;
   padding: 30px;
+}
+
+@media (max-width: 900px) {
+  .theme-card .theme-card-main {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .theme-card .theme-card-main {
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
 }
 
 .intro {
