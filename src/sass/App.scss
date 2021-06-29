@@ -418,7 +418,7 @@ body, html{
         transition: color 0.1s linear;
 
         @include biggerwidth{
-            padding: 10vh 0 0 24vw;
+            padding: 10vh 0 0 23vw;
         }
 
         @include laptopLarge{
@@ -432,20 +432,20 @@ body, html{
         
         @include tablet{
             @include font(900, 3.6rem);
-            padding: 10vh 0 0 0.2vw;
+            padding: 10vh 0 0 3vw;
         }
 
         @include mobileLarge{
-            @include font(900, 2.7rem);
-            padding: 10vh 0 0 4vw;
+            @include font(900, 2.9rem);
+            padding: 17vh 0 0 0vw;
         }
         @include mobileSmall{
             @include font(800, 2rem);
-            padding: 10vh 0 0 3vw;
+            padding: 20vh 0 0 3vw;
         }
         @include media(390px){
-            @include font(800, 1.6rem);
-            padding: 10vh 0 0 0vw;
+            @include font(800, 1.7rem);
+            padding: 17vh 0 0 0px;
         }
         
         &:hover{
@@ -569,6 +569,7 @@ body, html{
         border-radius: 34%;
         border:5.3px solid $color2;
         padding:0.7%;
+        opacity:0.1;
 
 
 
@@ -589,16 +590,21 @@ body, html{
         @include tablet{
             left: -38%;
             top:300px;
+           
         }
         @include mobileLarge{
             left: -48%;
             top:180px;
             border:none;
+         
         }
         @include mobileSmall{
-            left: -85%;
-            top:90px;
+            left: -66%;
+            top:20px;
             border:none;
+            z-index: 0;
+    
+         
            
         }
           
@@ -621,8 +627,8 @@ body, html{
           top:2%;
         }
         @include mobileSmall{
-          left:75%;
-          top:0%;
+          left:65%;
+          top:1%;
         }
 
 
@@ -696,6 +702,9 @@ body, html{
                 height:300px;
                 width:300px;
                 margin-right: 4%;
+                background-size: 150% 200%;
+                background-position: 81% 50%;
+
             }
             @include mobileLarge{
                 height:200px;
@@ -719,7 +728,7 @@ body, html{
             }
            
             @include mobileSmall{
-                width:46%;
+                width:47%;
             }
            
 
@@ -740,6 +749,10 @@ body, html{
                
             &-mainpara{
                 @include font(200,1.55rem);
+
+                @include laptopLarge{
+                    @include font(200,1.4rem); 
+                }
                 @include tablet{
                     @include font(200,1rem);
                 }
@@ -748,7 +761,11 @@ body, html{
                     @include font(200,1.1rem);
                 }
                 @include mobileLarge{
-                    @include font(200,0.8rem);
+                    @include font(200,1rem);
+                }
+                @include mobileSmall{
+                    @include font(200,1rem); 
+                    
                 }
             }
               
@@ -796,21 +813,31 @@ body, html{
         padding: 200px 0 100px 300px;
 
     
-        @include laptop{
-            width:32%;
+        @include laptopLarge{
+            width:38%;
+            padding: 200px 0 100px 300px;
+            @include font(200,1.4rem); 
         }
      
         @include media(820px){
             @include font(200,1.1rem); 
+            width:37%;
+            padding: 200px 0px 90px 250px;
         }
 
+       @include tablet{
+        padding: 120px 0 50px 300px;
+       }
         @include mobileLarge{
-            padding: 50px 0 80px 200px;
-            @include font(200,0.8rem); 
+            padding: 60px 0 60px 200px;
+            @include font(200,1rem); 
+            width:40%;
         }
         @include mobileSmall{
-           width: 50%;
-           padding: 50px 0 80px 100px;
+           width: 53%;
+           padding: 70px 0 70px 27vw;
+           @include font(200,1rem); 
+
         }
      
         
@@ -832,6 +859,11 @@ body, html{
         @include tablet{
             top: 0%;
             left:50%;
+          }
+        @include mobileSmall{
+            top:1%;
+            left:17%;
+            width:94px;
           }
        
         
@@ -889,19 +921,21 @@ body, html{
         position: absolute;
         top:10%;
         right:-5%;
-        z-index:1;
+        z-index:0;
         transform: rotateZ(30deg);
         perspective: 20rem;
+        opacity:0.2;
 
         @include laptopLarge{
-            height: 300px;
-            width: 300px; 
+            height: 360px;
+            width: 360px; 
         }
 
         @include laptop{
-            height: 250px;
-            width: 250px; 
-            top:5%;
+            height: 300px;
+            width: 300px; 
+            top:30%;
+          
         }
 
         @include tablet{
@@ -956,7 +990,7 @@ body, html{
 
 
    &-video{
-       margin: 400px 0px 20px 25%;
+       margin:400px 0px 20px 25%;
        border: 5px solid $color;
        border-radius: 4px;
        box-sizing: content-box;
@@ -980,7 +1014,7 @@ body, html{
         width: 400px;
        }
        @include mobileSmall{
-        margin: 230px 0px 20px 17%;
+        margin: 230px 0px 18px 17%;
         width: 240px;
        }
    }
@@ -1081,6 +1115,7 @@ body, html{
         opacity:0.8;
         border-radius: 34%;
         border:5.3px solid $color2;
+        opacity:0.1;
 
 
          @include laptopLarge{
@@ -1100,16 +1135,17 @@ body, html{
             border:none;
          }
          @include mobileLarge{
-            right:-42%;
+            right:-44%;
             top:10px;
             border:none; 
          }
          @include mobileSmall{
-            right:0%;
-            top:30px;
+            right:10%;
+            top:-60px;
             border:none;
             height:20px;
             width:20px;
+            z-index: 0;
         
          }
        
@@ -1128,6 +1164,8 @@ body, html{
         z-index:1;
         transform: rotateZ(147deg);
         perspective: 20rem;
+        opacity:0.2;
+
        @include laptopLarge{
         height: 380px;
         width: 380px;
@@ -1244,12 +1282,15 @@ body, html{
         padding-bottom: 20px;
 
         @include tablet{
-            top:795px;
-            left: 65%;
+            top:890px;
+            left:72%;
+            padding-bottom: 50px;
         }
+       
         @include mobileSmall{
             top:710px;
-            left:52%;
+            left:60%;
+            padding-bottom: 10px;
         }
 
      #{&}-1{
@@ -1524,7 +1565,17 @@ body, html{
 
   }
    
+  &-copy{
+      color: $color2;
+      position: absolute;
+      bottom:-124px;
+      left:45%;
+      @include font(400,0.8rem);
 
+      @include mobileSmall{
+        left:0px;
+      }
+  }
 
 
 

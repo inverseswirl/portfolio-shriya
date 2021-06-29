@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoMdFlower } from 'react-icons/io';
+import {AiOutlineCopyrightCircle} from 'react-icons/ai';
 
 const Projects=()=>{
     return(
@@ -40,7 +41,8 @@ const Projects=()=>{
             <span className="projects-dots2-4"></span>
             <span className="projects-dots2-5"></span>
       </div>
-                
+
+      <div className="projects-copy"><AiOutlineCopyrightCircle  size={17}  style={{marginBottom: '-4px'}}/> Shriya 2021</div>  
         </div>
     )
 }

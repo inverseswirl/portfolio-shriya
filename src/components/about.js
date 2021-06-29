@@ -31,7 +31,6 @@ const AboutMe =()=>{
               <p className="about-first-para-mainpara">
               I moved to Melbourne in 2019. 
               <br/>My journey as a coder started in 2020. 
-              Earlier, I worked in a hospital administration role. 
               <br/>
             </p>
               
