@@ -204,7 +204,7 @@ body, html{
     position: fixed;
     z-index:2;
     left:0%;
-    top:56%;
+    top:60%;
     @include sansserif-font();
     color: white;
     background-color: #0072b1;
@@ -213,6 +213,8 @@ body, html{
     height: 45px;
     width:45px;
     padding: 0.1%;
+
+
 
     @include mobileSmall{
     height: 28px;
@@ -240,7 +242,7 @@ body, html{
     animation: moveRight 0.5s linear forwards 1;
      
     @include mobileSmall{
-       height: 90px;
+       height: 85px;
        width:36px; 
     }
 
@@ -249,7 +251,7 @@ body, html{
       transform: rotateZ(90deg);
       color:$design-color;
       background-color: transparent;
-      width:80%;
+      width:100%;
       position: absolute;
       top:28px;
       letter-spacing: 0.5px;
@@ -408,7 +410,6 @@ body, html{
 
     &-tag1{
         $color:  $color;
-        @include flex(row);
         padding: 10vh 0 0 17vw;
         @include sansserif-font();
         color:$color;
@@ -440,12 +441,13 @@ body, html{
             padding: 17vh 0 0 0vw;
         }
         @include mobileSmall{
-            @include font(800, 2rem);
+            @include font(900, 2rem);
             padding: 20vh 0 0 3vw;
         }
         @include media(390px){
-            @include font(800, 1.7rem);
+            @include font(900, 1.75rem);
             padding: 17vh 0 0 0px;
+             
         }
         
         &:hover{
@@ -453,6 +455,11 @@ body, html{
             cursor: pointer;
             -webkit-text-stroke: 3px $color;
             color:transparent;
+
+            @include mobileSmall{
+                -webkit-text-stroke: 0px $color;
+                color: $color;
+            }
             
             
            

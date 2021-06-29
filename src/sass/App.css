@@ -211,7 +211,7 @@ body, html {
   position: fixed;
   z-index: 2;
   left: 0%;
-  top: 56%;
+  top: 60%;
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: #0072b1;
@@ -250,7 +250,7 @@ body, html {
 
 @media (max-width: 475px) {
   .theme {
-    height: 90px;
+    height: 85px;
     width: 36px;
   }
 }
@@ -262,7 +262,7 @@ body, html {
           transform: rotateZ(90deg);
   color: white;
   background-color: transparent;
-  width: 80%;
+  width: 100%;
   position: absolute;
   top: 28px;
   letter-spacing: 0.5px;
@@ -444,19 +444,6 @@ body, html {
 }
 
 .intro-tag1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 10vh 0 0 17vw;
   font-family: 'Montserrat', sans-serif;
   color: #485c11;
@@ -509,7 +496,7 @@ body, html {
 
 @media (max-width: 475px) {
   .intro-tag1 {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 2rem;
     padding: 20vh 0 0 3vw;
   }
@@ -517,8 +504,8 @@ body, html {
 
 @media (max-width: 390px) {
   .intro-tag1 {
-    font-weight: 800;
-    font-size: 1.7rem;
+    font-weight: 900;
+    font-size: 1.75rem;
     padding: 17vh 0 0 0px;
   }
 }
@@ -527,6 +514,13 @@ body, html {
   cursor: pointer;
   -webkit-text-stroke: 3px #485c11;
   color: transparent;
+}
+
+@media (max-width: 475px) {
+  .intro-tag1:hover {
+    -webkit-text-stroke: 0px #485c11;
+    color: #485c11;
+  }
 }
 
 .intro-tag2 {
