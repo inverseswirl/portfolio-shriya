@@ -64,7 +64,7 @@ body, html{
 .text{
 
     @mixin animation($sec){
-        animation: type 0.8s alternate forwards  $sec ;
+        animation: type 1s alternate forwards  $sec ;
     }
    
     color: white;
@@ -78,7 +78,7 @@ body, html{
     background-color:white;
   
     @include mobileSmall{
-        @include font(400,1.6rem); 
+        @include font(400,1.5rem); 
     }
 
 
@@ -383,34 +383,8 @@ body, html{
       height: 80vh;
   }
   
-   &-leaf{
-       position: absolute;
-       left:40%;
-       color: rgb(126, 173, 51);
-       animation: leaf 12s linear infinite;
-       
-    }
-   &-leaf1{
-       position: absolute;
-       left:20%;
-       color: rgb(126, 173, 51);
-       animation: leaf 10s linear infinite;
-      
-       
-    }
-   &-leaf2{
-       position: absolute;
-       right:20%;
-       bottom:27%;
-       color: rgb(126, 173, 51);
-       animation: leaf2 10s linear infinite;
-       @include mobileSmall{
-        display: none;
-    }
-
-      
-       
-    }
+ 
+  
     
 
 
@@ -479,7 +453,7 @@ body, html{
         color: whitesmoke;
         background-color: transparent;
         padding:0px;
-        animation:  swish 1s linear forwards 0.2s, movedown 1s linear forwards infinite ;
+        animation:  swish 1s linear forwards 0.2s, movedown 2s linear forwards infinite ;
         opacity:0;
 
         @include mobileLarge{
@@ -492,10 +466,10 @@ body, html{
 
       &::after{
           content:"scroll";
-          @include font(600, 16px);
+          @include font(600, 15px);
           @include sansserif-font();
           position: absolute;
-          left:24px;
+          left:20px;
           bottom:0px;
           bottom:0px;
          
@@ -583,13 +557,15 @@ body, html{
         padding:0.7%;
 
 
+
+       
        @include laptopLarge{
            left: -25%;
            top:250px;
         }
        
-        @include media(1040px){
-            left: -25%;
+        @include media(1200px){
+            left: -20%;
             top:350px;
         }
         @include laptop{
@@ -694,8 +670,9 @@ body, html{
             height:400px;
             width:400px;
             background-image: url('../img/mypic.jpg');
-            background-size: 100% 110%;
+            background-size: 200% 200%;
             background-repeat: no-repeat;
+            background-position: center;
             animation: textappear 1s linear 1;
             border-radius: 50%;
             filter:contrast(90%) brightness(110%) ;
@@ -989,7 +966,7 @@ body, html{
         width: 400px;
        }
        @include mobileSmall{
-        margin: 220px 0px 20px 17%;
+        margin: 230px 0px 20px 17%;
         width: 240px;
        }
    }
@@ -1023,18 +1000,12 @@ body, html{
            @include font(900,1.9rem);
        }
        @include mobileSmall{
-           left:19%;
+           left:18%;
            top: 20%;
-           @include font(900,1.4rem);
+           @include font(900,1.3rem);
        }
 
 
-
-       &:hover{
-           cursor: pointer;
-           -webkit-text-stroke: 2px $color;
-           color:transparent;
-        }
     }
             
         
@@ -1113,6 +1084,11 @@ body, html{
             right:-35%;
             top:10px;
             border:none;
+         }
+         @include mobileLarge{
+            right:-42%;
+            top:10px;
+            border:none; 
          }
          @include mobileSmall{
             right:0%;
@@ -1251,14 +1227,14 @@ body, html{
         position: absolute;
         top:750px;
         left:75%;
-        padding-bottom: 60px;
+        padding-bottom: 20px;
 
         @include tablet{
             top:795px;
             left: 65%;
         }
         @include mobileSmall{
-            top:750px;
+            top:710px;
             left:52%;
         }
 
@@ -1312,6 +1288,14 @@ body, html{
         padding-top: 170px;
         padding-left: 250px;
 
+        @include tablet{
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+            padding-left: 0px;
+           
+           }
+
         @include mobileSmall{
            
             @include flex(column);
@@ -1349,9 +1333,15 @@ body, html{
         animation: swish 1s linear forwards 1;
         text-decoration: none;
         text-shadow: -1.4px 2px 2px $color;
-        &:hover{
-            text-decoration: underline;
-           
+        border-bottom: 2px solid $color2;
+        
+        @include laptop{
+            @include font(200,1.3rem); 
+        }
+        @include tablet{
+            padding-left: 0px;
+            padding-top: 20px;
+            margin-left: -120px;     
         }
 
         @include mobileSmall{
@@ -1371,8 +1361,28 @@ body, html{
       @include flex(row);
       justify-content: flex-start;
        padding-top: 30px;
-       padding-left: 100px;
+       padding-left: 400px;
 
+
+       @include media(1200px){
+        padding-left: 330px; 
+       }
+
+        @include laptopLarge{
+            padding-left: 300px;   
+        }
+
+
+        @include tablet{
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+            padding-left: 340px;
+           
+        }
+        @include mobileLarge{
+            padding-left: 0px;  
+        }
        @include mobileSmall{
        
         @include flex(column);
@@ -1409,10 +1419,17 @@ body, html{
         animation: swish 1s linear forwards 1;
         text-decoration: none;
         text-shadow: -1.4px 2px 2px $color;
-        &:hover{
-            text-decoration: underline;
-           
-        }
+        border-bottom: 2px solid $color2;
+       
+            @include laptop{
+                @include font(200,1.3rem); 
+            }
+
+            @include tablet{
+                padding-left: 0px;
+                padding-top: 20px;
+                margin-left: -120px;     
+            }
 
         @include mobileSmall{
             @include font(200,1rem);
@@ -1431,11 +1448,16 @@ body, html{
       @include flex(row);
        padding-top: 30px;
 
-       @include mobileSmall{
-       
+       @include tablet{
         @include flex(column);
         justify-content: center;
         align-items: center;
+       
+       }
+
+       @include mobileSmall{
+       
+        @include flex(column);
         padding-left: 0px;
     }
       
@@ -1467,11 +1489,16 @@ body, html{
         animation: swish 1s linear forwards 1;
         text-decoration: none;
         text-shadow: -1.4px 2px 2px $color;
-        &:hover{
-            text-decoration: underline;
-           
-        }
+        border-bottom: 2px solid $color2;
 
+        @include laptop{
+            @include font(200,1.3rem); 
+        }
+        @include tablet{
+            padding-left: 0px;
+            padding-top: 20px;
+            margin-left: -120px;     
+        }
         @include mobileSmall{
             @include font(200,1rem);
             padding-left: 0px;
@@ -1532,50 +1559,6 @@ body, html{
        
 
  
-
-
-@keyframes leaf {
-    0%{
-       transform: rotateX(30deg) rotateZ(20deg) ;
-       perspective: 20rem;
-      top: 10%;
-       
-    }
-    50%{
-       transform: rotateX(100deg) rotateZ(20deg) ;
-       perspective: 20rem;
-       top: 50%;
-       left:30%;
-    }
-    100%{
-        transform: rotateX(270deg) rotateZ(20deg) ;
-        perspective: 20rem;
-        top: 100%;
-        left:15%;
-    }
-    
-}
-@keyframes leaf2 {
-    0%{
-       transform: rotateZ(20deg) rotateX(40deg) ;
-       perspective: 20rem;
-       top: 10%;
-       right:40%;
-    }
-    50%{
-       transform: rotateZ(20deg) rotateX(80deg)  ;
-       perspective: 20rem;
-       top: 70%;
-       right:21%;
-    }
-    100%{
-        transform: rotateZ(20deg) rotateX(200deg) ;
-        perspective: 20rem;
-        top: 100%;
-        right:15%;
-    }
-    
-}
 
 @keyframes swish {
    0%{

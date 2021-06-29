@@ -25,8 +25,6 @@ class App extends React.Component {
  
 
   handleScroll(e){
-  
-      console.log(e.target.scrollTop)
     this.setState({scroll:e.target.scrollTop})
   
   }
@@ -53,14 +51,14 @@ render(){
     <div className="App"  onScroll={this.handleScroll} >
       
 
-    
      {animate==="font" ? <Second scroll={scroll}/> :  <Intro  animate={this.handleAnimation}/>}
+    
      
+    </div>
   
 
 
 
-    </div>
   );
 }
 

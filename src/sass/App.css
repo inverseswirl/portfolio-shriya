@@ -61,91 +61,91 @@ body, html {
 @media (max-width: 475px) {
   .text {
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
 .text .M {
-  -webkit-animation: type 0.8s alternate forwards 0s;
-          animation: type 0.8s alternate forwards 0s;
+  -webkit-animation: type 1s alternate forwards 0s;
+          animation: type 1s alternate forwards 0s;
   display: inline-block;
 }
 
 .text .y {
-  -webkit-animation: type 0.8s alternate forwards 0.1s;
-          animation: type 0.8s alternate forwards 0.1s;
+  -webkit-animation: type 1s alternate forwards 0.1s;
+          animation: type 1s alternate forwards 0.1s;
   display: inline-block;
 }
 
 .text .l {
-  -webkit-animation: type 0.8s alternate forwards 0.2s;
-          animation: type 0.8s alternate forwards 0.2s;
+  -webkit-animation: type 1s alternate forwards 0.2s;
+          animation: type 1s alternate forwards 0.2s;
   display: inline-block;
 }
 
 .text .i {
-  -webkit-animation: type 0.8s alternate forwards 0.3s;
-          animation: type 0.8s alternate forwards 0.3s;
+  -webkit-animation: type 1s alternate forwards 0.3s;
+          animation: type 1s alternate forwards 0.3s;
   display: inline-block;
 }
 
 .text .f {
-  -webkit-animation: type 0.8s alternate forwards 0.4s;
-          animation: type 0.8s alternate forwards 0.4s;
+  -webkit-animation: type 1s alternate forwards 0.4s;
+          animation: type 1s alternate forwards 0.4s;
   display: inline-block;
 }
 
 .text .e {
-  -webkit-animation: type 0.8s alternate forwards 0.5s;
-          animation: type 0.8s alternate forwards 0.5s;
+  -webkit-animation: type 1s alternate forwards 0.5s;
+          animation: type 1s alternate forwards 0.5s;
   display: inline-block;
 }
 
 .text .a {
-  -webkit-animation: type 0.8s alternate forwards 0.6s;
-          animation: type 0.8s alternate forwards 0.6s;
+  -webkit-animation: type 1s alternate forwards 0.6s;
+          animation: type 1s alternate forwards 0.6s;
   display: inline-block;
 }
 
 .text .s {
-  -webkit-animation: type 0.8s alternate forwards 0.7s;
-          animation: type 0.8s alternate forwards 0.7s;
+  -webkit-animation: type 1s alternate forwards 0.7s;
+          animation: type 1s alternate forwards 0.7s;
   display: inline-block;
 }
 
 .text .aa {
-  -webkit-animation: type 0.8s alternate forwards 0.8s;
-          animation: type 0.8s alternate forwards 0.8s;
+  -webkit-animation: type 1s alternate forwards 0.8s;
+          animation: type 1s alternate forwards 0.8s;
   display: inline-block;
 }
 
 .text .C {
-  -webkit-animation: type 0.8s alternate forwards 0.9s;
-          animation: type 0.8s alternate forwards 0.9s;
+  -webkit-animation: type 1s alternate forwards 0.9s;
+          animation: type 1s alternate forwards 0.9s;
   display: inline-block;
 }
 
 .text .o {
-  -webkit-animation: type 0.8s alternate forwards 1s;
-          animation: type 0.8s alternate forwards 1s;
+  -webkit-animation: type 1s alternate forwards 1s;
+          animation: type 1s alternate forwards 1s;
   display: inline-block;
 }
 
 .text .d {
-  -webkit-animation: type 0.8s alternate forwards 1.1s;
-          animation: type 0.8s alternate forwards 1.1s;
+  -webkit-animation: type 1s alternate forwards 1.1s;
+          animation: type 1s alternate forwards 1.1s;
   display: inline-block;
 }
 
 .text .ee {
-  -webkit-animation: type 0.8s alternate forwards 1.2s;
-          animation: type 0.8s alternate forwards 1.2s;
+  -webkit-animation: type 1s alternate forwards 1.2s;
+          animation: type 1s alternate forwards 1.2s;
   display: inline-block;
 }
 
 .text .r {
-  -webkit-animation: type 0.8s alternate forwards 1.3s;
-          animation: type 0.8s alternate forwards 1.3s;
+  -webkit-animation: type 1s alternate forwards 1.3s;
+          animation: type 1s alternate forwards 1.3s;
   display: inline-block;
 }
 
@@ -427,37 +427,6 @@ body, html {
   }
 }
 
-.intro-leaf {
-  position: absolute;
-  left: 40%;
-  color: #7ead33;
-  -webkit-animation: leaf 12s linear infinite;
-          animation: leaf 12s linear infinite;
-}
-
-.intro-leaf1 {
-  position: absolute;
-  left: 20%;
-  color: #7ead33;
-  -webkit-animation: leaf 10s linear infinite;
-          animation: leaf 10s linear infinite;
-}
-
-.intro-leaf2 {
-  position: absolute;
-  right: 20%;
-  bottom: 27%;
-  color: #7ead33;
-  -webkit-animation: leaf2 10s linear infinite;
-          animation: leaf2 10s linear infinite;
-}
-
-@media (max-width: 475px) {
-  .intro-leaf2 {
-    display: none;
-  }
-}
-
 .intro-tag1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,8 +520,8 @@ body, html {
   color: whitesmoke;
   background-color: transparent;
   padding: 0px;
-  -webkit-animation: swish 1s linear forwards 0.2s, movedown 1s linear forwards infinite;
-          animation: swish 1s linear forwards 0.2s, movedown 1s linear forwards infinite;
+  -webkit-animation: swish 1s linear forwards 0.2s, movedown 2s linear forwards infinite;
+          animation: swish 1s linear forwards 0.2s, movedown 2s linear forwards infinite;
   opacity: 0;
 }
 
@@ -571,10 +540,10 @@ body, html {
 .intro-tag2::after {
   content: "scroll";
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  left: 24px;
+  left: 20px;
   bottom: 0px;
   bottom: 0px;
 }
@@ -664,9 +633,9 @@ body, html {
   }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1200px) {
   .about-flower {
-    left: -25%;
+    left: -20%;
     top: 350px;
   }
 }
@@ -813,8 +782,9 @@ body, html {
   height: 400px;
   width: 400px;
   background-image: url("../img/mypic.jpg");
-  background-size: 100% 110%;
+  background-size: 200% 200%;
   background-repeat: no-repeat;
+  background-position: center;
   -webkit-animation: textappear 1s linear 1;
           animation: textappear 1s linear 1;
   border-radius: 50%;
@@ -1135,7 +1105,7 @@ body, html {
 
 @media (max-width: 475px) {
   .video-video {
-    margin: 220px 0px 20px 17%;
+    margin: 230px 0px 20px 17%;
     width: 240px;
   }
 }
@@ -1185,17 +1155,11 @@ body, html {
 
 @media (max-width: 475px) {
   .video-headline {
-    left: 19%;
+    left: 18%;
     top: 20%;
     font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
-}
-
-.video-headline:hover {
-  cursor: pointer;
-  -webkit-text-stroke: 2px darkolivegreen;
-  color: transparent;
 }
 
 .projects {
@@ -1295,6 +1259,14 @@ body, html {
 @media (max-width: 745px) {
   .projects-flower {
     right: -35%;
+    top: 10px;
+    border: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-flower {
+    right: -42%;
     top: 10px;
     border: none;
   }
@@ -1466,7 +1438,7 @@ body, html {
   position: absolute;
   top: 750px;
   left: 75%;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 745px) {
@@ -1478,7 +1450,7 @@ body, html {
 
 @media (max-width: 475px) {
   .projects-dots2 {
-    top: 750px;
+    top: 710px;
     left: 52%;
   }
 }
@@ -1539,6 +1511,27 @@ body, html {
   padding-left: 250px;
 }
 
+@media (max-width: 745px) {
+  .projects-project1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+  }
+}
+
 @media (max-width: 475px) {
   .projects-project1 {
     display: -webkit-box;
@@ -1593,10 +1586,22 @@ body, html {
           animation: swish 1s linear forwards 1;
   text-decoration: none;
   text-shadow: -1.4px 2px 2px #485c11;
+  border-bottom: 2px solid #aca106;
 }
 
-.projects-project1 .projects-project1-name:hover {
-  text-decoration: underline;
+@media (max-width: 900px) {
+  .projects-project1 .projects-project1-name {
+    font-weight: 200;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 745px) {
+  .projects-project1 .projects-project1-name {
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: -120px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -1627,7 +1632,46 @@ body, html {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-top: 30px;
-  padding-left: 100px;
+  padding-left: 400px;
+}
+
+@media (max-width: 1200px) {
+  .projects-project2 {
+    padding-left: 330px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .projects-project2 {
+    padding-left: 300px;
+  }
+}
+
+@media (max-width: 745px) {
+  .projects-project2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 340px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-project2 {
+    padding-left: 0px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -1683,10 +1727,22 @@ body, html {
           animation: swish 1s linear forwards 1;
   text-decoration: none;
   text-shadow: -1.4px 2px 2px #485c11;
+  border-bottom: 2px solid #aca106;
 }
 
-.projects-project2 .projects-project2-name:hover {
-  text-decoration: underline;
+@media (max-width: 900px) {
+  .projects-project2 .projects-project2-name {
+    font-weight: 200;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 745px) {
+  .projects-project2 .projects-project2-name {
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: -120px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -1716,7 +1772,7 @@ body, html {
   padding-top: 30px;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 745px) {
   .projects-project3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1733,6 +1789,24 @@ body, html {
             align-items: center;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 475px) {
+  .projects-project3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 0px;
   }
 }
@@ -1769,10 +1843,22 @@ body, html {
           animation: swish 1s linear forwards 1;
   text-decoration: none;
   text-shadow: -1.4px 2px 2px #485c11;
+  border-bottom: 2px solid #aca106;
 }
 
-.projects-project3 .projects-project3-name:hover {
-  text-decoration: underline;
+@media (max-width: 900px) {
+  .projects-project3 .projects-project3-name {
+    font-weight: 200;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 745px) {
+  .projects-project3 .projects-project3-name {
+    padding-left: 0px;
+    padding-top: 20px;
+    margin-left: -120px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -1796,112 +1882,6 @@ body, html {
   100% {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
-  }
-}
-
-@-webkit-keyframes leaf {
-  0% {
-    -webkit-transform: rotateX(30deg) rotateZ(20deg);
-            transform: rotateX(30deg) rotateZ(20deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 10%;
-  }
-  50% {
-    -webkit-transform: rotateX(100deg) rotateZ(20deg);
-            transform: rotateX(100deg) rotateZ(20deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 50%;
-    left: 30%;
-  }
-  100% {
-    -webkit-transform: rotateX(270deg) rotateZ(20deg);
-            transform: rotateX(270deg) rotateZ(20deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 100%;
-    left: 15%;
-  }
-}
-
-@keyframes leaf {
-  0% {
-    -webkit-transform: rotateX(30deg) rotateZ(20deg);
-            transform: rotateX(30deg) rotateZ(20deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 10%;
-  }
-  50% {
-    -webkit-transform: rotateX(100deg) rotateZ(20deg);
-            transform: rotateX(100deg) rotateZ(20deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 50%;
-    left: 30%;
-  }
-  100% {
-    -webkit-transform: rotateX(270deg) rotateZ(20deg);
-            transform: rotateX(270deg) rotateZ(20deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 100%;
-    left: 15%;
-  }
-}
-
-@-webkit-keyframes leaf2 {
-  0% {
-    -webkit-transform: rotateZ(20deg) rotateX(40deg);
-            transform: rotateZ(20deg) rotateX(40deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 10%;
-    right: 40%;
-  }
-  50% {
-    -webkit-transform: rotateZ(20deg) rotateX(80deg);
-            transform: rotateZ(20deg) rotateX(80deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 70%;
-    right: 21%;
-  }
-  100% {
-    -webkit-transform: rotateZ(20deg) rotateX(200deg);
-            transform: rotateZ(20deg) rotateX(200deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 100%;
-    right: 15%;
-  }
-}
-
-@keyframes leaf2 {
-  0% {
-    -webkit-transform: rotateZ(20deg) rotateX(40deg);
-            transform: rotateZ(20deg) rotateX(40deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 10%;
-    right: 40%;
-  }
-  50% {
-    -webkit-transform: rotateZ(20deg) rotateX(80deg);
-            transform: rotateZ(20deg) rotateX(80deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 70%;
-    right: 21%;
-  }
-  100% {
-    -webkit-transform: rotateZ(20deg) rotateX(200deg);
-            transform: rotateZ(20deg) rotateX(200deg);
-    -webkit-perspective: 20rem;
-            perspective: 20rem;
-    top: 100%;
-    right: 15%;
   }
 }
 

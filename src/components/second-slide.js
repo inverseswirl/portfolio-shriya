@@ -1,6 +1,5 @@
 import React from 'react';
-import {IoIosLeaf,IoIosArrowDown,IoIosArrowForward} from 'react-icons/io';
-import {RiLeafFill} from 'react-icons/ri'; 
+import {IoIosArrowDown,IoIosArrowForward} from 'react-icons/io';
 import {MdCancel} from 'react-icons/md';
 import {GiPlainCircle} from 'react-icons/gi';
 import AboutMe from '../components/about';
@@ -15,15 +14,12 @@ constructor(props){
     super(props)
 
  this.state={click:0}
- this.About=this.About.bind(this);
  this.handleClick=this.handleClick.bind(this);
 }
 
 
 
-  About(e){
-    console.log(e)
-  }
+
 
  
 
@@ -59,7 +55,7 @@ const{click}=this.state;
          <p className="theme-card-main"> The idea is inspired from the nature. <br/>The theme & colours reflect the same.</p>
       </div> 
        )}
-       
+
      </div>
   
 
@@ -71,11 +67,9 @@ const{click}=this.state;
         <div className="intro" >
           
            <button className="intro-tag1">How it started ?</button>
-            <button  className="intro-tag2" onClick={this.About}><IoIosArrowDown size={90}/></button>
+            <button  className="intro-tag2" ><IoIosArrowDown size={80}/></button>
 
-            <span  className="intro-leaf"><RiLeafFill size={38} /></span>
-            <span  className="intro-leaf1"><IoIosLeaf size={40} /></span>
-            <span  className="intro-leaf2"><IoIosLeaf  size={42} /></span>
+         
 
 
        
