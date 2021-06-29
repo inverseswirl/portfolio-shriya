@@ -225,12 +225,13 @@ body, html {
 
 @media (max-width: 475px) {
   .linkedin {
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border-radius: 3px;
     padding-top: 2px;
+    top: 58%;
   }
 }
 
@@ -270,7 +271,7 @@ body, html {
 @media (max-width: 475px) {
   .theme-btn {
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
