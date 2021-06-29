@@ -1021,8 +1021,10 @@ body, html{
         width: 400px;
        }
        @include mobileSmall{
-        margin: 230px 0px 18px 17%;
-        width: 240px;
+        margin: 220px 0px 18px 17%;
+        width: 245px;
+        border :none;
+
        }
    }
 
@@ -1056,7 +1058,7 @@ body, html{
        }
        @include mobileSmall{
            left:18%;
-           top: 20%;
+           top: 26%;
            @include font(900,1.3rem);
        }
 
@@ -1214,6 +1216,7 @@ body, html{
 
      @include mobileSmall{
         left: 30vw;
+        @include font(500,1.45rem);
       
      }
 

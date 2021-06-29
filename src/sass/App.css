@@ -1156,8 +1156,9 @@ body, html {
 
 @media (max-width: 475px) {
   .video-video {
-    margin: 230px 0px 18px 17%;
-    width: 240px;
+    margin: 220px 0px 18px 17%;
+    width: 245px;
+    border: none;
   }
 }
 
@@ -1207,7 +1208,7 @@ body, html {
 @media (max-width: 475px) {
   .video-headline {
     left: 18%;
-    top: 20%;
+    top: 26%;
     font-weight: 900;
     font-size: 1.3rem;
   }
@@ -1399,6 +1400,8 @@ body, html {
 @media (max-width: 475px) {
   .projects-headline {
     left: 30vw;
+    font-weight: 500;
+    font-size: 1.45rem;
   }
 }
 

@@ -18,7 +18,7 @@ const Projects=()=>{
        <div className="projects-flower"><IoMdFlower color="#aca106" size={400}/></div>
        <div className="projects-shape" ></div>
 
-            <h1 className="projects-headline">Projects</h1>
+            <h1 className="projects-headline">Project links</h1>
 
         <div className="projects-project1">
             <div className="projects-project1-pic"></div>
