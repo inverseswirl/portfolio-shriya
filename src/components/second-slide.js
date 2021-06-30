@@ -37,7 +37,8 @@ render(){
 const{click}=this.state;
     return(
    <>
-    <button className="linkedin">in</button> 
+    <a className="linkedin" href="https://www.linkedin.com/in/shriya-dhar-174886103/" target="_blank" >in</a> 
+    <a className="github" href="https://github.com/inverseswirl" target="_blank" ></a> 
 
 
     <div className="theme" onClick={this.handleClick}> 
