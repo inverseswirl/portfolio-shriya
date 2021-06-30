@@ -249,6 +249,15 @@ body, html{
     background-color: white;
     cursor: pointer;
 
+     
+    @include mobileSmall{
+        height: 28px;
+        width:28px;
+        top:63%;
+        
+       
+        }
+
    
 }
 
@@ -470,7 +479,7 @@ body, html{
             padding: 20vh 0 0 3vw;
         }
         @include media(390px){
-            @include font(900, 1.75rem);
+            @include font(900, 1.6rem);
             padding: 17vh 0 0 0px;
              
         }
