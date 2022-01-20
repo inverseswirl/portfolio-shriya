@@ -14,7 +14,11 @@
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
     "react-sound": "^1.2.0",
+<<<<<<< HEAD
     "sass": "^1.49.0",
+=======
+    "sass": "^1.43.4",
+>>>>>>> 5e4291e6ee970236fc7cd2ee808a834cfe0c1c68
     "web-vitals": "^1.0.1"
   },
   "scripts": {
