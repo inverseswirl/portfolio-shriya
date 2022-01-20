@@ -1,135 +1,116 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
 ///font mixins......
 
-@mixin   serif-font(){
-    font-family: 'Lora', serif;
+@mixin serif-font() {
+  font-family: "Lora", serif;
 }
-@mixin   sansserif-font(){
-    font-family: 'Montserrat', sans-serif;
+@mixin sansserif-font() {
+  font-family: "Montserrat", sans-serif;
 }
-@mixin   cursive(){
-    font-family: Quicksand,'cursive';
-   
+@mixin cursive() {
+  font-family: Quicksand, "cursive";
 }
 
 @mixin special-font() {
-    font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
 }
 
-@mixin font($font-weight,$font-size){
-    font-weight: $font-weight;
-    font-size: $font-size;
-} 
-
-
+@mixin font($font-weight, $font-size) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
 
 ///media qery mixin........
 
-
-$laptopLarge-screen:1170px;
-$laptop-screen:900px;
-$tablet-screen:745px;
-$mobileLarge-screen:600px;
+$laptopLarge-screen: 1170px;
+$laptop-screen: 900px;
+$tablet-screen: 745px;
+$mobileLarge-screen: 600px;
 $mobileSmall-screen: 475px;
 
-@mixin biggerwidth{
-    @media (min-width:1400px){
-        @content;
-      }
+@mixin biggerwidth {
+  @media (min-width: 1400px) {
+    @content;
+  }
 }
-@mixin bigger{
-    @media (max-width:1430px){
-        @content;
-      }
-}
-
-@mixin laptopLarge{
- @media (max-width:$laptopLarge-screen){
-     @content;
-   }
-}
-@mixin laptop{
- @media (max-width:$laptop-screen){
-     @content;
-   }
-}
-@mixin tablet{
- @media (max-width:$tablet-screen){
-     @content;
-   }
+@mixin bigger {
+  @media (max-width: 1430px) {
+    @content;
+  }
 }
 
-@mixin mobileLarge{
- @media (max-width:$mobileLarge-screen){
-     @content;
-   }
+@mixin laptopLarge {
+  @media (max-width: $laptopLarge-screen) {
+    @content;
+  }
 }
-@mixin mobileSmall{
- @media (max-width:$mobileSmall-screen){
-     @content;
-   }
+@mixin laptop {
+  @media (max-width: $laptop-screen) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: $tablet-screen) {
+    @content;
+  }
 }
 
-@mixin media($size){
-    @media (max-width: $size){
-      @content;
-    }
+@mixin mobileLarge {
+  @media (max-width: $mobileLarge-screen) {
+    @content;
+  }
+}
+@mixin mobileSmall {
+  @media (max-width: $mobileSmall-screen) {
+    @content;
+  }
 }
 
-
-
-
+@mixin media($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
 
 //miscellaneous mixins.......
 
-
-@mixin flex($direction){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: center;
-    align-items: center;
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
 }
 
-
-@mixin center(){
-    text-align: center;
+@mixin center() {
+  text-align: center;
 }
-
-
-
 
 ////////////////////////.................................
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-button{
-    border:none;
-    outline:none;
-    
-  
+button {
+  border: none;
+  outline: none;
 }
 // button:hover{
 //     border:none;
-//     outline:none; 
+//     outline:none;
 // }
 
-button:active{
-    border:none;
-    outline:none; 
-   
+button:active {
+  border: none;
+  outline: none;
 }
-
 
 // $design-color: rgb(236, 196, 94);
 $design-color: white;
 $color: rgb(72, 92, 17);
-$color2:#aca106;
+$color2: #aca106;

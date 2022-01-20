@@ -1,61 +1,25 @@
-import React from 'react';
-import './sass/App.css';
-import Second from './components/second-slide';
-import Intro from './components/intro';
+import React, { useState } from "react";
+import "./sass/App.scss";
+import Second from "./components/second-slide";
+import Intro from "./components/intro";
 
+const App = () => {
+  const [animate, handleAnimation] = useState(" ");
 
-
-
-
-
-
-
-
-class App extends React.Component {
-  constructor(props){
-    super(props)
-
-
-    this.state={animate: ""}
-    this.handleAnimation=this.handleAnimation.bind(this);
+  function animateFunction(animate) {
+    handleAnimation(animate);
   }
-
-
- 
-
-
-
-
-  
-
-  
-   
-  handleAnimation(animate){
-    this.setState({animate: animate})
-  }
-
-
-
-
-
-render(){
-  const{animate}=this.state
-
 
   return (
-    <div className="App"   >
-      
+    <div className="App">
+       {/* {animate === "font" ? (
+        <Second />
+      ) : ( 
+        <Intro animateFunction={animateFunction} />
+       )} */}
+          <Second/>
 
-     {animate==="font" ? <Second /> :  <Intro  animate={this.handleAnimation}/>}
-    
-     
     </div>
-  
-
-
-
   );
-}
-
-}
+};
 export default App;

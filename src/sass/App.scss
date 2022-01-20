@@ -1,1760 +1,1395 @@
+@import "./variables.scss";
 
-@import './variables.scss';
-
-
-
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body, html{
-   
-    overflow: scroll;
-    scroll-behavior: smooth;
-   
-   
-
- 
+body,
+html {
+  overflow: scroll;
+  scroll-behavior: smooth;
 }
 
+.App {
+  overflow: scroll;
+  overflow-x: hidden;
 
-
-
-
-
-.App{
-    overflow: scroll;
-    overflow-x:hidden;
-
-    height:100vh;
-    width:100vw;
-
-   
+  height: 100vh;
+  width: 100vw;
 }
 
-
-.cursor{
-    height:20px;
-    width: 20px;
-    border-radius: 50%;
-    border:2px solid black ;
-    position: absolute;
-    z-index:2;
-
-   
+.cursor {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  z-index: 2;
 }
 
-
-
-//////////   
-    
-        
-
-
-
-
-
-
-
+//////////
 
 /////first-slide///////............................................
 
+.text {
+  @mixin animation($sec) {
+    animation: type 1s alternate forwards $sec;
+  }
 
-.text{
+  color: white;
+  @include special-font();
+  @include font(400, 3.2rem);
+  padding: 7%;
+  text-indent: 1px;
+  margin-top: 20vh;
+  text-align: center;
+  animation: letter 0.8s linear forwards 2.5s, font 0.3s linear forwards 2.9s;
+  background-color: white;
 
-    @mixin animation($sec){
-        animation: type 1s alternate forwards  $sec ;
-    }
-   
-    color: white;
-    @include special-font();
-    @include font(400,3.2rem);
-    padding: 7%;
-    text-indent:1px;
-    margin-top:20vh;
-    text-align: center;
-    animation: letter 0.8s linear forwards 2.5s, font 0.3s linear forwards 2.9s;
-    background-color:white;
-  
-    @include mobileSmall{
-        @include font(400,1.5rem); 
-    }
+  @include mobileSmall {
+    @include font(400, 1.5rem);
+  }
 
+  .letter-1{
+    @include animation(0s);
+    display: inline-block;
+  }
 
-    .M{
-        @include animation(0s);
-        display: inline-block;
+  .letter-2 {
+    @include animation(0.1s);
+    display: inline-block;
+  }
 
-      
-    }
+  .letter-3 {
+    visibility: hidden;
+ 
+  }
 
-    .y{
-        @include animation(0.1s);
-        display: inline-block;
-    }
+  .letter-4{
+    @include animation(0.3s);
+    display: inline-block;
+  }
+  .letter-5 {
+    @include animation(0.4s);
+    display: inline-block;
+  }
+  .letter-6 {
+    @include animation(0.5s);
+    display: inline-block;
+  }
+  .letter-7 {
+    @include animation(0.6s);
+    display: inline-block;
+  }
+  .letter-8 {
+    visibility: hidden;
+  }
 
-    .l{
-        @include animation(0.2s);
-        display: inline-block;
-    }
+  .letter-9 {
+    @include animation(0.8s);
+    display: inline-block;
+  }
+  .letter-10 {
+    @include animation(0.9s);
+    display: inline-block;
+  }
+  .letter-11 {
+    @include animation(1s);
+    visibility: hidden;
+  }
+  .letter-12{
+    @include animation(1.1s);
+    display: inline-block;
+  }
+  .letter-13 {
+    visibility: hidden;
+  }
 
-    .i{
-        @include animation(0.3s);
-        display: inline-block;
-    }
-    .f{
-        @include animation(0.4s);
-        display: inline-block;
-    }
-    .e{
-        @include animation(0.5s);
-        display: inline-block;
-    }
-    .a{
-        @include animation(0.6s); 
-        display: inline-block;
-    }
-    .s{
-        @include animation(0.7s); 
-        display: inline-block;
-    }
-   
-    .aa{
-        @include animation(0.8s); 
-        display: inline-block;
-        
-    }
-    .C{
-        @include animation(0.9s); 
-        display: inline-block;
-    }
-    .o{
-        @include animation(1s); 
-        display: inline-block;
-    }
-    .d{
-        @include animation(1.1s); 
-        display: inline-block;
-    }
-    .ee{
-        @include animation(1.2s); 
-        display: inline-block;
-    }
-       
-    .r{
-        @include animation(1.3s); 
-        display: inline-block;
-      
-    }
-
-   
-     
-        
+  .letter-14 {
+    @include animation(1.3s);
+    display: inline-block;
+  }
+  .letter-15 {
+    @include animation(1.4s);
+    display: inline-block;
+  }
+  .letter-16 {
+    @include animation(1.5s);
+    display: inline-block;
+  }
+  .letter-17 {
+    @include animation(1.6s);
+    display: inline-block;
+  }
+  .letter-18 {
+    @include animation(1.7s);
+    display: inline-block;
+  }
 }
-   
-  
-
-
-
-
 
 @keyframes type {
-    0%{
-     text-indent: 0px;
-     color: white;
-     padding:0.8%;
-     border-radius: 2px;
-  
-    }
-    100%{
-        text-indent: 1px;
-        color: rgb(170, 206, 98);
-        background-color:rgb(18,18,18);
-        margin-right:-2px;
-        padding:0.8%;
-        border-radius: 2px;
-    }
-      
-
+  0% {
+    text-indent: 0px;
+    color: white;
+    padding: 0.8%;
+    border-radius: 2px;
+  }
+  100% {
+    text-indent: 1px;
+    color: rgb(170, 206, 98);
+    background-color: rgb(18, 18, 18);
+    margin-right: -2px;
+    padding: 0.8%;
+    border-radius: 2px;
+  }
 }
 
 ///keyframes....
-@keyframes letter{
-   100%{
-       font-size: 0.5rem;
-      
-   }
- 
+@keyframes letter {
+  100% {
+    font-size: 0.5rem;
+  }
 }
 @keyframes font {
- 100%{
-     visibility: hidden;
-     
-    
-    }
-} 
-
-     
+  100% {
+    visibility: hidden;
+  }
+}
 
 ///////INTRO.....................................
 
+.linkedin {
+  position: fixed;
+  z-index: 2;
+  left: 0%;
+  top: 45px;
+  // @include sansserif-font();
+  color: white;
+  background-color: #0072b1;
+  @include font(900, 2.3rem);
+  border-radius: 4px;
+  height: 45px;
+  width: 45px;
+  padding: 0.1%;
+  text-decoration: none;
+  cursor: pointer;
 
-.linkedin{
-    position: fixed;
-    z-index:2;
-    left:0%;
-    top:60%;
-    @include sansserif-font();
-    color: white;
-    background-color: #0072b1;
-    @include font(900, 2.3rem);
-    border-radius: 4px;
-    height: 45px;
-    width:45px;
-    padding: 0.1%;
-    text-decoration: none;
-    cursor: pointer;
-
-
-
-    
-    @include mobileSmall{
+  @include mobileSmall {
     height: 26px;
-    width:26px;
+    width: 26px;
     @include font(900, 1.1rem);
     border-radius: 3px;
     padding-top: 3px;
     padding-left: 2px;
-    top:58%;
-   
-    }
-
+    top: 58%;
+  }
 }
 
+.github {
+  position: fixed;
+  z-index: 2;
+  left: 0%;
+  top: 70%;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0.1%;
+  background-image: url("../img//GitHub-Mark-64px.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: white;
+  cursor: pointer;
 
-.github{
-    position: fixed;
-    z-index:2;
-    left:0%;
-    top:70%;
-    border-radius: 50%;
-    height: 50px;
-    width:50px;
-    padding: 0.1%;
-    background-image: url('../img//GitHub-Mark-64px.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: white;
-    cursor: pointer;
-
-     
-    @include mobileSmall{
-        height: 28px;
-        width:28px;
-        top:63%;
-        
-       
-        }
-
-   
+  @include mobileSmall {
+    height: 28px;
+    width: 28px;
+    top: 63%;
+  }
 }
 
+.theme {
+  background-color: $color;
+  height: 100px;
+  width: 36px;
+  position: fixed;
+  z-index: 2;
+  top: 40%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  animation: moveRight 0.5s linear forwards 1;
 
-.theme{
-   
-    background-color: $color;
-    height: 100px;
-    width:36px;
-    position: fixed;
-    z-index:2;
-    top:40%;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    animation: moveRight 0.5s linear forwards 1;
-     
-    @include mobileSmall{
-       height: 80px;
-       width:32px; 
+  @include mobileSmall {
+    height: 80px;
+    width: 32px;
+  }
+
+  &-btn {
+    @include font(500, 1.2rem);
+    transform: rotateZ(90deg);
+    color: $design-color;
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 23px;
+
+    @include mobileSmall {
+      @include font(500, 0.7rem);
+    }
+  }
+
+  &-card {
+    position: absolute;
+    z-index: 2;
+    top: -100%;
+    left: 200%;
+    height: 350px;
+    width: 35vw;
+    background-color: rgb(235, 217, 184);
+    border-radius: 4px;
+    animation: appear 0.3s linear;
+
+    @include mobileLarge {
+      height: 350px;
+      width: 45vw;
+    }
+    @include mobileSmall {
+      height: 350px;
+      width: 52vw;
     }
 
-    &-btn{
-      @include font(500,1.2rem); 
-      transform: rotateZ(90deg);
-      color:$design-color;
-      background-color: transparent;
-      width:100%;
-      position: absolute;
-      top:23px;
-      
-      
-      @include mobileSmall{
-         @include font(500,0.7rem); 
-        
-       }
-       
-     
-    }
-      
+    #{&}-flex {
+      @include flex(row);
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
 
+      @include laptop {
+        @include flex(column);
+      }
 
-    &-card{
-          position: absolute;
-           z-index: 2;
-           top: -100%;
-           left:200%;
-           height: 350px;
-           width:35vw;
-           background-color: rgb(235, 217, 184);
-           border-radius: 4px;
-           animation: appear 0.3s linear;
-         
-           @include mobileLarge{
-            height: 350px;
-            width:45vw; 
-           }
-           @include mobileSmall{
-            height: 350px;
-            width:52vw; 
-           }
-          
-      #{&}-flex{
-           @include flex(row);
-           justify-content: flex-start;
-           align-items: center;
-           position: relative;
-         
-           @include laptop{
-            @include flex(column);
-           }
+      &-img {
+        background-image: url("../img/secondslide.jpg");
+        background-size: cover;
+        height: 200px;
+        width: 55%;
+        border-bottom-right-radius: 100%;
 
-            &-img{
-                background-image: url('../img/secondslide.jpg');
-                background-size: cover;
-                height: 200px;
-                width:55%;
-                border-bottom-right-radius: 100%;
-                
-                @include laptop{
-                    border-bottom-right-radius: 0px;
-                    width:100%;
-                    height:130px;
-                }
-               
-            }
+        @include laptop {
+          border-bottom-right-radius: 0px;
+          width: 100%;
+          height: 130px;
+        }
+      }
 
+      &-para {
+        @include sansserif-font();
+        color: $color;
+        width: 45%;
+        @include font(400, 1.1rem);
+        padding: 20px 0 0 10px;
 
-          
-    
-            &-para{
-               @include sansserif-font();
-               color: $color;
-               width:45%;
-               @include font(400,1.1rem);
-               padding: 20px 0 0 10px;
-
-               @include laptopLarge{
-                @include font(400,1rem); 
-                padding: 20px 0 0 0px;
-               
-               }
-
-               @include laptop{
-                  padding: 12px 0 0 0px;
-                  @include font(400,1rem);
-                  width:80%;
-                 }
-
-                 @include mobileLarge{
-                    @include font(400,0.9rem);
-                    width:100%;
-                    padding: 12px 0 0 20px;
-                 }
-
-            }
-
-            &-cross{
-                position: absolute;
-                top:2%;
-                right:2%;
-                        
-            }
-              
+        @include laptopLarge {
+          @include font(400, 1rem);
+          padding: 20px 0 0 0px;
         }
 
-        #{&}-main{
-            @include sansserif-font();
-            color: $color;
-            @include font(400,1.1rem);
-            padding:30px;
-
-            @include laptop{
-                @include font(400,1rem); 
-                padding:20px;
-            }
-            @include mobileLarge{
-              @include font(400,0.9rem); 
-              padding:10px;
-            }
+        @include laptop {
+          padding: 12px 0 0 0px;
+          @include font(400, 1rem);
+          width: 80%;
         }
 
+        @include mobileLarge {
+          @include font(400, 0.9rem);
+          width: 100%;
+          padding: 12px 0 0 20px;
+        }
+      }
 
-
-
-            
+      &-cross {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+      }
     }
-          
 
+    #{&}-main {
+      @include sansserif-font();
+      color: $color;
+      @include font(400, 1.1rem);
+      padding: 30px;
 
-
-      
-      
-    
+      @include laptop {
+        @include font(400, 1rem);
+        padding: 20px;
+      }
+      @include mobileLarge {
+        @include font(400, 0.9rem);
+        padding: 10px;
+      }
+    }
+  }
 }
 
-.intro{
-
-      
-  height: 110vh;
-  width:100%;
-  background-image: linear-gradient(200deg,rgb(209, 211, 212), transparent),url('../img/secondslide.jpg');
+.intro {
+  height: 65vh;
+  width: 104vw;
+  margin: 2px 2vw 0 2vw;
+  background-image: linear-gradient( rgba(32, 31, 31, 0.7), transparent), url("../img/secondslide.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  animation:  appear 0.8s linear 1;
-  position: relative;
+  animation: appear 0.8s linear 1;
   box-sizing: border-box;
-  
 
-  @include mobileSmall{
-      height: 80vh;
-      background-size: 210% 120%;
-
+  @include mobileSmall {
+    height: 80vh;
+    background-size: 210% 120%;
   }
-  
- 
-  
-    
 
-
-
-
+  &-tag1 {
+    $color: $color;
+    @include flex(row);
+    margin: 0 auto;
+    @include sansserif-font();
+    color: white;
+    // border-bottom: 1px solid white;
+    background-color: transparent;
+    @include font(800, 3.5rem);
+    animation: swish 1s linear forwards 1;
+    transition: color 0.1s linear;
    
-
-    &-tag1{
-        $color:  $color;
-        padding: 10vh 0 0 17vw;
-        @include sansserif-font();
-        color:$color;
-        background-color:transparent;
-        @include font(900, 5.4rem);
-        animation: swish 0.8s linear forwards 1;
-        transition: color 0.1s linear;
-
-        @include biggerwidth{
-            padding: 10vh 0 0 23vw;
-        }
-
-        @include laptopLarge{
-            @include font(900, 5.1rem);
-            padding: 10vh 0 0 10vw;
-        }
-        @include laptop{
-            @include font(900, 4.1rem);
-            padding: 10vh 0 0 7vw;
-        }
-        
-        @include tablet{
-            @include font(900, 3.6rem);
-            padding: 10vh 0 0 3vw;
-        }
-
-        @include mobileLarge{
-            @include font(900, 2.9rem);
-            padding: 17vh 0 0 0vw;
-        }
-        @include mobileSmall{
-            @include font(900, 2rem);
-            padding: 20vh 0 0 3vw;
-        }
-        @include media(390px){
-            @include font(900, 1.6rem);
-            padding: 17vh 0 0 0px;
-             
-        }
-        
-        &:hover{
-            
-            -webkit-text-stroke: 3px $color;
-            color:transparent;
-
-            @include mobileSmall{
-                -webkit-text-stroke: 0px $color;
-                color: $color;
-            }
-            
-            
-           
-        }
-    
-    }
-    
-    &-tag2{
-        position: absolute;
-        left:45%;
-        top:63%;
-        color: whitesmoke;
-        background-color: transparent;
-        padding:0px;
-        animation:  swish 1s linear forwards 0.2s, movedown 2s linear forwards infinite ;
-        opacity:0;
-
-        @include mobileLarge{
-           left:40%;
-        }
-        @include mobileSmall{
-           left:35%;
-        }
+    // &::before{
+    //   border-left: 5vw solid white;
+    //   content: " ";
+    //   width: 5px;
+    //   height:3.5rem;
       
 
-      &::after{
-          content:"scroll";
-          @include font(600, 15px);
-          @include sansserif-font();
-          position: absolute;
-          left:20px;
-          bottom:0px;
-          bottom:0px;
-         
+    // }
 
-      }       
+    @include biggerwidth {
+      padding: 10vh 0 0;
     }
-    @keyframes movedown {
-        0%{
-            transform: translateY(0px);
-    
-        }
-        50%{
-            transform: translateY(25px);
-          
-        }
-       100%{
-            transform: translateY(0px);
- 
-        }
-        
+
+    @include laptopLarge {
+      @include font(800, 3.2rem);
+      // padding: 10vh 0 0 10vw;
     }
-   
+    @include laptop {
+      @include font(800, 3rem);
+      padding: 10vh 0 0 7vw;
+    }
 
+    @include tablet {
+      @include font(800, 3.6rem);
+      padding: 10vh 0 0 3vw;
+    }
 
+    @include mobileLarge {
+      @include font(800, 2.9rem);
+      padding: 10vh 0 0 0vw;
+    }
+    @include mobileSmall {
+      @include font(800, 2rem);
+      padding: 15vh 5vw 0 0vw;
+    }
+    @include media(390px) {
+      @include font(800, 1.6rem);
+      padding: 17vh 0 0 0px;
+    }
 
-
-
-
-   
-
-        
     
- 
+    
+  }
 
+  &-tag2 {
 
+    @include flex(row);
+    margin: 0 auto;
+    padding-top: 2vh;
 
+    color: whitesmoke;
+    background-color: transparent;
+    animation: swish 1s linear forwards 0.2s,
+      movedown 2s linear forwards infinite;
+    opacity: 0;
 
+    @include mobileLarge {
+    
+    }
+    @include mobileSmall {
+      font-size: 1rem;
+    }
 
-
+  }
+  @keyframes movedown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(25px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }
 
 //////about ....................
 
-
-
-.about{
-  
-    background-color: $design-color;
-    position: relative;
-
-    
-
-    &-svg{
-        position: absolute;
-        top:-200px;
-        z-index:0;
-
-        @include biggerwidth{
-            top: -260px;
-        }
-        
-        @include laptop{
-            top: -150px;
-        }
-        @include tablet{
-            top: -100px;
-        }
-        @include mobileSmall{
-            top: -60px;
-        }
-
-    }
-
-
-
-    &-flower{
-        position: absolute;
-        z-index: 1;
-        top:200px;
-        left:-13%;
-        transform: rotateZ(148deg);
-        opacity:0.8;
-        border-radius: 34%;
-        border:5.3px solid $color2;
-        padding:0.7%;
-        opacity:0.1;
-
-
-
-       
-       @include laptopLarge{
-           left: -25%;
-           top:250px;
-        }
-       
-        @include media(1200px){
-            left: -20%;
-            top:350px;
-        }
-        @include laptop{
-            left: -32%;
-            top:350px;
-        }
-        @include tablet{
-            left: -38%;
-            top:300px;
-           
-        }
-        @include mobileLarge{
-            left: -48%;
-            top:180px;
-            border:none;
-         
-        }
-        @include mobileSmall{
-            left: -66%;
-            top:20px;
-            border:none;
-            z-index: 0;
-    
-         
-           
-        }
-          
-
-    } 
-      
-   
-
-     
-    &-dots{
-
-        @include flex(row);
-        justify-content: space-around;
-        width:100px;
-        position: absolute;
-        top:4%;
-        left: 76%;
-
-        @include tablet{
-          top:2%;
-        }
-        @include mobileSmall{
-          left:65%;
-          top:1%;
-        }
-
-
-        #{&}-1{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-    
-        }
-        #{&}-2{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-    
-        }
-
-
-     #{&}-3{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-          
-
-        }
-     #{&}-4{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: $color2;
-     
-
-        }
-     #{&}-5{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: $color2;
-
-        }
-
-    }
-
-
-    &-first{
-        padding-top: 50px;
-        animation: transition1 1s ease-out  forwards 1;
-        @include flex(row);
-        justify-content: center;
-
-        @include mobileSmall{
-            @include flex(column);
-        }
-
-      #{&}-pic{
-
-            height:400px;
-            width:400px;
-            background-image: url('../img/mypic.jpg');
-            background-size: 110% 160%;
-            background-repeat: no-repeat;
-            background-position: 30% 50%;
-            animation: textappear 1s linear 1;
-            border-radius: 50%;
-            filter:contrast(90%) brightness(110%) ;
-            margin-right: 3%;
-
-            @include tablet{
-                height:300px;
-                width:300px;
-                margin-right: 4%;
-                background-size: 150% 200%;
-                background-position: 81% 50%;
-
-            }
-            @include mobileLarge{
-                height:200px;
-                width:200px;
-                margin-right: 4%;
-            }
-           
-            
-        }
-           
-
-        #{&}-para{
-            @include sansserif-font();
-            color:$color;
-            animation: textappear 1s linear forwards 1;
-            perspective:20rem;
-            z-index: 0;
-            width:30%;
-            @include tablet{
-                width:32%;
-            }
-           
-            @include mobileSmall{
-                width:47%;
-            }
-           
-
-            &-headline{
-                @include font(500,2rem);
-                padding-bottom: 20px;
-                @include tablet{
-                    @include font(500,1.5rem); 
-                }
-                @include media(820px){
-                    @include font(500,1.5rem); 
-                }
-                @include mobileSmall{
-                    padding-top: 2vh;
-                    @include font(500,1.2rem); 
-                }
-            }
-               
-            &-mainpara{
-                @include font(200,1.55rem);
-
-                @include laptopLarge{
-                    @include font(200,1.4rem); 
-                }
-                @include tablet{
-                    @include font(200,1rem);
-                }
-
-                @include media(820px){
-                    @include font(200,1.1rem);
-                }
-                @include mobileLarge{
-                    @include font(200,1rem);
-                }
-                @include mobileSmall{
-                    @include font(200,1rem); 
-                    
-                }
-            }
-              
-
-        }
-       
-        
-    } 
-        
-
-       
-}
-    
-      
-
-
-   
-   
-        
-       
-
-    
-
-
-
-
-
-
-
-
-//////story...........
-
-.story{
-    $color: $color;
-    background-color: $design-color;
-    position: relative;
- 
-    
-   &-para{
-        @include sansserif-font();
-        @include font(200,1.55rem);
-        color:$color;
-        animation: textappear 1s linear forwards 1;
-        width:30%;
-        padding: 200px 0 100px 300px;
-
-    
-        @include laptopLarge{
-            width:38%;
-            padding: 200px 0 100px 300px;
-            @include font(200,1.4rem); 
-        }
-     
-        @include media(820px){
-            @include font(200,1.1rem); 
-            width:37%;
-            padding: 200px 0px 90px 250px;
-        }
-
-       @include tablet{
-        padding: 120px 0 50px 300px;
-       }
-        @include mobileLarge{
-            padding: 60px 0 60px 200px;
-            @include font(200,1rem); 
-            width:40%;
-        }
-        @include mobileSmall{
-           width: 53%;
-           padding: 70px 0 70px 27vw;
-           @include font(200,1rem); 
-
-        }
-     
-        
-       
-    }
-
-
-
-
-   &-dots{
-
-        @include flex(row);
-        justify-content: space-around;
-        width:100px;
-        position: absolute;
-        top:10%;
-        left: 40%;
-
-        @include tablet{
-            top: 0%;
-            left:50%;
-          }
-        @include mobileSmall{
-            top:1%;
-            left:17%;
-            width:94px;
-          }
-       
-        
-        #{&}-1{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-    
-        }
-        #{&}-2{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-    
-        }
-
-
-     #{&}-3{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-          
-
-        }
-     #{&}-4{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: $color2;
-     
-
-        }
-     #{&}-5{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: $color2;
-
-        }
-
-
-    }
-   
-
-   
-  
-   &-shape{
-        box-shadow: 1px 1px 14px 1px $color2;
-        border-radius: 34%;
-        height: 420px;
-        width: 420px;
-        position: absolute;
-        top:10%;
-        right:-5%;
-        z-index:0;
-        transform: rotateZ(30deg);
-        perspective: 20rem;
-        opacity:0.2;
-
-        @include laptopLarge{
-            height: 360px;
-            width: 360px; 
-        }
-
-        @include laptop{
-            height: 300px;
-            width: 300px; 
-            top:30%;
-          
-        }
-
-        @include tablet{
-            display:none;
-          }
-      
-    }
-
-
-
-
-}
-
-
-
-
-
-
+.about {
+  background-color: $design-color;
+  position: relative;
 
  
-  
-   
-    
 
- ///////video
+  &-flower {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: -13%;
+    transform: rotateZ(148deg);
+    opacity: 0.8;
+    border-radius: 34%;
+    border: 5.3px solid $color2;
+    padding: 0.7%;
+    opacity: 0.1;
 
-
- .video{
-   
-    background-image: linear-gradient(180deg,$color2,$design-color, transparent, $color2);
-    background-position: 8% 70%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:1200px;
-    position: relative;
-
-    @include tablet{
-        height:700px; 
-    }
-    @include mobileLarge{
-        height:580px; 
+    @include laptopLarge {
+      left: -25%;
+      top: 250px;
     }
 
-    &-svg{
-        position: absolute;
-        z-index: -1;
-        top:-5px;
-        z-index:0;
-        transform: rotateZ(180deg);
+    @include media(1200px) {
+      left: -20%;
+      top: 350px;
+    }
+    @include laptop {
+      left: -32%;
+      top: 350px;
+    }
+    @include tablet {
+      left: -38%;
+      top: 300px;
+    }
+    @include mobileLarge {
+      left: -48%;
+      top: 180px;
+      border: none;
+    }
+    @include mobileSmall {
+      left: -66%;
+      top: 20px;
+      border: none;
+      z-index: 0;
+    }
+  }
+
+
+  &-first {
+    padding-top: 50px;
+    animation: transition1 1s ease-out forwards 1;
+    @include flex(row);
+    justify-content: center;
+
+    @include mobileSmall {
+      @include flex(column);
     }
 
+    #{&}-pic {
+      height: 400px;
+      width: 400px;
+      background-image: url("../img/mypic.jpg");
+      background-size: 110% 160%;
+      background-repeat: no-repeat;
+      background-position: 30% 50%;
+      animation: textappear 1s linear 1;
+      border-radius: 50%;
+      filter: contrast(90%) brightness(110%);
+      margin-right: 3%;
 
-   &-video{
-       margin:400px 0px 20px 25%;
-       border: 4px solid $color2;
-       border-radius: 4px;
-       box-sizing: content-box;
-
-       @include biggerwidth{
-        margin: 400px 0px 20px 27%;
-       }
-       @include  laptopLarge{
-        margin: 350px 0px 20px 18%;
-       }
-       @include  laptop{
-        margin: 350px 0px 20px 13%;
-        width: 600px;
-       }
-       @include  tablet{
-        margin: 300px 0px 20px 13%;
-        width: 500px;
-       }
-       @include mobileLarge{
-        margin: 200px 0px 20px 9%;
-        width: 400px;
-       }
-       @include mobileSmall{
-        margin: 220px 0px 18px 17%;
-        width: 245px;
-        border :none;
-        border: 2px solid $color2;
-
-       }
-   }
-
-
-     &-headline{
-       @include font(900,3rem);
-       @include sansserif-font();
-       color: $color;
-       position: absolute;
-       z-index: 0;
-       top:26%;
-       left:36%;
-
-       @include laptopLarge{
-           left:29%;
-           top: 21%;
-       }
-       @include laptop{
-           left:20%;
-           top: 21%;
-       }
-       @include tablet{
-           left:21%;
-           top: 27%;
-           @include font(900,2.5rem);
-       }
-       @include mobileLarge{
-           left:19%;
-           top: 20%;
-           @include font(900,1.9rem);
-       }
-       @include mobileSmall{
-           left:18%;
-           top: 26%;
-           @include font(900,1.3rem);
-       }
-
-
-    }
-            
-        
-        
-       
-
- }
-  
- 
-//////projects
-
-
-.projects{
-    position: relative;
-    background-color: $design-color;
-
-    &-svg{
-        position: absolute;
-        top:-270px;
-        z-index: 0;
-
-       @include biggerwidth{
-        top:-310px;
-       }
-       @include bigger{
-        top:-230px;
-       }
-       
-        @include laptopLarge{
-            top:-200px; 
-        }
-        @include laptop{
-            top:-150px; 
-        }
-        @include tablet{
-            top:-130px; 
-        }
-        @include mobileLarge{
-            top:-105px; 
-        }
-        @include mobileSmall{
-            top:-90px; 
-        }
-        @include media(410px){
-            top:-75px; 
-        }
-        @include media(360px){
-            top:-69px; 
-        }
-
-    }
-
-    &-flower{
-        position: absolute;
-        z-index: 1;
-        top:50px;
-        right:-15%;
-        transform: rotateZ(120deg);
-        opacity:0.8;
-        border-radius: 34%;
-        border:5.3px solid $color2;
-        opacity:0.1;
-
-
-         @include laptopLarge{
-            right:-25%;
-            top:40px;
-
-         }
-         @include laptop{
-            right:-30%;
-            top:30px;
-            transform:rotateZ(24deg);
-            border:none;
-         }
-         @include tablet{
-            right:-35%;
-            top:10px;
-            border:none;
-         }
-         @include mobileLarge{
-            right:-44%;
-            top:10px;
-            border:none; 
-         }
-         @include mobileSmall{
-            right:10%;
-            top:-60px;
-            border:none;
-            height:20px;
-            width:20px;
-            z-index: 0;
-        
-         }
-       
-
-    }
-   
-
-    &-shape{
-        box-shadow: 1px 1px 14px 1px $color2;
-        border-radius: 34%;
-        height: 420px;
-        width: 420px;
-        position: absolute;
-        top:350px;
-        left:-14%;
-        z-index:1;
-        transform: rotateZ(147deg);
-        perspective: 20rem;
-        opacity:0.2;
-
-       @include laptopLarge{
-        height: 380px;
-        width: 380px;
-        left:-21%;
-
-       }
-
-       @include laptop{
+      @include tablet {
         height: 300px;
         width: 300px;
-        left:-29%;
-       }
-       @include mobileLarge{
-        display: none;
-       }
-
-
+        margin-right: 4%;
+        background-size: 150% 200%;
+        background-position: 81% 50%;
+      }
+      @include mobileLarge {
+        height: 200px;
+        width: 200px;
+        margin-right: 4%;
+      }
     }
 
+    #{&}-para {
+      @include sansserif-font();
+      color: $color;
+      animation: textappear 1s linear forwards 1;
+      perspective: 20rem;
+      z-index: 0;
+      width: 30%;
+      @include tablet {
+        width: 32%;
+      }
 
+      @include mobileSmall {
+        width: 47%;
+      }
 
-    &-headline{
-     @include font(600,2rem);
-     @include sansserif-font();
-     position: absolute;
-     z-index:0;
-     color: $color;
-     left:40vw;
-     padding-top: 80px;
-
-    
-
-     @include laptop{
-        padding-top: 90px;
-     }
-
-     @include mobileSmall{
-        left: 30vw;
-        @include font(600,1.45rem);
-      
-     }
-
-
-
-    }
-    &-dots{
-        @include flex(row);
-        justify-content: space-around;
-        width:100px;
-        position: absolute;
-        top:60px;
-        left:10%;
-
-        @include tablet{
-            top:35px;
-        }
-        @include mobileSmall{
-            top:10px;
-            left:5%;
-        }
-
-     #{&}-1{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-    
-        }
-        #{&}-2{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-    
-        }
-
-
-     #{&}-3{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-          
-
-        }
-     #{&}-4{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: $color2;
-     
-
-        }
-     #{&}-5{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: $color2;
-
-        }
-
-
-
-    }
-    &-dots2{
-        @include flex(row);
-        justify-content: space-around;
-        width:100px;
-        position: absolute;
-        top:750px;
-        left:75%;
+      &-headline {
+        @include font(500, 2rem);
         padding-bottom: 20px;
-
-        @include tablet{
-            top:890px;
-            left:72%;
-            padding-bottom: 50px;
+        @include tablet {
+          @include font(500, 1.5rem);
         }
-       
-        @include mobileSmall{
-            top:710px;
-            left:60%;
-            padding-bottom: 10px;
+        @include media(820px) {
+          @include font(500, 1.5rem);
         }
-
-     #{&}-1{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-    
+        @include mobileSmall {
+          padding-top: 2vh;
+          @include font(500, 1.2rem);
         }
-        #{&}-2{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-    
-        }
-
-
-     #{&}-3{
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            background-color: $color2;
-          
-
-        }
-     #{&}-4{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: $color2;
-     
-
-        }
-     #{&}-5{
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: $color2;
-
-        }
-
-
-
-    }
-
-  &-project1{
-      @include flex(row);
-       justify-content: flex-start;
-        padding-top: 170px;
-        padding-left: 250px;
-
-        @include tablet{
-            @include flex(column);
-            justify-content: center;
-            align-items: center;
-            padding-left: 0px;
-           
-           }
-
-        @include mobileSmall{
-           
-            @include flex(column);
-            justify-content: center;
-            align-items: center;
-            padding-left: 0px;
-            padding-top: 180px;
-         
-        }
-      
-      #{&}-pic{
-        height:160px;
-        width:160px;
-        background-image:url('../img/EMIapp.png');
-        background-size: cover;
-        background-position: 50% 0%;
-        background-repeat: no-repeat;
-        animation: textappear 1s linear 1;
-        border-radius: 50%;
-        filter:contrast(80%) brightness(94%) ;
-
-
-          @include mobileSmall{
-            height:80px;
-            width:80px; 
-          }
       }
 
-      #{&}-name{
-        @include font(200,1.55rem);
-        @include sansserif-font();
-        color:$color;
-        padding-top: 10px;
-        background-color: transparent;
-        animation: swish 1s linear forwards 1;
-        text-decoration: none;
-        text-shadow: -1.4px 2px 2px $color;
-        border-bottom: 2px solid $color2;
-        
-        @include laptop{
-            @include font(200,1.3rem); 
+      &-mainpara {
+        @include font(200, 1.55rem);
+
+        @include laptopLarge {
+          @include font(200, 1.4rem);
         }
-        @include tablet{
-            padding-left: 0px;
-            padding-top: 20px;
-            margin-left: -120px;     
+        @include tablet {
+          @include font(200, 1rem);
         }
 
-        @include mobileSmall{
-            @include font(200,1rem);
-            padding-left: 0px;
-            padding-top: 20px;
-            margin-left: -120px;
+        @include media(820px) {
+          @include font(200, 1.1rem);
         }
-        
-    }
-  }
-
-
-
-   
-  &-project2{
-      @include flex(row);
-      justify-content: flex-start;
-       padding-top: 30px;
-       padding-left: 400px;
-
-
-       @include media(1200px){
-        padding-left: 330px; 
-       }
-
-        @include laptopLarge{
-            padding-left: 300px;   
+        @include mobileLarge {
+          @include font(200, 1rem);
         }
-
-
-        @include tablet{
-            @include flex(column);
-            justify-content: center;
-            align-items: center;
-            padding-left: 340px;
-           
+        @include mobileSmall {
+          @include font(200, 1rem);
         }
-        @include mobileLarge{
-            padding-left: 0px;  
-        }
-       @include mobileSmall{
-       
-        @include flex(column);
-        justify-content: center;
-        align-items: center;
-        padding-left: 0px;
-    }
-       
-      
-      #{&}-pic{
-        height:160px;
-        width:160px;
-        background-image: url('../img/accentapp.png');
-        background-size: cover;
-        background-position: 50% 0%;
-        background-repeat: no-repeat;
-        animation: textappear 1s linear 1;
-        border-radius: 50%;
-        filter:contrast(100%) brightness(105%) ;
-
-        @include mobileSmall{
-            height:80px;
-            width:80px; 
-          }
-    
       }
-
-      #{&}-name{
-        @include font(200,1.55rem);
-        @include sansserif-font();
-        color:$color;
-        background-color: transparent;
-        margin-left: 22px;
-        animation: swish 1s linear forwards 1;
-        text-decoration: none;
-        text-shadow: -1.4px 2px 2px $color;
-        border-bottom: 2px solid $color2;
-       
-            @include laptop{
-                @include font(200,1.3rem); 
-            }
-
-            @include tablet{
-                padding-left: 0px;
-                padding-top: 20px;
-                margin-left: -120px;     
-            }
-
-        @include mobileSmall{
-            @include font(200,1rem);
-            padding-left: 0px;
-            padding-top: 20px;
-            margin-left: -120px;
-        }
-        
     }
   }
-
-
-
-   
-  &-project3{
-      @include flex(row);
-       padding-top: 30px;
-
-       @include tablet{
-        @include flex(column);
-        justify-content: center;
-        align-items: center;
-       
-       }
-
-       @include mobileSmall{
-       
-        @include flex(column);
-        padding-left: 0px;
-    }
-      
-      #{&}-pic{
-        height:160px;
-        width:160px;
-        background-image: url('../img/Screen\ Shot\ 2021-06-16\ at\ 10.19.49\ pm.png');
-        background-size: cover;
-        background-position: 50% 0%;
-        background-repeat: no-repeat;
-        animation: textappear 1s linear 1;
-        border-radius: 50%;
-        filter:contrast(100%) brightness(100%) ;
-        @include mobileSmall{
-            height:80px;
-            width:80px; 
-          }
-    
-      }
-
-
-
-      #{&}-name{
-        @include font(200,1.55rem);
-        color:$color;
-        @include sansserif-font();
-        padding-top: 10px;
-        background-color: transparent;
-        animation: swish 1s linear forwards 1;
-        text-decoration: none;
-        text-shadow: -1.4px 2px 2px $color;
-        border-bottom: 2px solid $color2;
-
-        @include laptop{
-            @include font(200,1.3rem); 
-        }
-        @include tablet{
-            padding-left: 0px;
-            padding-top: 20px;
-            margin-left: -120px;     
-        }
-        @include mobileSmall{
-            @include font(200,1rem);
-            padding-left: 0px;
-            padding-top: 20px;
-            margin-left: -120px;
-        }
-        
-    }
-
-  }
-   
-  &-copy{
-      color: $color2;
-      position: absolute;
-      bottom:-124px;
-      left:45%;
-      @include font(400,0.8rem);
-
-      @include mobileSmall{
-        left:0px;
-      }
-  }
-
-
-
-
-
-
-
-
-
 }
 
 
+//svg
 
 
+  .svg {
+    position: absolute;
+    top: -200px;
+    z-index: 0;
+
+    @include biggerwidth {
+      top: -260px;
+    }
+
+    @include laptop {
+      top: -150px;
+    }
+    @include tablet {
+      top: -100px;
+    }
+    @include mobileSmall {
+      top: -60px;
+    }
+  }
+
+///dots
 
 
+.dots {
+  @include flex(row);
+  justify-content: space-around;
+  width: 100px;
+  position: absolute;
+  top: 4%;
+  left: 76%;
+
+  @include tablet {
+    top: 2%;
+  }
+  @include mobileSmall {
+    left: 65%;
+    top: 1%;
+  }
+
+  &-1 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+  &-2 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+
+  &-3 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+  &-4 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+  &-5 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+}
+//////story...........
+
+.story {
+  $color: $color;
+  background-color: $design-color;
+  position: relative;
+
+  &-para {
+    @include sansserif-font();
+    @include font(200, 1.55rem);
+    color: $color;
+    animation: textappear 1s linear forwards 1;
+    width: 30%;
+    padding: 200px 0 100px 300px;
+
+    @include laptopLarge {
+      width: 38%;
+      padding: 200px 0 100px 300px;
+      @include font(200, 1.4rem);
+    }
+
+    @include media(820px) {
+      @include font(200, 1.1rem);
+      width: 37%;
+      padding: 200px 0px 90px 250px;
+    }
+
+    @include tablet {
+      padding: 120px 0 50px 300px;
+    }
+    @include mobileLarge {
+      padding: 60px 0 60px 200px;
+      @include font(200, 1rem);
+      width: 40%;
+    }
+    @include mobileSmall {
+      width: 53%;
+      padding: 70px 0 70px 27vw;
+      @include font(200, 1rem);
+    }
+  }
 
 
+  &-shape {
+    box-shadow: 1px 1px 14px 1px $color2;
+    border-radius: 34%;
+    height: 420px;
+    width: 420px;
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    z-index: 0;
+    transform: rotateZ(30deg);
+    perspective: 20rem;
+    opacity: 0.2;
+
+    @include laptopLarge {
+      height: 360px;
+      width: 360px;
+    }
+
+    @include laptop {
+      height: 300px;
+      width: 300px;
+      top: 30%;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+////story dots
 
 
+.story-dots {
+  @include flex(row);
+  justify-content: space-around;
+  width: 100px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
 
+  @include tablet {
+    top: 0%;
+    left: 50%;
+  }
+  @include mobileSmall {
+    top: 1%;
+    left: 17%;
+    width: 94px;
+  }
 
+  &-1 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+  &-2 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
 
+  &-3 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+  &-4 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+  &-5 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $color2;
+  }
+}
+///////video
 
+.video {
+  background-image: linear-gradient(
+    180deg,
+    $color2,
+    $design-color,
+    transparent,
+    $color2
+  );
+  background-image: linear-gradient(
+    110deg,
+    $color,
+    $color2,
+    $color
+  );
+  background-position: 8% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1200px;
+  position: relative;
 
+  @include tablet {
+    height: 700px;
+  }
+  @include mobileLarge {
+    height: 580px;
+  }
 
+  &-svg {
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    z-index: 0;
+    transform: rotateZ(180deg);
+  }
 
-        
+  &-video {
+    margin: 400px 0px 20px 25%;
+    border: 4px solid $color2;
+    border-radius: 4px;
+    box-sizing: content-box;
+
+    @include biggerwidth {
+      margin: 400px 0px 20px 27%;
+    }
+    @include laptopLarge {
+      margin: 350px 0px 20px 18%;
+    }
+    @include laptop {
+      margin: 350px 0px 20px 13%;
+      width: 600px;
+    }
+    @include tablet {
+      margin: 300px 0px 20px 13%;
+      width: 500px;
+    }
+    @include mobileLarge {
+      margin: 200px 0px 20px 9%;
+      width: 400px;
+    }
+    @include mobileSmall {
+      margin: 220px 0px 18px 17%;
+      width: 245px;
+      border: none;
+      border: 2px solid $color2;
+    }
+  }
+
+  &-headline {
+    @include font(900, 3rem);
+    @include sansserif-font();
+    color: $color;
+    position: absolute;
+    z-index: 0;
+    top: 26%;
+    left: 36%;
+
+    @include laptopLarge {
+      left: 29%;
+      top: 21%;
+    }
+    @include laptop {
+      left: 20%;
+      top: 21%;
+    }
+    @include tablet {
+      left: 21%;
+      top: 27%;
+      @include font(900, 2.5rem);
+    }
+    @include mobileLarge {
+      left: 19%;
+      top: 20%;
+      @include font(900, 1.9rem);
+    }
+    @include mobileSmall {
+      left: 18%;
+      top: 26%;
+      @include font(900, 1.3rem);
+    }
+  }
+}
+
+//////projects
+
+.projects {
+  position: relative;
+  background-color: $design-color;
+
+  &-svg {
+    position: absolute;
+    top: -270px;
+    z-index: 0;
+
+    @include biggerwidth {
+      top: -310px;
+    }
+    @include bigger {
+      top: -230px;
+    }
+
+    @include laptopLarge {
+      top: -200px;
+    }
+    @include laptop {
+      top: -150px;
+    }
+    @include tablet {
+      top: -130px;
+    }
+    @include mobileLarge {
+      top: -105px;
+    }
+    @include mobileSmall {
+      top: -90px;
+    }
+    @include media(410px) {
+      top: -75px;
+    }
+    @include media(360px) {
+      top: -69px;
+    }
+  }
+
+  &-flower {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: -15%;
+    transform: rotateZ(120deg);
+    opacity: 0.8;
+    border-radius: 34%;
+    border: 5.3px solid $color2;
+    opacity: 0.1;
+
+    @include laptopLarge {
+      right: -25%;
+      top: 40px;
+    }
+    @include laptop {
+      right: -30%;
+      top: 30px;
+      transform: rotateZ(24deg);
+      border: none;
+    }
+    @include tablet {
+      right: -35%;
+      top: 10px;
+      border: none;
+    }
+    @include mobileLarge {
+      right: -44%;
+      top: 10px;
+      border: none;
+    }
+    @include mobileSmall {
+      right: 10%;
+      top: -60px;
+      border: none;
+      height: 20px;
+      width: 20px;
+      z-index: 0;
+    }
+  }
+
+  &-shape {
+    box-shadow: 1px 1px 14px 1px $color2;
+    border-radius: 34%;
+    height: 420px;
+    width: 420px;
+    position: absolute;
+    top: 350px;
+    left: -14%;
+    z-index: 1;
+    transform: rotateZ(147deg);
+    perspective: 20rem;
+    opacity: 0.2;
+
+    @include laptopLarge {
+      height: 380px;
+      width: 380px;
+      left: -21%;
+    }
+
+    @include laptop {
+      height: 300px;
+      width: 300px;
+      left: -29%;
+    }
+    @include mobileLarge {
+      display: none;
+    }
+  }
+
+  &-headline {
+    @include font(600, 2rem);
+    @include sansserif-font();
+    position: absolute;
+    z-index: 0;
+    color: $color;
+    left: 40vw;
+    padding-top: 80px;
+
+    @include laptop {
+      padding-top: 90px;
+    }
+
+    @include mobileSmall {
+      left: 30vw;
+      @include font(600, 1.45rem);
+    }
+  }
+  &-dots {
+    @include flex(row);
+    justify-content: space-around;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 10%;
+
+    @include tablet {
+      top: 35px;
+    }
+    @include mobileSmall {
+      top: 10px;
+      left: 5%;
+    }
+
+    #{&}-1 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+    #{&}-2 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+
+    #{&}-3 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+    #{&}-4 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+    #{&}-5 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+  }
+  &-dots2 {
+    @include flex(row);
+    justify-content: space-around;
+    width: 100px;
+    position: absolute;
+    top: 750px;
+    left: 75%;
+    padding-bottom: 20px;
+
+    @include tablet {
+      top: 890px;
+      left: 72%;
+      padding-bottom: 50px;
+    }
+
+    @include mobileSmall {
+      top: 710px;
+      left: 60%;
+      padding-bottom: 10px;
+    }
+
+    #{&}-1 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+    #{&}-2 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+
+    #{&}-3 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+    #{&}-4 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+    #{&}-5 {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background-color: $color2;
+    }
+  }
+
+  &-project1 {
+    @include flex(row);
+    justify-content: flex-start;
+    padding-top: 170px;
+    padding-left: 250px;
+
+    @include tablet {
+      @include flex(column);
+      justify-content: center;
+      align-items: center;
+      padding-left: 0px;
+    }
+
+    @include mobileSmall {
+      @include flex(column);
+      justify-content: center;
+      align-items: center;
+      padding-left: 0px;
+      padding-top: 180px;
+    }
+
+    #{&}-pic {
+      height: 160px;
+      width: 160px;
+      background-image: url("../img/EMIapp.png");
+      background-size: cover;
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      animation: textappear 1s linear 1;
+      border-radius: 50%;
+      filter: contrast(80%) brightness(94%);
+
+      @include mobileSmall {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    #{&}-name {
+      @include font(200, 1.55rem);
+      @include sansserif-font();
+      color: $color;
+      padding-top: 10px;
+      background-color: transparent;
+      animation: swish 1s linear forwards 1;
+      text-decoration: none;
+      text-shadow: -1.4px 2px 2px $color;
+      border-bottom: 2px solid $color2;
+
+      @include laptop {
+        @include font(200, 1.3rem);
+      }
+      @include tablet {
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-left: -120px;
+      }
+
+      @include mobileSmall {
+        @include font(200, 1rem);
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-left: -120px;
+      }
+    }
+  }
+
+  &-project2 {
+    @include flex(row);
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-left: 400px;
+
+    @include media(1200px) {
+      padding-left: 330px;
+    }
+
+    @include laptopLarge {
+      padding-left: 300px;
+    }
+
+    @include tablet {
+      @include flex(column);
+      justify-content: center;
+      align-items: center;
+      padding-left: 340px;
+    }
+    @include mobileLarge {
+      padding-left: 0px;
+    }
+    @include mobileSmall {
+      @include flex(column);
+      justify-content: center;
+      align-items: center;
+      padding-left: 0px;
+    }
+
+    #{&}-pic {
+      height: 160px;
+      width: 160px;
+      background-image: url("../img/accentapp.png");
+      background-size: cover;
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      animation: textappear 1s linear 1;
+      border-radius: 50%;
+      filter: contrast(100%) brightness(105%);
+
+      @include mobileSmall {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    #{&}-name {
+      @include font(200, 1.55rem);
+      @include sansserif-font();
+      color: $color;
+      background-color: transparent;
+      margin-left: 22px;
+      animation: swish 1s linear forwards 1;
+      text-decoration: none;
+      text-shadow: -1.4px 2px 2px $color;
+      border-bottom: 2px solid $color2;
+
+      @include laptop {
+        @include font(200, 1.3rem);
+      }
+
+      @include tablet {
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-left: -120px;
+      }
+
+      @include mobileSmall {
+        @include font(200, 1rem);
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-left: -120px;
+      }
+    }
+  }
+
+  &-project3 {
+    @include flex(row);
+    padding-top: 30px;
+
+    @include tablet {
+      @include flex(column);
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include mobileSmall {
+      @include flex(column);
+      padding-left: 0px;
+    }
+
+    #{&}-pic {
+      height: 160px;
+      width: 160px;
+      background-image: url("../img/Screen\ Shot\ 2021-06-16\ at\ 10.19.49\ pm.png");
+      background-size: cover;
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      animation: textappear 1s linear 1;
+      border-radius: 50%;
+      filter: contrast(100%) brightness(100%);
+      @include mobileSmall {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    #{&}-name {
+      @include font(200, 1.55rem);
+      color: $color;
+      @include sansserif-font();
+      padding-top: 10px;
+      background-color: transparent;
+      animation: swish 1s linear forwards 1;
+      text-decoration: none;
+      text-shadow: -1.4px 2px 2px $color;
+      border-bottom: 2px solid $color2;
+
+      @include laptop {
+        @include font(200, 1.3rem);
+      }
+      @include tablet {
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-left: -120px;
+      }
+      @include mobileSmall {
+        @include font(200, 1rem);
+        padding-left: 0px;
+        padding-top: 20px;
+        margin-left: -120px;
+      }
+    }
+  }
+
+  &-copy {
+    color: $color2;
+    position: absolute;
+    bottom: -124px;
+    left: 45%;
+    @include font(400, 0.8rem);
+
+    @include mobileSmall {
+      left: 0px;
+    }
+  }
+}
+
 ////......
-
 
 ///keyframes.....
 
-
-
-
-
 @keyframes rotater {
-   
-    100%{
-        transform:  rotateZ(360deg) ; 
-    }
-       
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
-       
-       
-
- 
 
 @keyframes swish {
-   0%{
-    opacity:0;
-    }
-    100%{
-      opacity:1;
-      transform: translateX(70px);
-    }
-    
-}
-
-@keyframes transition1{
-    0%{
-       opacity:0;
-       transform: translateY(0px);
-    }
-    100%{
-        opacity:1;
-        transform: translateY(-30px);
-    }
-}
+  0% {
+    opacity: 0;
+    transform: translateY(-20vw);
+  }
+  100% {
+    opacity: 1;
    
-    
-@keyframes textappear{
-    0%{
-      transform:  translateY(90px);
-    }
-    100%{
-        transform:  translateY(0px);
-     
-    }
+  }
 }
-  
-    
 
+@keyframes transition1 {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes textappear {
+  0% {
+    transform: translateY(90px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 @keyframes appear {
-    0%{
-   
-    opacity:0;
-   }
-   50%{
-    opacity:0.5;
-   }
-
-   100%{
-   opacity:1;
+  0% {
+    opacity: 0;
   }
-       
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-
-   
-
-  
-   
-   
 
 @keyframes moveRight {
-    0%{
-        transform:  translateX(-20px);   
-    }
-   100%{
-
-     transform:translateX(0px);
-      
-    }
-  
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
-
-   
-
-    
-   
-  
- 
-  
-
-   
-
-
-
-
-
-
-
-
-
-
-  
-
-
-

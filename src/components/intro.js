@@ -1,48 +1,41 @@
-import React from 'react';
+import React from "react";
 
+const Intro = (props) => {
+  const letter_array = [
+    "M",
+    "y",
+    " ",
+    "l",
+    "i",
+    "f",
+    "e",
+    " ",
+    "a",
+    "s",
+    " ",
+    "a",
+    " ",
+    "C",
+    "o",
+    "d",
+    "e",
+    "r",
+  ];
+  const intro_line = letter_array.map((letter, index) => (
+    <span className={`letter-${index + 1}`}>{letter}</span>
+  ));
 
+  function checkanime(e) {
+    props.animateFunction(e.animationName);
+  }
 
+  return (
+    <div className="text" onAnimationEnd={checkanime}>
+      {intro_line}
 
-class Intro extends React.Component{
-    constructor(props){
-        super(props)
-
-this.Checkanime=this.Checkanime.bind(this)
-
-    
- }
-
-
-Checkanime(e){
-
- this.props.animate(e.animationName)
-
-}
-
-
- render(){
-
-
-    return(
-     <div  className="text"  onAnimationEnd={this.Checkanime}  >
-         <p ><span className="M">M</span><span className="y">y</span>  <span className="l">l</span><span className="i">i</span><span className="f">f</span><span className="e">e</span>  <span className="a">a</span><span className="s">s</span> <span className="aa">a</span> <span className="C"> C</span><span className="o">o</span><span className="d">d</span><span className="ee">e</span><span className="r">r</span> </p> 
-         <br/>
-    
-
-    </div> 
-   
-         
-
-   
-          
-   
-   
-          
-    )
-}
-}
-
-
-
+      <br />
+    </div>
+  );
+};
 
 export default Intro;
